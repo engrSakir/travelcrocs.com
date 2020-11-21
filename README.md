@@ -15,12 +15,19 @@ Development start from 13-11-2020 to 13-7-2021 (240days). Total update 34.
 
 
 #Credentials
-Admin\
+Admin
 ............................................\
-Email: admin@travelcrocs.com\
-Password: password\
+Email: admin@travelcrocs.com
+Password: password
 
-User\
+User
 ............................................\
-Email: user@travelcrocs.com\
-Password: password\
+Email: user@travelcrocs.com
+Password: password
+
+
+API
+1. https://test.api.amadeus.com/v1/security/oauth2/token    //Access token generator
+    Need to pass,
+        a. client_id
+        b. client_secret
