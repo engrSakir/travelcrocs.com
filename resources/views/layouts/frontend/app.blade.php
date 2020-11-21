@@ -50,5 +50,6 @@
 
 <!-- Template JS Files -->
 @include('layouts.frontend.partials.foot')
+@include('includes.alert')
 </body>
 </html>

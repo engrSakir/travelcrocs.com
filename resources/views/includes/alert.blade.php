@@ -7,8 +7,8 @@
 </div>
 -->
 <script>
-    function still_alert(type, message){
-        $('.alert-display').html('' +
+    function still_alert(type, message, place){
+        $('.'+place).html('' +
             '\n' +
             '<div class="alert alert-custom alert-notice alert-light-'+type+' fade show" role="alert">\n' +
             '    <div class="alert-icon"><i class="flaticon-'+type+'"></i></div>\n' +
@@ -21,5 +21,11 @@
             '</div>'+
             '')
     }
+
+    function frontend_alert(type, message, place){
+        $('.'+place).html(' <div class="alert alert-'+type+'" role="alert">\n' + message +' </div>')
+    }
+
+
 </script>
 

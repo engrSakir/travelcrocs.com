@@ -26,4 +26,8 @@
 <link rel="stylesheet" href="{{ asset('assets/frontend/css/jquery-ui.css') }}">
 <link rel="stylesheet" href="{{ asset('assets/frontend/css/flag-icon.min.css') }}">
 <link rel="stylesheet" href="{{ asset('assets/frontend/css/style.css') }}">
+<!--SweetAlert 2-->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+<!--====== AJAX ======-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 @stack('css')
