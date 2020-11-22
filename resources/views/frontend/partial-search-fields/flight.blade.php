@@ -36,7 +36,7 @@
                         <label class="label-text">Flying from</label>
                         <div class="form-group">
                             <span class="la la-map-marker form-icon"></span>
-                            <input class="form-control" type="text" id="one-way-search-from" placeholder="City or airport">
+                            <input class="form-control" type="text" id="one-way-search-origin" placeholder="City or airport">
                         </div>
                     </div>
                 </div><!-- end col-lg-3 -->
@@ -45,7 +45,7 @@
                         <label class="label-text">Flying to</label>
                         <div class="form-group">
                             <span class="la la-map-marker form-icon"></span>
-                            <input class="form-control" type="text" placeholder="City or airport">
+                            <input class="form-control" type="text" id="one-way-search-destination" placeholder="City or airport">
                         </div>
                     </div>
                 </div><!-- end col-lg-3 -->
@@ -109,7 +109,7 @@
                     </div>
                 </div><!-- end col-lg-3 -->
                 <div class="col-lg-3">
-                    <a href="flight-search-result.html" class="theme-btn w-100 text-center margin-top-20px">Search Now</a>
+                    <a href="#" class="theme-btn w-100 text-center margin-top-20px">Search Now</a>
                 </div>
             </form>
         </div>
@@ -321,7 +321,7 @@
                 </div>
             </div><!-- end col-lg-3 -->
             <div class="col-lg-3">
-                <a href="flight-search-result.html" class="theme-btn w-100 text-center margin-top-20px">Search Now</a>
+                <a href="#" class="theme-btn w-100 text-center margin-top-20px">Search Now</a>
             </div>
         </div>
     </div><!-- end tab-pane -->
@@ -434,10 +434,10 @@
 ================================= -->
 <script>
     $(document).ready(function() {
-        //Prapok Name
-        $( "#one-way-search-from" ).autocomplete({
+        //one-way-search-origin
+        $( "#one-way-search-origin" ).autocomplete({
             source: function(request, response) {
-                console.log(request.term);
+                //console.log(request.term);
                 var api_url = 'https://test.api.amadeus.com/v1/reference-data/locations?subType=CITY,AIRPORT&keyword='+request.term;
                 var access_token = "{{ getAmadeusAccessToken() }}";
                 $.ajax({
@@ -446,8 +446,61 @@
                     headers: {
                         Authorization: 'Bearer ' + access_token
                     },
-                    success:function(responsed_data){
-                        console.log(responsed_data)
+                    success:function(data){
+                        var array = $.map(data.data,function(obj){
+                            return{
+                                value: obj.address['cityName'], //Filable in input field
+                                label: obj.address['cityName'],  //Show as label of input field
+                                phone: obj.address['cityName']
+                            }
+                        })
+                        response($.ui.autocomplete.filter(array, request.term));
+                    },
+                    error: function (xhr) {
+                        Swal.fire({
+                            title: 'Expire access code !',
+                            text: "Please reload this page for generate a new access code.",
+                            icon: 'info',
+                            showCancelButton: true,
+                            confirmButtonColor: '#deaa40',
+                            cancelButtonColor: '#0fcaca',
+                            confirmButtonText: 'Yes, reload it!'
+                        }).then((result) => {
+                            if (result.isConfirmed) {
+                                Swal.fire(
+                                    'Thank you!',
+                                    'New access code generation completed.',
+                                    'success'
+                                )
+                            }
+                            location.reload();
+                        })
+                    },
+                })
+            },
+            minLength: 1,
+        });
+        //one-way-search-destination
+        $( "#one-way-search-destination" ).autocomplete({
+            source: function(request, response) {
+                //console.log(request.term);
+                var api_url = 'https://test.api.amadeus.com/v1/reference-data/locations?subType=CITY,AIRPORT&keyword='+request.term;
+                var access_token = "{{ getAmadeusAccessToken() }}";
+                $.ajax({
+                    method: 'GET',
+                    url: api_url,
+                    headers: {
+                        Authorization: 'Bearer ' + access_token
+                    },
+                    success:function(data){
+                        var array = $.map(data.data,function(obj){
+                            return{
+                                value: obj.address['cityName'], //Filable in input field
+                                label: obj.address['cityName'],  //Show as label of input field
+                                phone: obj.address['cityName']
+                            }
+                        })
+                        response($.ui.autocomplete.filter(array, request.term));
                     },
                     error: function (xhr) {
                         Swal.fire({
