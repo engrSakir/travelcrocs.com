@@ -21,7 +21,12 @@
   <component name="ChangeListManager">
     <list default="true" id="42c33c20-9443-4946-97ea-543c8a623b1d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/frontend/partial-search-fields/flight.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontend/partial-search-fields/flight.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Administrative/DashboardController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Administrative/DashboardController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/RoleSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/RoleSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/UserSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/UserSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/frontend/partials/header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/frontend/partials/header.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -157,12 +162,13 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/layouts/frontend" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/lang" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\laragon\www\travelcrocs\resources\lang" />
       <recent name="D:\laragon\www\travelcrocs\resources\views\layouts\frontend" />
     </key>
   </component>
@@ -183,6 +189,7 @@
       <workItem from="1605767547775" duration="24388000" />
       <workItem from="1605847451849" duration="11387000" />
       <workItem from="1605932494419" duration="36271000" />
+      <workItem from="1606279506047" duration="7953000" />
     </task>
     <servers />
   </component>

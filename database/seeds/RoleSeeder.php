@@ -16,5 +16,6 @@ class RoleSeeder extends Seeder
         Role::create(['name' => 'administrative']);
 
         User::find(1)->assignRole('administrative');
+        User::find(2)->assignRole('administrative');
     }
 }

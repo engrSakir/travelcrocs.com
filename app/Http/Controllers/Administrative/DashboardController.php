@@ -12,7 +12,11 @@ class DashboardController extends Controller
      */
     public function index()
     {
-        return view('administrative.dashboard.index');
+        $default_lang_data = file_get_contents(resource_path('lang').'/'.'menual'.'.json');
+        //file_put_contents(resource_path('lang/').'menual'.'.json',$default_lang_data);
+
+        //return view('administrative.dashboard.index');
+        dd($default_lang_data);
     }
 
     /**
