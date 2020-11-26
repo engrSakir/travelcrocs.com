@@ -13,13 +13,35 @@ class LanguageSeeder extends Seeder
     public function run()
     {
         DB::table('languages')->insert([
-            'name' => 'বাংলা',
-            'language' => 'bd',
+            'status' => '1',
+            'name' => 'English',
+            'code' => 'en',
+            'flag' => 'en.pmg',
+            'alignment' => 'ltr',
         ]);
 
         DB::table('languages')->insert([
+            'status' => '1',
+            'name' => 'বাংলা',
+            'code' => 'bn',
+            'flag' => 'bd.pmg',
+            'alignment' => 'ltr',
+        ]);
+
+        DB::table('languages')->insert([
+            'status' => '1',
             'name' => 'Hindi',
-            'language' => 'hi',
+            'code' => 'hin',
+            'flag' => 'hin.png',
+            'alignment' => 'ltr',
+        ]);
+
+        DB::table('languages')->insert([
+            'status' => '1',
+            'name' => 'Arabic',
+            'code' => 'ar',
+            'flag' => 'ar.png',
+            'alignment' => 'rtl',
         ]);
     }
 }

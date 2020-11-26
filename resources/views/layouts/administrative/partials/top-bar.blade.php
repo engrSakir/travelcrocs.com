@@ -7,7 +7,7 @@
             <!--begin::Header Menu-->
             <div id="kt_header_menu" class="header-menu header-menu-mobile header-menu-layout-default">
                 <!--begin::Header Nav-->
-                <ul class="menu-nav">
+                <ul class="menu-nav" style="display: none">
                     <li class="menu-item menu-item-open menu-item-here menu-item-submenu menu-item-rel menu-item-open menu-item-here menu-item-active" data-menu-toggle="click" aria-haspopup="true">
                         <a href="javascript:;" class="menu-link menu-toggle">
                             <span class="menu-text">Pages</span>
@@ -16,7 +16,7 @@
                         <div class="menu-submenu menu-submenu-classic menu-submenu-left">
                             <ul class="menu-subnav">
                                 <li class="menu-item menu-item-active" aria-haspopup="true">
-                                    <a href="index.html" class="menu-link">
+                                    <a href="{{ route('administrative.dashboard.index') }}" class="menu-link">
 															<span class="svg-icon menu-icon">
 																<!--begin::Svg Icon | path:assets/media/svg/icons/Clothes/Briefcase.svg-->
 																<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
@@ -702,7 +702,7 @@
             </div>
             <!--end::Search-->
             <!--begin::Notifications-->
-            <div class="dropdown">
+            <div style="display: none" class="dropdown">
                 <!--begin::Toggle-->
                 <div class="topbar-item" data-toggle="dropdown" data-offset="10px,0px">
                     <div class="btn btn-icon btn-clean btn-dropdown btn-lg mr-1 pulse pulse-primary">
@@ -1160,7 +1160,7 @@
             </div>
             <!--end::Notifications-->
             <!--begin::Quick Actions-->
-            <div class="dropdown">
+            <div style="display: none" class="dropdown">
                 <!--begin::Toggle-->
                 <div class="topbar-item" data-toggle="dropdown" data-offset="10px,0px">
                     <div class="btn btn-icon btn-clean btn-dropdown btn-lg mr-1">
@@ -1273,7 +1273,7 @@
             </div>
             <!--end::Quick Actions-->
             <!--begin::Cart-->
-            <div class="topbar-item">
+            <div style="display: none" class="topbar-item">
                 <div class="btn btn-icon btn-clean btn-dropdown btn-lg mr-1" id="kt_quick_cart_toggle">
 										<span class="svg-icon svg-icon-xl svg-icon-primary">
 											<!--begin::Svg Icon | path:assets/media/svg/icons/Shopping/Cart3.svg-->
@@ -1290,7 +1290,7 @@
             </div>
             <!--end::Cart-->
             <!--begin::Quick panel-->
-            <div class="topbar-item">
+            <div style="display: none" class="topbar-item">
                 <div class="btn btn-icon btn-clean btn-lg mr-1" id="kt_quick_panel_toggle">
 										<span class="svg-icon svg-icon-xl svg-icon-primary">
 											<!--begin::Svg Icon | path:assets/media/svg/icons/Layout/Layout-4-blocks.svg-->
@@ -1307,7 +1307,7 @@
             </div>
             <!--end::Quick panel-->
             <!--begin::Chat-->
-            <div class="topbar-item">
+            <div style="display: none" class="topbar-item">
                 <div class="btn btn-icon btn-clean btn-lg mr-1" data-toggle="modal" data-target="#kt_chat_modal">
 										<span class="svg-icon svg-icon-xl svg-icon-primary">
 											<!--begin::Svg Icon | path:assets/media/svg/icons/Communication/Group-chat.svg-->
@@ -1337,13 +1337,13 @@
                     <!--begin::Nav-->
                     <ul class="navi navi-hover py-4">
                         <!--begin::Item-->
-                        @foreach(languages() as $language)
+                        @foreach(activeLanguages() as $activeLanguage)
                         <li class="navi-item">
-                            <a href="#" class="navi-link">
+                            <a href="{{ route('languageSwitcher', $activeLanguage->code) }}" class="navi-link">
 													<span class="symbol symbol-20 mr-3">
 														<img src="{{ asset('assets/administrative/media/svg/flags/226-united-states.svg') }}" alt="" />
 													</span>
-                                <span class="navi-text">{{ $language->name }}</span>
+                                <span class="navi-text">{{ $activeLanguage->name }}</span>
                             </a>
                         </li>
                         @endforeach

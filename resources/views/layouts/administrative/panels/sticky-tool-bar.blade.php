@@ -9,14 +9,14 @@
     <!--end::Item-->
     <!--begin::Item-->
     <li class="nav-item mb-2" data-toggle="tooltip" title="Layout Builder" data-placement="left">
-        <a class="btn btn-sm btn-icon btn-bg-light btn-icon-primary btn-hover-primary" href="https://preview.keenthemes.com/metronic/demo1/builder.html" target="_blank">
+        <a class="btn btn-sm btn-icon btn-bg-light btn-icon-primary btn-hover-primary" href="#" target="_blank">
             <i class="flaticon2-gear"></i>
         </a>
     </li>
     <!--end::Item-->
     <!--begin::Item-->
     <li class="nav-item mb-2" data-toggle="tooltip" title="Documentation" data-placement="left">
-        <a class="btn btn-sm btn-icon btn-bg-light btn-icon-warning btn-hover-warning" href="https://keenthemes.com/metronic/?page=docs" target="_blank">
+        <a class="btn btn-sm btn-icon btn-bg-light btn-icon-warning btn-hover-warning" href="#" target="_blank">
             <i class="flaticon2-telegram-logo"></i>
         </a>
     </li>

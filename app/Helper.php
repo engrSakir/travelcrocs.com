@@ -1,12 +1,28 @@
 <?php
 
-use Illuminate\Support\Facades\DB;
+use App\Language;
+use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Http;
 
 if (!function_exists('random_code')){
 
-    function languages(){
-        return DB::table('languages')->get();
+    function allLanguages(){
+        return Language::where('status', true)->get();
+    }
+
+    function activeLanguages(){
+        return Language::where('status', true)->get();
+    }
+
+    function currentLanguage()
+    {
+        $locale = App::getLocale();
+        return Language::where("code", $locale)->first();
+    }
+
+    function LangFromCode($code)
+    {
+        return Language::where("code", $code)->first();
     }
 
     //Generate access token and return

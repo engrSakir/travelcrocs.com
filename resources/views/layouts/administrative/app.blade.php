@@ -1,13 +1,11 @@
-
 <!DOCTYPE html>
-<html lang="{{ config('app.locale') }}">
+<html lang="{{  App::getLocale() }}">
 <!--begin::Head-->
 <head>
-    <base href="">
-    <meta charset="utf-8" />
-    <title>{{ config('app.name') }} | @yield('title', $page_title ?? 'Administrative')</title>
+    <meta charset="utf-8"/>
+    <title>{{ config('app.name') }} | @stack('title')</title>
     <meta name="author" content="{{ config('app.name') }}">
-    <meta name="description" content="@yield('page_description', $page_description ?? '')"/>
+    <meta name="description" content="@stack('description')"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <!--begin::CSRF-->
     <meta name="csrf-token" content="{{ csrf_token() }}">
@@ -31,6 +29,9 @@
     <link href="{{ asset('assets/administrative/css/themes/layout/aside/dark.css') }}" rel="stylesheet" type="text/css" />
     <!--end::Layout Themes-->
     <link rel="shortcut icon" href="{{ asset('assets/administrative/media/logos/favicon.ico') }}" />
+    <!--====== AJAX ======-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    @stack('css')
 </head>
 <!--end::Head-->
 <!--begin::Body-->
@@ -98,6 +99,7 @@
 <!--begin::Page Scripts(used by this page)-->
 <script src="{{ asset('assets/administrative/js/pages/widgets.js') }}"></script>
 <!--end::Page Scripts-->
+@stack('js')
 @include('includes.logout')
 </body>
 <!--end::Body-->

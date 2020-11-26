@@ -1,5 +1,6 @@
 <?php
 
+
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,6 +15,9 @@ use Illuminate\Support\Facades\Route;
 */
 
 Auth::routes();
+
+//Language switching
+Route::get('/language/{languageCode}', 'LanguageController@languageSwitcher')->name('languageSwitcher');
 
 //Frontend
 Route::group(['namespace' => 'Frontend', 'as' => 'frontend.'], function (){
@@ -31,4 +35,9 @@ Route::get('/home',function (){ return redirect()->route('administrative.dashboa
 Route::group(['namespace' => 'Administrative', 'as' => 'administrative.', 'prefix'=>'administrative', 'middleware'=>['permission:administrative-access', 'auth']], function (){
     //Dashboard route: administrative.dashboard.index
     Route::resource('dashboard', 'DashboardController');
+    Route::group(['prefix'=>'application'], function (){
+        Route::resource('language', 'LanguageController');
+    });
+
+
 });

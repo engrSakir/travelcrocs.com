@@ -20,13 +20,286 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="42c33c20-9443-4946-97ea-543c8a623b1d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/travelcrocs.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/travelcrocs.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Helper.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Helper.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Administrative/DashboardController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Administrative/DashboardController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/LanguageController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/LanguageController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Kernel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Language.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/RoleSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/RoleSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/UserSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/UserSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/LanguageSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/LanguageSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/administrative/js/pages/crud/ktdatatable/base/data-ajax.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/administrative/js/pages/crud/ktdatatable/base/data-ajax.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/auth/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/login.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/includes/alert.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/includes/alert.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/administrative/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/administrative/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/administrative/panels/demo-panel.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/administrative/panels/demo-panel.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/administrative/panels/quick-panel.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/administrative/panels/quick-panel.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/administrative/panels/sticky-tool-bar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/administrative/panels/sticky-tool-bar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/administrative/panels/user-panel.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/administrative/panels/user-panel.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/administrative/partials/footer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/administrative/partials/footer.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/administrative/partials/left-sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/administrative/partials/left-sidebar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/administrative/partials/top-bar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/administrative/partials/top-bar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/frontend/partials/footer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/frontend/partials/footer.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layouts/frontend/partials/header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/frontend/partials/header.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/crud/datatables/advanced/column-rendering.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/crud/datatables/advanced/column-rendering.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/crud/datatables/advanced/column-visibility.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/crud/datatables/advanced/column-visibility.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/crud/datatables/advanced/footer-callback.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/crud/datatables/advanced/footer-callback.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/crud/datatables/advanced/multiple-controls.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/crud/datatables/advanced/multiple-controls.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/crud/datatables/advanced/row-callback.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/crud/datatables/advanced/row-callback.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/crud/datatables/advanced/row-grouping.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/crud/datatables/advanced/row-grouping.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/crud/datatables/basic/basic.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/crud/datatables/basic/basic.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/crud/datatables/basic/headers.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/crud/datatables/basic/headers.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/crud/datatables/basic/paginations.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/crud/datatables/basic/paginations.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/crud/datatables/basic/scrollable.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/crud/datatables/basic/scrollable.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/crud/datatables/data-sources/ajax-client-side.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/crud/datatables/data-sources/ajax-client-side.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/crud/datatables/data-sources/ajax-server-side.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/crud/datatables/data-sources/ajax-server-side.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/crud/datatables/data-sources/html.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/crud/datatables/data-sources/html.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/crud/datatables/data-sources/javascript.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/crud/datatables/data-sources/javascript.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/crud/datatables/extensions/buttons.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/crud/datatables/extensions/buttons.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/crud/datatables/extensions/colreorder.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/crud/datatables/extensions/colreorder.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/crud/datatables/extensions/keytable.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/crud/datatables/extensions/keytable.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/crud/datatables/extensions/responsive.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/crud/datatables/extensions/responsive.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/crud/datatables/extensions/rowgroup.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/crud/datatables/extensions/rowgroup.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/crud/datatables/extensions/rowreorder.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/crud/datatables/extensions/rowreorder.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/crud/datatables/extensions/scroller.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/crud/datatables/extensions/scroller.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/crud/datatables/extensions/select.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/crud/datatables/extensions/select.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/crud/datatables/search-options/advanced-search.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/crud/datatables/search-options/advanced-search.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/crud/datatables/search-options/column-search.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/crud/datatables/search-options/column-search.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/crud/file-upload/dropzonejs.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/crud/file-upload/dropzonejs.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/crud/file-upload/image-input.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/crud/file-upload/image-input.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/crud/file-upload/uppy.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/crud/file-upload/uppy.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/crud/forms/controls/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/crud/forms/controls/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/crud/forms/controls/checkbox.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/crud/forms/controls/checkbox.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/crud/forms/controls/input-group.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/crud/forms/controls/input-group.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/crud/forms/controls/option.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/crud/forms/controls/option.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/crud/forms/controls/radio.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/crud/forms/controls/radio.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/crud/forms/controls/switch.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/crud/forms/controls/switch.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/crud/forms/editors/bootstrap-markdown.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/crud/forms/editors/bootstrap-markdown.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/crud/forms/editors/ckeditor-balloon-block.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/crud/forms/editors/ckeditor-balloon-block.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/crud/forms/editors/ckeditor-balloon.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/crud/forms/editors/ckeditor-balloon.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/crud/forms/editors/ckeditor-classic.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/crud/forms/editors/ckeditor-classic.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/crud/forms/editors/ckeditor-document.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/crud/forms/editors/ckeditor-document.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/crud/forms/editors/ckeditor-inline.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/crud/forms/editors/ckeditor-inline.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/crud/forms/editors/quill.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/crud/forms/editors/quill.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/crud/forms/editors/summernote.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/crud/forms/editors/summernote.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/crud/forms/editors/tinymce.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/crud/forms/editors/tinymce.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/crud/forms/layouts/action-bars.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/crud/forms/layouts/action-bars.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/crud/forms/layouts/default-forms.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/crud/forms/layouts/default-forms.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/crud/forms/layouts/multi-column-forms.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/crud/forms/layouts/multi-column-forms.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/crud/forms/layouts/sticky-action-bar.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/crud/forms/layouts/sticky-action-bar.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/crud/forms/validation/form-controls.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/crud/forms/validation/form-controls.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/crud/forms/validation/form-widgets.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/crud/forms/validation/form-widgets.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/crud/forms/validation/states.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/crud/forms/validation/states.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/crud/forms/widgets/autosize.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/crud/forms/widgets/autosize.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/crud/forms/widgets/bootstrap-datepicker.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/crud/forms/widgets/bootstrap-datepicker.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/crud/forms/widgets/bootstrap-daterangepicker.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/crud/forms/widgets/bootstrap-daterangepicker.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/crud/forms/widgets/bootstrap-datetimepicker.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/crud/forms/widgets/bootstrap-datetimepicker.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/crud/forms/widgets/bootstrap-maxlength.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/crud/forms/widgets/bootstrap-maxlength.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/crud/forms/widgets/bootstrap-multipleselectsplitter.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/crud/forms/widgets/bootstrap-multipleselectsplitter.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/crud/forms/widgets/bootstrap-select.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/crud/forms/widgets/bootstrap-select.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/crud/forms/widgets/bootstrap-switch.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/crud/forms/widgets/bootstrap-switch.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/crud/forms/widgets/bootstrap-timepicker.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/crud/forms/widgets/bootstrap-timepicker.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/crud/forms/widgets/bootstrap-touchspin.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/crud/forms/widgets/bootstrap-touchspin.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/crud/forms/widgets/clipboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/crud/forms/widgets/clipboard.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/crud/forms/widgets/form-repeater.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/crud/forms/widgets/form-repeater.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/crud/forms/widgets/input-mask.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/crud/forms/widgets/input-mask.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/crud/forms/widgets/ion-range-slider.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/crud/forms/widgets/ion-range-slider.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/crud/forms/widgets/jquery-mask.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/crud/forms/widgets/jquery-mask.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/crud/forms/widgets/nouislider.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/crud/forms/widgets/nouislider.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/crud/forms/widgets/recaptcha.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/crud/forms/widgets/recaptcha.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/crud/forms/widgets/select2.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/crud/forms/widgets/select2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/crud/forms/widgets/tagify.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/crud/forms/widgets/tagify.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/crud/forms/widgets/typeahead.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/crud/forms/widgets/typeahead.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/crud/ktdatatable/advanced/column-rendering.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/crud/ktdatatable/advanced/column-rendering.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/crud/ktdatatable/advanced/column-width.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/crud/ktdatatable/advanced/column-width.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/crud/ktdatatable/advanced/modal.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/crud/ktdatatable/advanced/modal.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/crud/ktdatatable/advanced/record-selection.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/crud/ktdatatable/advanced/record-selection.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/crud/ktdatatable/advanced/row-details.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/crud/ktdatatable/advanced/row-details.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/crud/ktdatatable/advanced/vertical.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/crud/ktdatatable/advanced/vertical.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/crud/ktdatatable/api/events.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/crud/ktdatatable/api/events.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/crud/ktdatatable/api/methods.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/crud/ktdatatable/api/methods.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/crud/ktdatatable/base/data-ajax.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/crud/ktdatatable/base/data-ajax.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/crud/ktdatatable/base/data-json.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/crud/ktdatatable/base/data-json.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/crud/ktdatatable/base/data-local.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/crud/ktdatatable/base/data-local.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/crud/ktdatatable/base/html-table.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/crud/ktdatatable/base/html-table.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/crud/ktdatatable/base/local-sort.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/crud/ktdatatable/base/local-sort.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/crud/ktdatatable/base/translation.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/crud/ktdatatable/base/translation.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/crud/ktdatatable/child/data-ajax.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/crud/ktdatatable/child/data-ajax.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/crud/ktdatatable/child/data-local.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/crud/ktdatatable/child/data-local.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/custom/apps/chat/group.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/custom/apps/chat/group.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/custom/apps/chat/popup.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/custom/apps/chat/popup.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/custom/apps/chat/private.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/custom/apps/chat/private.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/custom/apps/contacts/add-contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/custom/apps/contacts/add-contact.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/custom/apps/contacts/edit-contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/custom/apps/contacts/edit-contact.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/custom/apps/contacts/list-columns.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/custom/apps/contacts/list-columns.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/custom/apps/contacts/list-datatable.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/custom/apps/contacts/list-datatable.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/custom/apps/contacts/view-contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/custom/apps/contacts/view-contact.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/custom/apps/ecommerce/checkout.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/custom/apps/ecommerce/checkout.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/custom/apps/ecommerce/dashboard-2.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/custom/apps/ecommerce/dashboard-2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/custom/apps/ecommerce/dashboard-3.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/custom/apps/ecommerce/dashboard-3.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/custom/apps/ecommerce/dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/custom/apps/ecommerce/dashboard.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/custom/apps/ecommerce/my-orders.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/custom/apps/ecommerce/my-orders.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/custom/apps/ecommerce/order-details.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/custom/apps/ecommerce/order-details.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/custom/apps/ecommerce/product-1.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/custom/apps/ecommerce/product-1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/custom/apps/ecommerce/product-2.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/custom/apps/ecommerce/product-2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/custom/apps/ecommerce/product-3.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/custom/apps/ecommerce/product-3.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/custom/apps/ecommerce/shopping-cart.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/custom/apps/ecommerce/shopping-cart.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/custom/apps/education/class/dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/custom/apps/education/class/dashboard.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/custom/apps/education/school/calendar.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/custom/apps/education/school/calendar.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/custom/apps/education/school/dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/custom/apps/education/school/dashboard.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/custom/apps/education/school/library.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/custom/apps/education/school/library.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/custom/apps/education/school/statistics.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/custom/apps/education/school/statistics.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/custom/apps/education/school/students.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/custom/apps/education/school/students.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/custom/apps/education/school/teachers.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/custom/apps/education/school/teachers.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/custom/apps/education/student/calendar.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/custom/apps/education/student/calendar.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/custom/apps/education/student/classmates.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/custom/apps/education/student/classmates.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/custom/apps/education/student/dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/custom/apps/education/student/dashboard.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/custom/apps/education/student/profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/custom/apps/education/student/profile.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/custom/apps/inbox.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/custom/apps/inbox.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/custom/apps/profile/profile-1/account-information.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/custom/apps/profile/profile-1/account-information.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/custom/apps/profile/profile-1/change-password.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/custom/apps/profile/profile-1/change-password.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/custom/apps/profile/profile-1/email-settings.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/custom/apps/profile/profile-1/email-settings.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/custom/apps/profile/profile-1/overview.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/custom/apps/profile/profile-1/overview.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/custom/apps/profile/profile-1/personal-information.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/custom/apps/profile/profile-1/personal-information.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/custom/apps/profile/profile-2.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/custom/apps/profile/profile-2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/custom/apps/profile/profile-3.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/custom/apps/profile/profile-3.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/custom/apps/profile/profile-4.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/custom/apps/profile/profile-4.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/custom/apps/projects/add-project.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/custom/apps/projects/add-project.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/custom/apps/projects/edit-project.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/custom/apps/projects/edit-project.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/custom/apps/projects/list-columns-1.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/custom/apps/projects/list-columns-1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/custom/apps/projects/list-columns-2.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/custom/apps/projects/list-columns-2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/custom/apps/projects/list-columns-3.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/custom/apps/projects/list-columns-3.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/custom/apps/projects/list-columns-4.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/custom/apps/projects/list-columns-4.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/custom/apps/projects/list-datatable.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/custom/apps/projects/list-datatable.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/custom/apps/projects/view-project.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/custom/apps/projects/view-project.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/custom/apps/support-center/faq-1.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/custom/apps/support-center/faq-1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/custom/apps/support-center/faq-2.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/custom/apps/support-center/faq-2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/custom/apps/support-center/faq-3.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/custom/apps/support-center/faq-3.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/custom/apps/support-center/feedback.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/custom/apps/support-center/feedback.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/custom/apps/support-center/home-1.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/custom/apps/support-center/home-1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/custom/apps/support-center/home-2.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/custom/apps/support-center/home-2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/custom/apps/support-center/license.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/custom/apps/support-center/license.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/custom/apps/todo/docs.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/custom/apps/todo/docs.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/custom/apps/todo/files.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/custom/apps/todo/files.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/custom/apps/todo/tasks.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/custom/apps/todo/tasks.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/custom/apps/user/add-user.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/custom/apps/user/add-user.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/custom/apps/user/edit-user.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/custom/apps/user/edit-user.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/custom/apps/user/list-columns-1.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/custom/apps/user/list-columns-1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/custom/apps/user/list-columns-2.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/custom/apps/user/list-columns-2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/custom/apps/user/list-datatable.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/custom/apps/user/list-datatable.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/custom/apps/user/list-default.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/custom/apps/user/list-default.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/custom/pages/invoices/invoice-1.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/custom/pages/invoices/invoice-1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/custom/pages/invoices/invoice-2.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/custom/pages/invoices/invoice-2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/custom/pages/invoices/invoice-3.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/custom/pages/invoices/invoice-3.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/custom/pages/invoices/invoice-4.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/custom/pages/invoices/invoice-4.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/custom/pages/invoices/invoice-5.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/custom/pages/invoices/invoice-5.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/custom/pages/invoices/invoice-6.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/custom/pages/invoices/invoice-6.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/custom/pages/login/login-1.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/custom/pages/login/login-1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/custom/pages/pricing/pricing-1.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/custom/pages/pricing/pricing-1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/custom/pages/pricing/pricing-2.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/custom/pages/pricing/pricing-2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/custom/pages/pricing/pricing-3.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/custom/pages/pricing/pricing-3.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/custom/pages/pricing/pricing-4.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/custom/pages/pricing/pricing-4.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/custom/pages/wizard/wizard-1.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/custom/pages/wizard/wizard-1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/custom/pages/wizard/wizard-2.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/custom/pages/wizard/wizard-2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/custom/pages/wizard/wizard-3.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/custom/pages/wizard/wizard-3.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/custom/pages/wizard/wizard-4.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/custom/pages/wizard/wizard-4.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/custom/pages/wizard/wizard-5.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/custom/pages/wizard/wizard-5.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/custom/pages/wizard/wizard-6.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/custom/pages/wizard/wizard-6.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/features/bootstrap/alerts.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/features/bootstrap/alerts.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/features/bootstrap/button-group.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/features/bootstrap/button-group.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/features/bootstrap/buttons.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/features/bootstrap/buttons.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/features/bootstrap/dropdown.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/features/bootstrap/dropdown.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/features/bootstrap/modal.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/features/bootstrap/modal.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/features/bootstrap/navs.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/features/bootstrap/navs.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/features/bootstrap/popover.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/features/bootstrap/popover.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/features/bootstrap/progress.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/features/bootstrap/progress.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/features/bootstrap/tables.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/features/bootstrap/tables.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/features/bootstrap/tooltip.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/features/bootstrap/tooltip.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/features/bootstrap/typography.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/features/bootstrap/typography.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/features/calendar/background-events.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/features/calendar/background-events.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/features/calendar/basic.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/features/calendar/basic.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/features/calendar/external-events.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/features/calendar/external-events.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/features/calendar/google.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/features/calendar/google.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/features/calendar/list-view.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/features/calendar/list-view.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/features/cards/draggable.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/features/cards/draggable.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/features/cards/general.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/features/cards/general.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/features/cards/stacked.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/features/cards/stacked.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/features/cards/sticky.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/features/cards/sticky.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/features/cards/stretched.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/features/cards/stretched.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/features/cards/tabbed.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/features/cards/tabbed.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/features/cards/tools.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/features/cards/tools.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/features/charts/amcharts/charts.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/features/charts/amcharts/charts.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/features/charts/amcharts/maps.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/features/charts/amcharts/maps.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/features/charts/amcharts/stock-charts.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/features/charts/amcharts/stock-charts.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/features/charts/apexcharts.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/features/charts/apexcharts.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/features/charts/flotcharts.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/features/charts/flotcharts.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/features/charts/google-charts.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/features/charts/google-charts.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/features/custom/accordions.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/features/custom/accordions.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/features/custom/advance-navs.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/features/custom/advance-navs.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/features/custom/callout.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/features/custom/callout.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/features/custom/iconbox.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/features/custom/iconbox.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/features/custom/label.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/features/custom/label.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/features/custom/line-tabs.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/features/custom/line-tabs.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/features/custom/overlay.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/features/custom/overlay.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/features/custom/pagination.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/features/custom/pagination.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/features/custom/pulse.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/features/custom/pulse.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/features/custom/ribbons.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/features/custom/ribbons.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/features/custom/spinners.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/features/custom/spinners.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/features/custom/symbol.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/features/custom/symbol.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/features/custom/timeline.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/features/custom/timeline.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/features/custom/utilities.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/features/custom/utilities.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/features/icons/custom-icons.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/features/icons/custom-icons.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/features/icons/flaticon.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/features/icons/flaticon.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/features/icons/fontawesome5.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/features/icons/fontawesome5.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/features/icons/keenthemes-icons.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/features/icons/keenthemes-icons.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/features/icons/lineawesome.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/features/icons/lineawesome.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/features/icons/socicons.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/features/icons/socicons.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/features/icons/svg.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/features/icons/svg.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/features/maps/google-maps.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/features/maps/google-maps.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/features/maps/jqvmap.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/features/maps/jqvmap.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/features/maps/leaflet.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/features/maps/leaflet.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/features/miscellaneous/blockui.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/features/miscellaneous/blockui.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/features/miscellaneous/bootstrap-notify.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/features/miscellaneous/bootstrap-notify.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/features/miscellaneous/cropper.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/features/miscellaneous/cropper.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/features/miscellaneous/dual-listbox.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/features/miscellaneous/dual-listbox.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/features/miscellaneous/idle-timer.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/features/miscellaneous/idle-timer.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/features/miscellaneous/kanban-board.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/features/miscellaneous/kanban-board.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/features/miscellaneous/perfect-scrollbar.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/features/miscellaneous/perfect-scrollbar.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/features/miscellaneous/session-timeout.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/features/miscellaneous/session-timeout.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/features/miscellaneous/sticky-panels.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/features/miscellaneous/sticky-panels.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/features/miscellaneous/sweetalert2.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/features/miscellaneous/sweetalert2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/features/miscellaneous/toastr.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/features/miscellaneous/toastr.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/features/miscellaneous/treeview.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/features/miscellaneous/treeview.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/features/widgets/advance-tables.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/features/widgets/advance-tables.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/features/widgets/base-tables.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/features/widgets/base-tables.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/features/widgets/charts.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/features/widgets/charts.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/features/widgets/engage.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/features/widgets/engage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/features/widgets/feeds.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/features/widgets/feeds.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/features/widgets/lists.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/features/widgets/lists.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/features/widgets/mixed.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/features/widgets/mixed.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/features/widgets/nav-panels.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/features/widgets/nav-panels.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/features/widgets/stats.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/features/widgets/stats.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/features/widgets/tiles.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/features/widgets/tiles.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/layout/general/empty-page.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/layout/general/empty-page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/layout/general/fixed-footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/layout/general/fixed-footer.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/layout/general/fluid-content.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/layout/general/fluid-content.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/layout/general/minimized-aside.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/layout/general/minimized-aside.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/layout/general/no-aside.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/layout/general/no-aside.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/layout/general/no-header-menu.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/layout/general/no-header-menu.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/layout/subheader/actions.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/layout/subheader/actions.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/layout/subheader/classic.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/layout/subheader/classic.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/layout/subheader/none.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/layout/subheader/none.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/layout/subheader/tabbed.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/layout/subheader/tabbed.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/layout/subheader/toolbar.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/layout/subheader/toolbar.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/layout/themes/aside-light.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/layout/themes/aside-light.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/administrative/layout/themes/header-dark.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/administrative/layout/themes/header-dark.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,113 +315,114 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
-      <path value="$PROJECT_DIR$/vendor/phpdocumentor/reflection-docblock" />
-      <path value="$PROJECT_DIR$/vendor/phpdocumentor/reflection-common" />
-      <path value="$PROJECT_DIR$/vendor/joedixon/laravel-translation" />
-      <path value="$PROJECT_DIR$/vendor/ramsey/collection" />
-      <path value="$PROJECT_DIR$/vendor/ramsey/uuid" />
+      <path value="$PROJECT_DIR$/vendor/monolog/monolog" />
       <path value="$PROJECT_DIR$/vendor/myclabs/deep-copy" />
-      <path value="$PROJECT_DIR$/vendor/filp/whoops" />
-      <path value="$PROJECT_DIR$/vendor/phpoption/phpoption" />
-      <path value="$PROJECT_DIR$/vendor/nunomaduro/collision" />
-      <path value="$PROJECT_DIR$/vendor/ralouphie/getallheaders" />
-      <path value="$PROJECT_DIR$/vendor/barryvdh/laravel-debugbar" />
-      <path value="$PROJECT_DIR$/vendor/sebastian/resource-operations" />
-      <path value="$PROJECT_DIR$/vendor/sebastian/recursion-context" />
-      <path value="$PROJECT_DIR$/vendor/spatie/laravel-translatable" />
-      <path value="$PROJECT_DIR$/vendor/sebastian/global-state" />
-      <path value="$PROJECT_DIR$/vendor/sebastian/diff" />
-      <path value="$PROJECT_DIR$/vendor/sebastian/exporter" />
-      <path value="$PROJECT_DIR$/vendor/spatie/laravel-permission" />
-      <path value="$PROJECT_DIR$/vendor/sebastian/object-enumerator" />
-      <path value="$PROJECT_DIR$/vendor/sebastian/environment" />
-      <path value="$PROJECT_DIR$/vendor/asm89/stack-cors" />
-      <path value="$PROJECT_DIR$/vendor/sebastian/comparator" />
-      <path value="$PROJECT_DIR$/vendor/sebastian/object-reflector" />
-      <path value="$PROJECT_DIR$/vendor/sebastian/version" />
-      <path value="$PROJECT_DIR$/vendor/sebastian/code-unit-reverse-lookup" />
-      <path value="$PROJECT_DIR$/vendor/psr/log" />
-      <path value="$PROJECT_DIR$/vendor/league/mime-type-detection" />
-      <path value="$PROJECT_DIR$/vendor/sebastian/type" />
-      <path value="$PROJECT_DIR$/vendor/psr/event-dispatcher" />
-      <path value="$PROJECT_DIR$/vendor/league/commonmark" />
-      <path value="$PROJECT_DIR$/vendor/psr/container" />
-      <path value="$PROJECT_DIR$/vendor/league/flysystem" />
-      <path value="$PROJECT_DIR$/vendor/psr/http-message" />
-      <path value="$PROJECT_DIR$/vendor/psr/simple-cache" />
-      <path value="$PROJECT_DIR$/vendor/brick/math" />
-      <path value="$PROJECT_DIR$/vendor/laravel/framework" />
-      <path value="$PROJECT_DIR$/vendor/laravel/tinker" />
-      <path value="$PROJECT_DIR$/vendor/symfony/debug" />
-      <path value="$PROJECT_DIR$/vendor/phar-io/version" />
       <path value="$PROJECT_DIR$/vendor/phar-io/manifest" />
-      <path value="$PROJECT_DIR$/vendor/opis/closure" />
-      <path value="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer" />
-      <path value="$PROJECT_DIR$/vendor/nikic/php-parser" />
-      <path value="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php" />
-      <path value="$PROJECT_DIR$/vendor/phpunit/php-token-stream" />
+      <path value="$PROJECT_DIR$/vendor/phar-io/version" />
+      <path value="$PROJECT_DIR$/vendor/phpspec/prophecy" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-code-coverage" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-file-iterator" />
       <path value="$PROJECT_DIR$/vendor/phpunit/php-text-template" />
       <path value="$PROJECT_DIR$/vendor/phpunit/php-timer" />
-      <path value="$PROJECT_DIR$/vendor/phpunit/php-file-iterator" />
-      <path value="$PROJECT_DIR$/vendor/phpunit/php-code-coverage" />
-      <path value="$PROJECT_DIR$/vendor/voku/portable-ascii" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-token-stream" />
       <path value="$PROJECT_DIR$/vendor/phpunit/phpunit" />
-      <path value="$PROJECT_DIR$/vendor/facade/ignition" />
-      <path value="$PROJECT_DIR$/vendor/facade/ignition-contracts" />
-      <path value="$PROJECT_DIR$/vendor/facade/flare-client-php" />
-      <path value="$PROJECT_DIR$/vendor/composer" />
-      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php80" />
-      <path value="$PROJECT_DIR$/vendor/symfony/error-handler" />
-      <path value="$PROJECT_DIR$/vendor/symfony/http-foundation" />
-      <path value="$PROJECT_DIR$/vendor/symfony/http-client-contracts" />
-      <path value="$PROJECT_DIR$/vendor/symfony/routing" />
-      <path value="$PROJECT_DIR$/vendor/symfony/event-dispatcher" />
-      <path value="$PROJECT_DIR$/vendor/symfony/css-selector" />
-      <path value="$PROJECT_DIR$/vendor/symfony/translation" />
-      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-mbstring" />
-      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-ctype" />
-      <path value="$PROJECT_DIR$/vendor/symfony/service-contracts" />
-      <path value="$PROJECT_DIR$/vendor/symfony/mime" />
-      <path value="$PROJECT_DIR$/vendor/webmozart/assert" />
-      <path value="$PROJECT_DIR$/vendor/symfony/finder" />
-      <path value="$PROJECT_DIR$/vendor/symfony/string" />
-      <path value="$PROJECT_DIR$/vendor/symfony/deprecation-contracts" />
-      <path value="$PROJECT_DIR$/vendor/nesbot/carbon" />
-      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-intl-idn" />
-      <path value="$PROJECT_DIR$/vendor/symfony/process" />
-      <path value="$PROJECT_DIR$/vendor/symfony/event-dispatcher-contracts" />
-      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php72" />
-      <path value="$PROJECT_DIR$/vendor/symfony/http-kernel" />
-      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php73" />
       <path value="$PROJECT_DIR$/vendor/symfony/console" />
-      <path value="$PROJECT_DIR$/vendor/fzaninotto/faker" />
-      <path value="$PROJECT_DIR$/vendor/symfony/translation-contracts" />
+      <path value="$PROJECT_DIR$/vendor/symfony/css-selector" />
+      <path value="$PROJECT_DIR$/vendor/symfony/debug" />
+      <path value="$PROJECT_DIR$/vendor/symfony/deprecation-contracts" />
+      <path value="$PROJECT_DIR$/vendor/symfony/error-handler" />
+      <path value="$PROJECT_DIR$/vendor/symfony/event-dispatcher" />
+      <path value="$PROJECT_DIR$/vendor/symfony/event-dispatcher-contracts" />
+      <path value="$PROJECT_DIR$/vendor/symfony/finder" />
+      <path value="$PROJECT_DIR$/vendor/symfony/http-client-contracts" />
+      <path value="$PROJECT_DIR$/vendor/symfony/http-foundation" />
+      <path value="$PROJECT_DIR$/vendor/symfony/http-kernel" />
+      <path value="$PROJECT_DIR$/vendor/symfony/mime" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-ctype" />
       <path value="$PROJECT_DIR$/vendor/symfony/polyfill-iconv" />
       <path value="$PROJECT_DIR$/vendor/symfony/polyfill-intl-grapheme" />
-      <path value="$PROJECT_DIR$/vendor/symfony/var-dumper" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-intl-idn" />
       <path value="$PROJECT_DIR$/vendor/symfony/polyfill-intl-normalizer" />
-      <path value="$PROJECT_DIR$/vendor/laravel/ui" />
-      <path value="$PROJECT_DIR$/vendor/monolog/monolog" />
-      <path value="$PROJECT_DIR$/vendor/psy/psysh" />
-      <path value="$PROJECT_DIR$/vendor/guzzlehttp/promises" />
-      <path value="$PROJECT_DIR$/vendor/guzzlehttp/psr7" />
-      <path value="$PROJECT_DIR$/vendor/guzzlehttp/guzzle" />
-      <path value="$PROJECT_DIR$/vendor/vlucas/phpdotenv" />
-      <path value="$PROJECT_DIR$/vendor/maximebf/debugbar" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php72" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php73" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php80" />
+      <path value="$PROJECT_DIR$/vendor/symfony/process" />
+      <path value="$PROJECT_DIR$/vendor/symfony/routing" />
+      <path value="$PROJECT_DIR$/vendor/symfony/service-contracts" />
+      <path value="$PROJECT_DIR$/vendor/symfony/string" />
+      <path value="$PROJECT_DIR$/vendor/symfony/translation" />
+      <path value="$PROJECT_DIR$/vendor/symfony/translation-contracts" />
+      <path value="$PROJECT_DIR$/vendor/symfony/var-dumper" />
       <path value="$PROJECT_DIR$/vendor/theseer/tokenizer" />
-      <path value="$PROJECT_DIR$/vendor/phpspec/prophecy" />
-      <path value="$PROJECT_DIR$/vendor/tijsverkoyen/css-to-inline-styles" />
-      <path value="$PROJECT_DIR$/vendor/dnoegel/php-xdg-base-dir" />
-      <path value="$PROJECT_DIR$/vendor/egulias/email-validator" />
+      <path value="$PROJECT_DIR$/vendor/barryvdh/laravel-debugbar" />
       <path value="$PROJECT_DIR$/vendor/doctrine/inflector" />
       <path value="$PROJECT_DIR$/vendor/doctrine/instantiator" />
       <path value="$PROJECT_DIR$/vendor/doctrine/lexer" />
-      <path value="$PROJECT_DIR$/vendor/dragonmantank/cron-expression" />
-      <path value="$PROJECT_DIR$/vendor/mockery/mockery" />
+      <path value="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php" />
+      <path value="$PROJECT_DIR$/vendor/maximebf/debugbar" />
       <path value="$PROJECT_DIR$/vendor/fideloper/proxy" />
       <path value="$PROJECT_DIR$/vendor/fruitcake/laravel-cors" />
+      <path value="$PROJECT_DIR$/vendor/phpoption/phpoption" />
+      <path value="$PROJECT_DIR$/vendor/ralouphie/getallheaders" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/code-unit-reverse-lookup" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/comparator" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/diff" />
+      <path value="$PROJECT_DIR$/vendor/composer" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/environment" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/exporter" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/global-state" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/object-reflector" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/recursion-context" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/type" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/version" />
+      <path value="$PROJECT_DIR$/vendor/webmozart/assert" />
+      <path value="$PROJECT_DIR$/vendor/fzaninotto/faker" />
+      <path value="$PROJECT_DIR$/vendor/guzzlehttp/guzzle" />
+      <path value="$PROJECT_DIR$/vendor/guzzlehttp/promises" />
+      <path value="$PROJECT_DIR$/vendor/guzzlehttp/psr7" />
+      <path value="$PROJECT_DIR$/vendor/nunomaduro/collision" />
+      <path value="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer" />
+      <path value="$PROJECT_DIR$/vendor/tijsverkoyen/css-to-inline-styles" />
+      <path value="$PROJECT_DIR$/vendor/dragonmantank/cron-expression" />
+      <path value="$PROJECT_DIR$/vendor/phpdocumentor/reflection-common" />
+      <path value="$PROJECT_DIR$/vendor/phpdocumentor/reflection-docblock" />
       <path value="$PROJECT_DIR$/vendor/phpdocumentor/type-resolver" />
       <path value="$PROJECT_DIR$/vendor/renatomarinho/laravel-page-speed" />
+      <path value="$PROJECT_DIR$/vendor/psr/container" />
+      <path value="$PROJECT_DIR$/vendor/psr/event-dispatcher" />
+      <path value="$PROJECT_DIR$/vendor/psr/http-message" />
+      <path value="$PROJECT_DIR$/vendor/psr/log" />
+      <path value="$PROJECT_DIR$/vendor/psr/simple-cache" />
+      <path value="$PROJECT_DIR$/vendor/psy/psysh" />
+      <path value="$PROJECT_DIR$/vendor/filp/whoops" />
+      <path value="$PROJECT_DIR$/vendor/opis/closure" />
+      <path value="$PROJECT_DIR$/vendor/voku/portable-ascii" />
+      <path value="$PROJECT_DIR$/vendor/asm89/stack-cors" />
+      <path value="$PROJECT_DIR$/vendor/brick/math" />
+      <path value="$PROJECT_DIR$/vendor/nikic/php-parser" />
+      <path value="$PROJECT_DIR$/vendor/facade/flare-client-php" />
+      <path value="$PROJECT_DIR$/vendor/facade/ignition" />
+      <path value="$PROJECT_DIR$/vendor/facade/ignition-contracts" />
+      <path value="$PROJECT_DIR$/vendor/league/commonmark" />
+      <path value="$PROJECT_DIR$/vendor/league/flysystem" />
+      <path value="$PROJECT_DIR$/vendor/league/mime-type-detection" />
+      <path value="$PROJECT_DIR$/vendor/nesbot/carbon" />
+      <path value="$PROJECT_DIR$/vendor/ramsey/collection" />
+      <path value="$PROJECT_DIR$/vendor/ramsey/uuid" />
+      <path value="$PROJECT_DIR$/vendor/scrivo/highlight.php" />
+      <path value="$PROJECT_DIR$/vendor/spatie/laravel-permission" />
+      <path value="$PROJECT_DIR$/vendor/spatie/laravel-translatable" />
+      <path value="$PROJECT_DIR$/vendor/vlucas/phpdotenv" />
+      <path value="$PROJECT_DIR$/vendor/egulias/email-validator" />
+      <path value="$PROJECT_DIR$/vendor/laravel/framework" />
+      <path value="$PROJECT_DIR$/vendor/laravel/tinker" />
+      <path value="$PROJECT_DIR$/vendor/laravel/ui" />
+      <path value="$PROJECT_DIR$/vendor/mockery/mockery" />
+      <path value="$PROJECT_DIR$/vendor/dnoegel/php-xdg-base-dir" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/resource-operations" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/object-enumerator" />
+      <path value="$PROJECT_DIR$/vendor/yajra/laravel-datatables-oracle" />
     </include_path>
   </component>
   <component name="ProjectId" id="1kUuZSciXc6TXSVt1vPPUu6Gvag" />
@@ -162,12 +436,18 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/lang" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/administrative/language" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\laragon\www\travelcrocs\app\Helpers" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\laragon\www\travelcrocs\resources\views\administrative\language" />
+      <recent name="D:\laragon\www\travelcrocs\resources\views\administrative" />
       <recent name="D:\laragon\www\travelcrocs\resources\lang" />
       <recent name="D:\laragon\www\travelcrocs\resources\views\layouts\frontend" />
     </key>
@@ -189,7 +469,9 @@
       <workItem from="1605767547775" duration="24388000" />
       <workItem from="1605847451849" duration="11387000" />
       <workItem from="1605932494419" duration="36271000" />
-      <workItem from="1606279506047" duration="7953000" />
+      <workItem from="1606279506047" duration="15983000" />
+      <workItem from="1606319394751" duration="4470000" />
+      <workItem from="1606357942189" duration="44130000" />
     </task>
     <servers />
   </component>
@@ -213,10 +495,22 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="702" y="327" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1050/-1366.305.1366.738@0.0.1920.1050" timestamp="1605939549537" />
+    <state x="690" y="279" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1606409001201">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="690" y="279" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1050/-1366.305.1366.738@0.0.1920.1050" timestamp="1606409001201" />
+    <state x="461" y="170" key="SettingsEditor" timestamp="1606362017953">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="461" y="170" key="SettingsEditor/0.0.1920.1050/-1366.305.1366.738@0.0.1920.1050" timestamp="1606362017953" />
     <state width="254" height="198" key="ShowFilterAction_Filter_Popup" timestamp="1605862056430">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state width="254" height="198" key="ShowFilterAction_Filter_Popup/0.0.1920.1050/-1366.305.1366.738@0.0.1920.1050" timestamp="1605862056430" />
+    <state x="777" y="438" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1606396110000">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="777" y="438" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1050/-1366.305.1366.738@0.0.1920.1050" timestamp="1606396110000" />
     <state x="616" y="243" key="run.anything.popup" timestamp="1605942884080">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>

@@ -25,7 +25,28 @@
     function frontend_alert(type, message, place){
         $('.'+place).html(' <div class="alert alert-'+type+'" role="alert">\n' + message +' </div>')
     }
-
-
 </script>
+
+<!--
+#show session message
+#Param 1. type 2. message
+-->
+@if(session()->has('message'))
+    <div class="alert alert-{{session('type')}}">
+        {!! session('message') !!}
+    </div>
+@endif
+<!--
+#show error message
+-->
+@if($errors->any())
+    <div class="alert alert-danger">
+        <ul>
+            @foreach($errors->all() as $error)
+                <li>{{$error}}</li>
+            @endforeach
+        </ul>
+    </div>
+@endif
+
 

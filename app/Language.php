@@ -6,8 +6,11 @@ use Illuminate\Database\Eloquent\Model;
 
 class Language extends Model
 {
-    protected $fillable = [
+    protected $fillable =[
+        'status',
         'name',
-        'language',
+        'code',
+        'flag',
+        'alignment',
     ];
 }

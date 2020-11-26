@@ -18,10 +18,9 @@
                             <div class="header-right-action">
                                 <div class="select-contain select--contain w-auto">
                                     <select class="select-contain-select">
-                                        <option data-content='<span class="flag-icon flag-icon-id mr-1"></span> Bahasa Indonesia'>Bahasa Indonesia</option>
-                                        <option data-content='<span class="flag-icon flag-icon-de mr-1"></span> Deutsch'>Deutsch</option>
-                                        <option data-content='<span class="flag-icon flag-icon-us mr-1"></span> English(US)' selected>English US</option>
-                                        <option data-content='<span class="flag-icon flag-icon-gb-eng mr-1"></span> English(UK)'>English UK</option>
+                                        @foreach(activeLanguages() as $activeLanguage)
+                                            <option data-content='<span class="flag-icon flag-icon-us mr-1"></span> {{ $activeLanguage->name }}'>{{ $activeLanguage->name }}</option>
+                                        @endforeach
                                     </select>
                                 </div>
                             </div>

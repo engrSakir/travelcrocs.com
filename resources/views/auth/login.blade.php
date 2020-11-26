@@ -6,7 +6,7 @@
     <base href="">
     <meta charset="utf-8" />
     {{-- Title Section --}}
-    <title>{{ config('app.name') }} | Login)</title>
+    <title>{{ config('app.name') }} | {{ __('Login') }})</title>
     <meta name="description" content="Please login to {{ config('app.name') }} " />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="csrf-token" content="{{ csrf_token() }}">

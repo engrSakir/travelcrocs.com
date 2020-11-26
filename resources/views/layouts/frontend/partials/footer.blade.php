@@ -88,7 +88,7 @@
             <div class="col-lg-7">
                 <div class="copy-right padding-top-30px">
                     <p class="copy__desc">
-                        &copy; Copyright 2020 Reserved
+                        &copy; Copyright {{ now()->year }} Reserved
                         <span class="la la-plane"></span> by <a href="https://themeforest.net/user/techydevs/portfolio">{{ config('app.name') }}</a>
                     </p>
                 </div><!-- end copy-right -->
