@@ -7,10 +7,10 @@ Development start from 13-11-2020 to 13-7-2021 (240days). Total update 34.
 
 #Packages 
 [laravel-debugbar](https://github.com/barryvdh/laravel-debugbar)
-[joedixon-laravel-translation](https://github.com/joedixon/laravel-translation)
 [spatie-laravel-translatable](https://github.com/spatie/laravel-translatable)
 [spatie-laravel-permission](https://spatie.be/docs/laravel-permission/v3/installation-laravel)
 [laravel-page-speed](https://github.com/renatomarinho/laravel-page-speed)
+[yajra-laravel-datatables](https://github.com/yajra/laravel-datatables)
 
 
 
@@ -19,6 +19,11 @@ Development start from 13-11-2020 to 13-7-2021 (240days). Total update 34.
 Admin
 ............................................\
 Email: admin@travelcrocs.com
+Password: password
+
+Vendor
+............................................\
+Email: vendor@travelcrocs.com
 Password: password
 
 User
