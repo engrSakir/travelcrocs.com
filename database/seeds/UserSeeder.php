@@ -22,8 +22,16 @@ class UserSeeder extends Seeder
 
         $user = new \App\User();
         $user->status       = 1;
-        $user->name         = 'Mr. Sakir';
-        $user->email        = 'm.sakirahmed@gmail.com';
+        $user->name         = 'Mr. Vendor';
+        $user->email        = 'vendor@travelcrocs.com';
+        $user->password     = \Illuminate\Support\Facades\Hash::make('password');
+        $user->api_token    = Str::random(60);
+        $user->save();
+
+        $user = new \App\User();
+        $user->status       = 1;
+        $user->name         = 'Mr. User';
+        $user->email        = 'user@travelcrocs.com';
         $user->password     = \Illuminate\Support\Facades\Hash::make('password');
         $user->api_token    = Str::random(60);
         $user->save();

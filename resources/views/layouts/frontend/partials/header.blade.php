@@ -184,7 +184,7 @@
                             </nav>
                         </div><!-- end main-menu-content -->
                         <div class="nav-btn">
-                            <a href="#" class="theme-btn">{{ __('Become a vendor') }}</a>
+                            <a href="#" class="theme-btn" data-toggle="modal" data-target="#vendorPopupForm">{{ __('Become a vendor') }}</a>
                         </div><!-- end nav-btn -->
                     </div><!-- end menu-wrapper -->
                 </div><!-- end col-lg-12 -->

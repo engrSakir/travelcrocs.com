@@ -1,7 +1,19 @@
 @extends('layouts.administrative.app')
 
 @section('content')
-    <h1>*Under development</h1>
+
+
+    <h1>*Under development---</h1>
+    @if(auth()->user()->hasPermissionTo('user-access'))
+        <h1>*User--- {{ auth()->user()->getAllPermissions() }}</h1>
+    @endif
+    @if(auth()->user()->hasPermissionTo('administrative-access'))
+        <h1>*Permissions--- {{ auth()->user()->getAllPermissions() }}</h1>
+    @endif
+    @if(auth()->user()->hasRole('administrative'))
+        <h1>*Roles--- {{ auth()->user()->roles }}</h1>
+    @endif
+
     <div class="content d-flex flex-column flex-column-fluid" id="kt_content" style="display: none">
         <!--begin::Subheader-->
         <div class="subheader py-2 py-lg-4 subheader-solid" id="kt_subheader" style="display: none">

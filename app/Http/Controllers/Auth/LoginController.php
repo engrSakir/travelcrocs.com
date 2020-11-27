@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
 use App\Providers\RouteServiceProvider;
+use Carbon\Carbon;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -52,10 +53,22 @@ class LoginController extends Controller
 
         if($this->guard()->validate($this->credentials($request))) {
             if(Auth::attempt(['email' => $request->email, 'password' => $request->password, 'status' => 1])) {
+                //Get last login information
+                \auth()->user()->last_login_at = Carbon::now();
+                \auth()->user()->last_login_from_location = 'Under develop';
+                \auth()->user()->last_login_from_device = 'Under develop';
+                //Redirect by role
+                if (auth()->user()->hasPermissionTo('user-access')){
+                    $permittedUrl = route('user.dashboard.index');
+                }elseif (auth()->user()->hasPermissionTo('vendor-access')){
+                    $permittedUrl = route('vendor.dashboard.index');
+                }elseif (auth()->user()->hasPermissionTo('administrative-access')){
+                    $permittedUrl = route('administrative.dashboard.index');
+                }
                 return response()->json([
                     'type' => 'success',
                     'message' => 'Successfully login.',
-                    'url' => route('administrative.dashboard.index'),
+                    'url' => $permittedUrl,
                 ]);
             }  else {
                 $this->incrementLoginAttempts($request);
