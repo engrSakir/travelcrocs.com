@@ -10,7 +10,6 @@
     <!--begin::CSRF-->
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <!--end::CSRF-->
-    <link rel="canonical" href="https://keenthemes.com/metronic" />
     <!--begin::Fonts-->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" />
     <!--end::Fonts-->
@@ -28,7 +27,7 @@
     <link href="{{ asset('assets/administrative/css/themes/layout/brand/dark.css') }}" rel="stylesheet" type="text/css" />
     <link href="{{ asset('assets/administrative/css/themes/layout/aside/dark.css') }}" rel="stylesheet" type="text/css" />
     <!--end::Layout Themes-->
-    <link rel="shortcut icon" href="{{ asset('assets/administrative/media/logos/favicon.ico') }}" />
+    <link rel="shortcut icon" href="#" />
     <!--====== AJAX ======-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     @stack('css')

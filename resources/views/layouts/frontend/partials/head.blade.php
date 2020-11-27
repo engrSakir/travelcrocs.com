@@ -10,7 +10,7 @@
 <meta name="csrf-token" content="{{ csrf_token() }}">
 <!--end::CSRF-->
 <!-- Favicon -->
-<link rel="icon" href="{{ asset('assets/frontend/images/favicon.png') }}">
+<link rel="icon" href="#">
 <!-- Google Fonts -->
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
 <!-- Template CSS Files -->
