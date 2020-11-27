@@ -1,5 +1,5 @@
 <section class="footer-area section-bg padding-top-100px padding-bottom-30px">
-    <div class="container">
+    <div class="container" style="display: none">
         <div class="row">
             <div class="col-lg-3 responsive-column">
                 <div class="footer-item">
@@ -81,7 +81,7 @@
                 </div>
             </div><!-- end col-lg-4 -->
         </div><!-- end row -->
-    </div><!-- end container -->
+    </div sty><!-- end container -->
     <div class="section-block mt-4"></div>
     <div class="container">
         <div class="row align-items-center">
@@ -89,7 +89,7 @@
                 <div class="copy-right padding-top-30px">
                     <p class="copy__desc">
                         &copy; Copyright {{ now()->year }} Reserved
-                        <span class="la la-plane"></span> by <a href="https://themeforest.net/user/techydevs/portfolio">{{ config('app.name') }}</a>
+                        <span class="la la-plane"></span> by <a href="#">{{ config('app.name') }}</a>
                     </p>
                 </div><!-- end copy-right -->
             </div><!-- end col-lg-7 -->

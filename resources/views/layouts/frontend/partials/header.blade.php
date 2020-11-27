@@ -60,17 +60,9 @@
                             <nav>
                                 <ul>
                                     <li>
-                                        <a href="#">{{ __('Home---01304734623') }} <i class="la la-angle-down"></i></a>
-                                        <ul class="dropdown-menu-item">
-                                            <li><a href="#">Home - main</a></li>
-                                            <li><a href="#">Home - Hotel</a></li>
-                                            <li><a href="#">Home - Activity</a></li>
-                                            <li><a href="#">Home - Car</a></li>
-                                            <li><a href="#">Home - Cruise</a></li>
-                                            <li><a href="#">Home - Flight</a></li>
-                                        </ul>
+                                        <a href="{{ route('frontend.index') }}">{{ __('Home') }}</a>
                                     </li>
-                                    <li>
+                                    <li style="display:none;">
                                         <a href="#">Tour <i class="la la-angle-down"></i></a>
                                         <ul class="dropdown-menu-item">
                                             <li><a href="#">Tour Full width</a></li>
@@ -83,7 +75,7 @@
                                             <li><a href="#">Tour Search Result</a></li>
                                         </ul>
                                     </li>
-                                    <li>
+                                    <li style="display:none;">
                                         <a href="#">Cruise <i class="la la-angle-down"></i></a>
                                         <ul class="dropdown-menu-item">
                                             <li><a href="#">Cruises</a></li>
@@ -94,7 +86,7 @@
                                             <li><a href="#">Cruise Search Result</a></li>
                                         </ul>
                                     </li>
-                                    <li>
+                                    <li style="display:none;">
                                         <a href="#">Pages <i class="la la-angle-down"></i></a>
                                         <div class="dropdown-menu-item mega-menu">
                                             <ul class="row no-gutters">
@@ -145,7 +137,7 @@
                                             </ul>
                                         </div>
                                     </li>
-                                    <li>
+                                    <li style="display:none;">
                                         <a href="#">Flight <i class="la la-angle-down"></i></a>
                                         <ul class="dropdown-menu-item">
                                             <li><a href="#">Flight grid</a></li>
@@ -156,7 +148,7 @@
                                             <li><a href="#">Flight Search Result</a></li>
                                         </ul>
                                     </li>
-                                    <li>
+                                    <li style="display:none;">
                                         <a href="#">Hotel <i class="la la-angle-down"></i></a>
                                         <ul class="dropdown-menu-item">
                                             <li><a href="#">Hotel grid</a></li>
@@ -177,7 +169,7 @@
                                             </li>
                                         </ul>
                                     </li>
-                                    <li>
+                                    <li style="display:none;">
                                         <a href="#">car <i class="la la-angle-down"></i></a>
                                         <ul class="dropdown-menu-item">
                                             <li><a href="#">car grid</a></li>
@@ -192,7 +184,7 @@
                             </nav>
                         </div><!-- end main-menu-content -->
                         <div class="nav-btn">
-                            <a href="#" class="theme-btn">Become Local Expert</a>
+                            <a href="#" class="theme-btn">{{ __('Become a vendor') }}</a>
                         </div><!-- end nav-btn -->
                     </div><!-- end menu-wrapper -->
                 </div><!-- end col-lg-12 -->

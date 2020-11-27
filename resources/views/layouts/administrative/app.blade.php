@@ -79,7 +79,7 @@
 @include('layouts.administrative.panels.scroll-top')
 <!--end::Scrolltop-->
 <!--begin::Sticky Toolbar-->
-@include('layouts.administrative.panels.sticky-tool-bar')
+{{--@include('layouts.administrative.panels.sticky-tool-bar')--}}
 <!--end::Sticky Toolbar-->
 <!--begin::Demo Panel-->
 @include('layouts.administrative.panels.demo-panel')

@@ -9,24 +9,6 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-10 mx-auto responsive--column-l">
-                    <div class="hero-content pb-5">
-                        <div class="section-heading">
-                            <h2 class="sec__title cd-headline zoom">
-                                Amazing <span class="cd-words-wrapper">
-                                <b class="is-visible">Tours</b>
-                                <b>Adventures</b>
-                                <b>Flights</b>
-                                <b>Hotels</b>
-                                <b>Cars</b>
-                                <b>Cruises</b>
-                                <b>Package Deals</b>
-                                <b>Fun</b>
-                                <b>People</b>
-                                </span>
-                                Waiting for You
-                            </h2>
-                        </div>
-                    </div><!-- end hero-content -->
                     <div class="section-tab text-center pl-4">
                         <ul class="nav nav-tabs" id="myTab" role="tablist">
                             <li class="nav-item">

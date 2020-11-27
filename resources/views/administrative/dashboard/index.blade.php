@@ -1,9 +1,10 @@
 @extends('layouts.administrative.app')
 
 @section('content')
-    <div class="content d-flex flex-column flex-column-fluid" id="kt_content">
+    <h1>*Under development</h1>
+    <div class="content d-flex flex-column flex-column-fluid" id="kt_content" style="display: none">
         <!--begin::Subheader-->
-        <div class="subheader py-2 py-lg-4 subheader-solid" id="kt_subheader">
+        <div class="subheader py-2 py-lg-4 subheader-solid" id="kt_subheader" style="display: none">
             <div class="container-fluid d-flex align-items-center justify-content-between flex-wrap flex-sm-nowrap">
                 <!--begin::Info-->
                 <div class="d-flex align-items-center flex-wrap mr-2">
@@ -119,12 +120,12 @@
                 </div>
                 <!--end::Toolbar-->
             </div>
-        </div>
+        </div tyle="display: none">
         <!--end::Subheader-->
         <!--begin::Entry-->
-        <div class="d-flex flex-column-fluid">
+        <div class="d-flex flex-column-fluid" >
             <!--begin::Container-->
-            <div class="container">
+            <div class="container" style="display: none">
                 <!--begin::Dashboard-->
                 <!--begin::Row-->
                 <div class="row">
@@ -3221,7 +3222,7 @@
                 <!--end::Dashboard-->
             </div>
             <!--end::Container-->
-        </div>
+        </div tyle="display: none">
         <!--end::Entry-->
     </div>
 @endsection

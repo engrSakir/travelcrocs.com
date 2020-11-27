@@ -12,7 +12,7 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <link rel="canonical" href="https://keenthemes.com/metronic" />
     <!--begin::Fonts-->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700"/>
     <!--end::Fonts-->
     <!--begin::Page Custom Styles(used by this page)-->
     <link href="{{ asset('assets/administrative/css/pages/login/login-1.css') }}" rel="stylesheet" type="text/css" />
