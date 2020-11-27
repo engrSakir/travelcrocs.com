@@ -75,23 +75,23 @@
                     <i class="menu-icon ki ki-bold-more-hor icon-md"></i>
                 </li>
                 <li class="menu-section">
-                    <h4 class="menu-text">08. Ticket </h4>
+                    <h4 class="menu-text">08. Online Activities </h4>
                     <i class="menu-icon ki ki-bold-more-hor icon-md"></i>
                 </li>
                 <li class="menu-section">
-                    <h4 class="menu-text">09. Car Rental </h4>
+                    <h4 class="menu-text">09. Ticket </h4>
                     <i class="menu-icon ki ki-bold-more-hor icon-md"></i>
                 </li>
                 <li class="menu-section">
-                    <h4 class="menu-text">10. Transfer  </h4>
+                    <h4 class="menu-text">10. Car Rental  </h4>
                     <i class="menu-icon ki ki-bold-more-hor icon-md"></i>
                 </li>
                 <li class="menu-section">
-                    <h4 class="menu-text">11. Travel Gear  </h4>
+                    <h4 class="menu-text">11. Transfer </h4>
                     <i class="menu-icon ki ki-bold-more-hor icon-md"></i>
                 </li>
                 <li class="menu-section">
-                    <h4 class="menu-text">12. Cruises </h4>
+                    <h4 class="menu-text">12. Travel Gear Rental </h4>
                     <i class="menu-icon ki ki-bold-more-hor icon-md"></i>
                 </li>
                 <li class="menu-section">

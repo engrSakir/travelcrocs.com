@@ -41,3 +41,10 @@ Route::group(['namespace' => 'Administrative', 'as' => 'administrative.', 'prefi
 
 
 });
+
+//Vendor Routes
+Route::group(['namespace' => 'Vendor', 'as' => 'vendor.', 'prefix'=>'vendor', 'middleware'=>['permission:vendor-access', 'auth']], function (){
+    //Dashboard route: vendor.dashboard.index
+    Route::resource('dashboard', 'DashboardController');
+
+});

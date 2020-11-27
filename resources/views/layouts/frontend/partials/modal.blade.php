@@ -5,7 +5,7 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <div>
-                        <h5 class="modal-title title" id="exampleModalLongTitle">Sign Up</h5>
+                        <h5 class="modal-title title" id="exampleModalLongTitle">{{ __('Become a vendor') }}</h5>
                         <p class="font-size-14">{{ __('Welcome to') }} {{ config('app.name') }}</p>
                     </div>
                     <div class="signup-alert-area">
@@ -73,7 +73,7 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <div>
-                        <h5 class="modal-title title" id="exampleModalLongTitle">Sign Up</h5>
+                        <h5 class="modal-title title" id="exampleModalLongTitle">{{ __('Sign Up') }}</h5>
                         <p class="font-size-14">{{ __('Welcome to') }} {{ config('app.name') }}</p>
                     </div>
                     <div class="signup-alert-area">

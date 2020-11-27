@@ -34,8 +34,12 @@
                                 </div>
                             </div>
                             <div class="header-right-action">
-                                <a href="#" class="theme-btn theme-btn-small theme-btn-transparent mr-1" data-toggle="modal" data-target="#signupPopupForm">Sign Up</a>
-                                <a href="#" class="theme-btn theme-btn-small" data-toggle="modal" data-target="#loginPopupForm">Login</a>
+                                @guest
+                                    <a href="#" class="theme-btn theme-btn-small theme-btn-transparent mr-1" data-toggle="modal" data-target="#signupPopupForm">{{ __('Sign Up') }}</a>
+                                    <a href="#" class="theme-btn theme-btn-small" data-toggle="modal" data-target="#loginPopupForm">{{ __('Login') }}</a>
+                                @else
+                                    <a href="{{ route('login') }}" class="theme-btn theme-btn-small">{{ __('Dashboard') }}</a>
+                                @endguest
                             </div>
                         </div>
                     </div>

@@ -89,7 +89,7 @@
                 <div class="copy-right padding-top-30px">
                     <p class="copy__desc">
                         &copy; Copyright {{ now()->year }} Reserved
-                        <span class="la la-plane"></span> by <a href="#">{{ config('app.name') }}</a>
+                        <span class="la la-plane"></span> by <a href="{{ url('/') }}">{{ config('app.name') }}</a>
                     </p>
                 </div><!-- end copy-right -->
             </div><!-- end col-lg-7 -->
