@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Auth::routes();
+Auth::routes(['verify' => true]);
 
 //Language switching
 Route::get('/language/{languageCode}', 'LanguageController@languageSwitcher')->name('languageSwitcher');

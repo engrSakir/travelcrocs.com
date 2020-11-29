@@ -5,7 +5,10 @@ namespace App\Http\Controllers\Auth;
 use App\Http\Controllers\Controller;
 use App\Providers\RouteServiceProvider;
 use App\User;
+use Carbon\Carbon;
 use Illuminate\Foundation\Auth\RegistersUsers;
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
 
@@ -41,33 +44,74 @@ class RegisterController extends Controller
         $this->middleware('guest');
     }
 
-    /**
-     * Get a validator for an incoming registration request.
-     *
-     * @param  array  $data
-     * @return \Illuminate\Contracts\Validation\Validator
-     */
-    protected function validator(array $data)
+
+    //Over write register view
+    public function showRegistrationForm()
     {
-        return Validator::make($data, [
+        return view('auth.login');
+    }
+
+    /**
+     * over wright request method.
+     * @param Request $request
+     * @return \Illuminate\Http\JsonResponse
+     */
+    protected function register(Request $request)
+    {
+        $request->validate([
+            'type' => ['required', 'string'],
             'name' => ['required', 'string', 'max:255'],
             'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
             'password' => ['required', 'string', 'min:8', 'confirmed'],
         ]);
-    }
-
-    /**
-     * Create a new user instance after a valid registration.
-     *
-     * @param  array  $data
-     * @return \App\User
-     */
-    protected function create(array $data)
-    {
-        return User::create([
-            'name' => $data['name'],
-            'email' => $data['email'],
-            'password' => Hash::make($data['password']),
-        ]);
+        $user = new User();
+        $user->name = $request->input('name');
+        $user->email = $request->input('email');
+        $user->password = Hash::make($request->input('password'));
+        $user->status = 1;
+        try {
+            //User and vendor type account
+            if ($request->input('type') == 'user'){
+                $user->save();
+                $user->assignRole('user');
+            }elseif ($request->input('type') == 'vendor'){
+                $user->save();
+                $user->assignRole('vendor');
+            }else{
+                return response()->json([
+                    'type' => 'dander',
+                    'message' => 'Invalid user type',
+                ]);
+            }
+            if(Auth::attempt(['email' => $request->email, 'password' => $request->password, 'status' => 1])) {
+                //Get last login information
+                \auth()->user()->last_login_at = Carbon::now();
+                \auth()->user()->last_login_from_location = 'Under develop';
+                \auth()->user()->last_login_from_device = 'Under develop';
+                //Redirect by role
+                if (auth()->user()->hasPermissionTo('user-access')){
+                    $permittedUrl = route('user.dashboard.index');
+                }elseif (auth()->user()->hasPermissionTo('vendor-access')){
+                    $permittedUrl = route('vendor.dashboard.index');
+                }else{
+                    Auth::logout();
+                }
+                return response()->json([
+                    'type' => 'success',
+                    'message' => 'Successfully account created & login.',
+                    'url' => $permittedUrl,
+                ]);
+            }else{
+                return response()->json([
+                    'type' => 'info',
+                    'message' => 'Your account is not activated now. Please wait for approval.',
+                ]);
+            }
+        }catch (\Exception $exception){
+            return response()->json([
+                'type' => 'danger',
+                'message' => 'Error !!! '.$exception->getMessage(),
+            ]);
+        }
     }
 }
