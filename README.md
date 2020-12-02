@@ -31,6 +31,20 @@ User
 Email: user@travelcrocs.com
 Password: password
 
+#Permissions
+administrative-access >> can access full administrative panel
+vendor-access >> can access limited vendor panel
+vendor-access + vendor-permission >> can access fill vendor panel
+user-access >> can access full user panel
+
+#User re-direct
+re-direct by own permission
+re-direct from web.php home
+
+#Socialite
+GITHUB_CLIENT_ID=28fcdae6cb7feaf58d51
+GITHUB_CLIENT_SECRET=ca2a7a3b34937bc23a8f72c6a4460e46198da168
+GITHUB_CLIENT_REDIRECT_URL=http://travelcrocs.test/login/github/redirect
 
 API
 1. https://test.api.amadeus.com/v1/security/oauth2/token    //Access token generator

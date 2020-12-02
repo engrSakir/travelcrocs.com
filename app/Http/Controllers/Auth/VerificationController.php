@@ -4,7 +4,10 @@ namespace App\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
 use App\Providers\RouteServiceProvider;
+use Carbon\Carbon;
 use Illuminate\Foundation\Auth\VerifiesEmails;
+use Illuminate\Support\Facades\Auth;
+use Spatie\Permission\Models\Permission;
 
 class VerificationController extends Controller
 {
@@ -27,6 +30,7 @@ class VerificationController extends Controller
      * @var string
      */
     protected $redirectTo = RouteServiceProvider::HOME;
+
 
     /**
      * Create a new controller instance.

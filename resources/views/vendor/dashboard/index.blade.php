@@ -1,4 +1,5 @@
 @extends('layouts.vendor.app')
+@push('title') Dashboard @endpush
 @section('header')
     <div class="dashboard-bread dashboard-bread-2">
         <div class="container-fluid">

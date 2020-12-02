@@ -159,6 +159,12 @@
                         </ul>
                     </div>
                 </li>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <hr>
             </ul>
             <!--end::Menu Nav-->
         </div>

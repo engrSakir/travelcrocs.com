@@ -11,6 +11,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
+use Illuminate\Support\Str;
 
 class RegisterController extends Controller
 {
@@ -59,16 +60,19 @@ class RegisterController extends Controller
     protected function register(Request $request)
     {
         $request->validate([
-            'type' => ['required', 'string'],
-            'name' => ['required', 'string', 'max:255'],
-            'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
+            'type'      => ['required', 'string'],
+            'name'      => ['required', 'string', 'max:255'],
+            'email'     => ['required', 'string', 'email', 'max:255', 'unique:users'],
             'password' => ['required', 'string', 'min:8', 'confirmed'],
         ]);
+
         $user = new User();
-        $user->name = $request->input('name');
-        $user->email = $request->input('email');
-        $user->password = Hash::make($request->input('password'));
-        $user->status = 1;
+        $user->name         = $request->input('name');
+        $user->email        = $request->input('email');
+        $user->password     = Hash::make($request->input('password'));
+        $user->api_token    = Str::random(60);
+        $user->status       = 1;
+
         try {
             //User and vendor type account
             if ($request->input('type') == 'user'){
@@ -88,18 +92,10 @@ class RegisterController extends Controller
                 \auth()->user()->last_login_at = Carbon::now();
                 \auth()->user()->last_login_from_location = 'Under develop';
                 \auth()->user()->last_login_from_device = 'Under develop';
-                //Redirect by role
-                if (auth()->user()->hasPermissionTo('user-access')){
-                    $permittedUrl = route('user.dashboard.index');
-                }elseif (auth()->user()->hasPermissionTo('vendor-access')){
-                    $permittedUrl = route('vendor.dashboard.index');
-                }else{
-                    Auth::logout();
-                }
                 return response()->json([
                     'type' => 'success',
                     'message' => 'Successfully account created & login.',
-                    'url' => $permittedUrl,
+                    'url' => route('home'),
                 ]);
             }else{
                 return response()->json([

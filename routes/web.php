@@ -1,6 +1,7 @@
 <?php
 
 
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -16,23 +17,60 @@ use Illuminate\Support\Facades\Route;
 
 Auth::routes(['verify' => true]);
 
-//Language switching
+/***
+ * @params lang-code
+ * Lang switcher
+ */
 Route::get('/language/{languageCode}', 'LanguageController@languageSwitcher')->name('languageSwitcher');
 
-//Frontend
+/***
+ * All of frontend routes
+ */
 Route::group(['namespace' => 'Frontend', 'as' => 'frontend.'], function (){
     Route::get('/', 'IndexController@index')->name('index');
+    Route::get('/user-type', 'NonPermittedUserController@index')->name('nonPermittedUser')->middleware('auth');
+    Route::get('/user-type/{permission}', 'NonPermittedUserController@assignPermission')->name('assignPermission')->middleware('auth');
 });
 
-//# Authentication
+/***
+ * All of authentication routes
+ */
+Route::group(['namespace' => 'Auth', 'as' => '', 'middleware'=>['guest']], function (){
+    Route::get('/login/github', 'LoginController@githubLogin')->name('githubLogin');
+    Route::get('/login/github/redirect', 'LoginController@githubLoginRedirect')->name('githubLoginRedirect');
+});
+
+/***
+ * Authentication
+ * Different type url of login screen
+ */
 Route::get('/admin',function (){ return redirect()->route('login'); });
 Route::get('/administrative',function (){ return redirect()->route('login'); });
 Route::get('/dashboard',function (){ return redirect()->route('login'); });
 
-//Authorize route
-Route::get('/home',function (){ return redirect()->route('administrative.dashboard.index'); });
-//Administrative Routes
-Route::group(['namespace' => 'Administrative', 'as' => 'administrative.', 'prefix'=>'administrative', 'middleware'=>['permission:administrative-access', 'auth']], function (){
+/***
+ * HOME
+ * Authorize person redirect from home route
+ */
+Route::get('/home',function (){
+    if (auth()->user()->hasPermissionTo('user-access')){
+        return redirect()->route('user.dashboard.index');
+    }elseif (auth()->user()->hasPermissionTo('vendor-access')){
+        return redirect()->route('vendor.dashboard.index');
+    }elseif (auth()->user()->hasPermissionTo('administrative-access')){
+        return redirect()->route('administrative.dashboard.index');
+    }else{
+        session()->flash('message', 'Non-permitted user.');
+        session()->flash('type', 'danger');
+        //Auth::logout();
+        return redirect()->route('frontend.nonPermittedUser');
+    }
+})->name('home');
+
+/***
+ * All of administrative routes
+ */
+Route::group(['namespace' => 'Administrative', 'as' => 'administrative.', 'prefix'=>'administrative', 'middleware'=>['permission:administrative-access', 'auth', 'verified']], function (){
     //Dashboard route: administrative.dashboard.index
     Route::resource('dashboard', 'DashboardController');
     Route::group(['prefix'=>'application'], function (){
@@ -42,9 +80,21 @@ Route::group(['namespace' => 'Administrative', 'as' => 'administrative.', 'prefi
 
 });
 
-//Vendor Routes
-Route::group(['namespace' => 'Vendor', 'as' => 'vendor.', 'prefix'=>'vendor', 'middleware'=>['permission:vendor-access', 'auth']], function (){
+/**
+ * All of vendors routes
+ */
+Route::group(['namespace' => 'Vendor', 'as' => 'vendor.', 'prefix'=>'vendor', 'middleware'=>['permission:vendor-access', 'auth', 'verified']], function (){
     //Dashboard route: vendor.dashboard.index
+    Route::resource('dashboard', 'DashboardController');
+
+});
+
+
+/**
+ * All of user routes
+ */
+Route::group(['namespace' => 'User', 'as' => 'user.', 'prefix'=>'vendor', 'middleware'=>['permission:user-access', 'auth', 'verified']], function (){
+    //Dashboard route: user.dashboard.index
     Route::resource('dashboard', 'DashboardController');
 
 });

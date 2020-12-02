@@ -35,7 +35,7 @@
                             </div>
                             <div class="header-right-action">
                                 @guest
-                                    <a href="#" class="theme-btn theme-btn-small theme-btn-transparent mr-1" data-toggle="modal" data-target="#signupPopupForm">{{ __('Sign Up') }}</a>
+                                    <a href="javascript:0" class="theme-btn theme-btn-small theme-btn-transparent mr-1" id="user-signup-btn">{{ __('Sign Up') }}</a>
                                     <a href="#" class="theme-btn theme-btn-small" data-toggle="modal" data-target="#loginPopupForm">{{ __('Login') }}</a>
                                 @else
                                     <a href="{{ route('login') }}" class="theme-btn theme-btn-small">{{ __('Dashboard') }}</a>
@@ -187,9 +187,17 @@
                                 </ul>
                             </nav>
                         </div><!-- end main-menu-content -->
+                        @guest
                         <div class="nav-btn">
-                            <a href="#" class="theme-btn" data-toggle="modal" data-target="#vendorPopupForm">{{ __('Become a vendor') }}</a>
-                        </div><!-- end nav-btn -->
+                            <a href="javascript:0" class="theme-btn" id="vendor-signup-btn">{{ __('Become a vendor') }}</a>
+                        </div>
+                        @else
+                            @if(auth()->user()->hasPermissionTo('vendor-access'))
+                                <div class="nav-btn">
+                                    <a href="#" class="theme-btn" data-toggle="" data-target="">{{ __('Add a ticket') }}</a>
+                                </div>
+                                @endif
+                         @endguest
                     </div><!-- end menu-wrapper -->
                 </div><!-- end col-lg-12 -->
             </div><!-- end row -->

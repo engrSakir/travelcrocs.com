@@ -16,6 +16,7 @@ class UserSeeder extends Seeder
         $user->status       = 1;
         $user->name         = 'Mr. Admin';
         $user->email        = 'admin@travelcrocs.com';
+        $user->email_verified_at        = \Carbon\Carbon::now();
         $user->password     = \Illuminate\Support\Facades\Hash::make('password');
         $user->api_token    = Str::random(60);
         $user->save();
@@ -24,6 +25,7 @@ class UserSeeder extends Seeder
         $user->status       = 1;
         $user->name         = 'Mr. Vendor';
         $user->email        = 'vendor@travelcrocs.com';
+        $user->email_verified_at        = \Carbon\Carbon::now();
         $user->password     = \Illuminate\Support\Facades\Hash::make('password');
         $user->api_token    = Str::random(60);
         $user->save();
@@ -32,6 +34,7 @@ class UserSeeder extends Seeder
         $user->status       = 1;
         $user->name         = 'Mr. User';
         $user->email        = 'user@travelcrocs.com';
+        $user->email_verified_at        = \Carbon\Carbon::now();
         $user->password     = \Illuminate\Support\Facades\Hash::make('password');
         $user->api_token    = Str::random(60);
         $user->save();

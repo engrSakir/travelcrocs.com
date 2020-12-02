@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="{{ config('app.locale') }}">
 <!--begin::Head-->
@@ -6,7 +5,7 @@
     <base href="">
     <meta charset="utf-8" />
     {{-- Title Section --}}
-    <title>{{ config('app.name') }} | {{ __('Login') }})</title>
+    <title>{{ config('app.name') }} | {{ __('Login') }}</title>
     <meta name="description" content="Please login to {{ config('app.name') }} " />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="csrf-token" content="{{ csrf_token() }}">
@@ -43,7 +42,7 @@
             <div class="d-flex flex-column-auto flex-column pt-lg-40 pt-15">
                 <!--begin::Aside header-->
                 <a href="#" class="text-center mb-10">
-                    <img src="{{ asset('assets/administrative/media/logos/logo-letter-1.png') }}" class="max-h-70px" alt="" />
+                    <img src="{{ asset('assets/administrative/media/logos/logo-light.png') }}" class="max-h-70px" alt="" />
                 </a>
                 <!--end::Aside header-->
                 <!--begin::Aside title-->
@@ -105,6 +104,7 @@
                                         <!--end::Svg Icon-->
 									</span>{{ __('Sign in with Google') }}
                             </button>
+                            <a href="{{ route('githubLogin') }}">Login with github</a>
                         </div>
                         <!--end::Action-->
                     </form>

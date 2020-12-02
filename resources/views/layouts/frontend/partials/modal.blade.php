@@ -1,11 +1,11 @@
-<!-- start vendor-registration modal-shared -->
+<!-- start registration modal-shared -->
 <div class="modal-popup">
-    <div class="modal fade" id="vendorPopupForm" tabindex="-1" role="dialog"  aria-hidden="true">
+    <div class="modal fade" id="registration-modal" tabindex="-1" role="dialog"  aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
                 <div class="modal-header">
                     <div>
-                        <h5 class="modal-title title" id="exampleModalLongTitle">{{ __('Become a vendor') }}</h5>
+                        <h5 class="modal-title title" id="registration-modal-title">{{ __('Register') }}</h5>
                         <p class="font-size-14">{{ __('Welcome to') }} {{ config('app.name') }}</p>
                     </div>
                     <div class="signup-alert-area">
@@ -15,12 +15,12 @@
                         <span aria-hidden="true" class="la la-close"></span>
                     </button>
                 </div>
-                <div class="vendor-registration-alert-area">
+                <div class="registration-alert-area">
                     <!-- alert data come from jQuery -->
                 </div>
                 <div class="modal-body">
                     <div class="contact-form-action">
-                        <form method="post" id="vendor-registration-form">
+                        <form method="post" id="registration-form">
                             <div class="input-box">
                                 <label class="label-text">{{ __('Full Name') }}</label>
                                 <div class="form-group">
@@ -50,7 +50,8 @@
                                 </div>
                             </div><!-- end input-box -->
                             <div class="btn-box pt-3 pb-4">
-                                <button type="button" class="theme-btn w-100" id="vendor-registration-btn">{{ __('Register Account') }}</button>
+                                <input type="hidden" name="type">
+                                <button type="button" class="theme-btn w-100" id="registration-btn">{{ __('Register Account') }}</button>
                             </div>
                             <div class="action-box text-center">
                                 <p class="font-size-14">{{ __('Or Sign up Using') }}</p>
@@ -68,74 +69,6 @@
         </div>
     </div>
 </div><!-- end vendor modal-popup -->
-
-<!-- start signup modal-shared -->
-<div class="modal-popup">
-    <div class="modal fade" id="signupPopupForm" tabindex="-1" role="dialog"  aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <div>
-                        <h5 class="modal-title title" id="exampleModalLongTitle">{{ __('Sign Up') }}</h5>
-                        <p class="font-size-14">{{ __('Welcome to') }} {{ config('app.name') }}</p>
-                    </div>
-                    <div class="signup-alert-area">
-                        <!-- alert data come from jQuery -->
-                    </div>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true" class="la la-close"></span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <div class="contact-form-action">
-                        <form method="post">
-                            <div class="input-box">
-                                <label class="label-text">Full Name</label>
-                                <div class="form-group">
-                                    <span class="la la-user form-icon"></span>
-                                    <input class="form-control" type="text" name="text" placeholder="Type your username">
-                                </div>
-                            </div><!-- end input-box -->
-                            <div class="input-box">
-                                <label class="label-text">Email Address</label>
-                                <div class="form-group">
-                                    <span class="la la-envelope form-icon"></span>
-                                    <input class="form-control" type="text" name="text" placeholder="Type your email">
-                                </div>
-                            </div><!-- end input-box -->
-                            <div class="input-box">
-                                <label class="label-text">Password</label>
-                                <div class="form-group">
-                                    <span class="la la-lock form-icon"></span>
-                                    <input class="form-control" type="text" name="text" placeholder="Type password">
-                                </div>
-                            </div><!-- end input-box -->
-                            <div class="input-box">
-                                <label class="label-text">Repeat Password</label>
-                                <div class="form-group">
-                                    <span class="la la-lock form-icon"></span>
-                                    <input class="form-control" type="text" name="text" placeholder="Type again password">
-                                </div>
-                            </div><!-- end input-box -->
-                            <div class="btn-box pt-3 pb-4">
-                                <button type="button" class="theme-btn w-100">Register Account</button>
-                            </div>
-                            <div class="action-box text-center">
-                                <p class="font-size-14">Or Sign up Using</p>
-                                <ul class="social-profile py-3">
-                                    <li><a href="#" class="bg-5 text-white"><i class="lab la-facebook-f"></i></a></li>
-                                    <li><a href="#" class="bg-6 text-white"><i class="lab la-twitter"></i></a></li>
-                                    <li><a href="#" class="bg-7 text-white"><i class="lab la-instagram"></i></a></li>
-                                    <li><a href="#" class="bg-5 text-white"><i class="lab la-linkedin-in"></i></a></li>
-                                </ul>
-                            </div>
-                        </form>
-                    </div><!-- end contact-form-action -->
-                </div>
-            </div>
-        </div>
-    </div>
-</div><!-- end signup modal-popup -->
 
 <!-- start sign in modal-shared -->
 <div class="modal-popup">
@@ -202,16 +135,31 @@
 <!-- ================================
             START PAGE LAVEl SCRIPT
 ================================= -->
+@guest
 <script>
     $(document).ready(function() {
-        //vendor registration
-        $('#vendor-registration-btn').click(function(){
+        //user signup btn
+        $('#user-signup-btn').click(function(){
+            $('#registration-form').find("[name='type']").val('user')
+            $("#registration-modal-title").html('Register as an user')
+            $('#registration-modal').modal('show');
+        });
+
+        //vendor signup btn
+        $('#vendor-signup-btn').click(function(){
+            $('#registration-form').find("[name='type']").val('vendor')
+            $("#registration-modal-title").html('Register as an vendor')
+            $('#registration-modal').modal('show');
+        });
+
+        //registration
+        $('#registration-btn').click(function(){
             var formData = new FormData();
-            formData.append('type', 'vendor')
-            formData.append('name', $('#vendor-registration-form').find("[name='name']").val())
-            formData.append('email', $('#vendor-registration-form').find("[name='email']").val())
-            formData.append('password', $('#vendor-registration-form').find("[name='password']").val())
-            formData.append('password_confirmation', $('#vendor-registration-form').find("[name='password_confirmation']").val())
+            formData.append('type',  $('#registration-form').find("[name='type']").val())
+            formData.append('name', $('#registration-form').find("[name='name']").val())
+            formData.append('email', $('#registration-form').find("[name='email']").val())
+            formData.append('password', $('#registration-form').find("[name='password']").val())
+            formData.append('password_confirmation', $('#registration-form').find("[name='password_confirmation']").val())
                 $.ajax({
                     method: 'POST',
                     url: "{{ route('register') }}",
@@ -220,10 +168,10 @@
                     processData: false,
                     contentType: false,
                     beforeSend: function (){
-                        $("#vendor-registration-btn").append('<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>').prop("disabled",true);
+                        $("#registration-btn").append('<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>').prop("disabled",true);
                     },
                     complete: function (){
-                        $("#vendor-registration-btn").prop("disabled",false).find('.spinner-border').remove();
+                        $("#registration-btn").prop("disabled",false).find('.spinner-border').remove();
                     },
                     success: function (data) {
                         if (data.type == 'success'){
@@ -237,10 +185,10 @@
                             })
                             setTimeout(function() {
                                 location.replace(data.url);
-                            }, 800);//
+                            }, 400);//
                         }else{
                             console.log(data)
-                            frontend_alert(data.type, data.message, 'vendor-registration-alert-area'); //type message place(class)
+                            frontend_alert(data.type, data.message, 'registration-alert-area'); //type message place(class)
                         }
                     },
                     error: function (xhr) {
@@ -248,10 +196,11 @@
                         $.each(xhr.responseJSON.errors, function(key,value) {
                             errorMessage +=(''+value+'<br>');
                         });
-                        frontend_alert('danger', errorMessage, 'vendor-registration-alert-area'); //type message place(class)
+                        frontend_alert('danger', errorMessage, 'registration-alert-area'); //type message place(class)
                     },
                 })
         });
+
         //Login
         $('#login-button').click(function(){
             var formData = new FormData();
@@ -301,6 +250,7 @@
         });
     });
 </script>
+@endguest
 <!-- ================================
          END PAGE LAVEl SCRIPT
 ================================= -->

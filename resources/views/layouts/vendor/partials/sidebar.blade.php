@@ -6,7 +6,7 @@
         <div class="author-content">
             <div class="d-flex align-items-center">
                 <div class="author-img avatar-sm">
-                    <img src="{{ asset('assets/frontend/images/team9.jpg') }}" alt="profile">
+                    <img src="{{ auth()->user()->avatar }}" alt="profile">
                 </div>
                 <div class="author-bio">
                     <h4 class="author__title">{{ auth()->user()->name }}</h4>
