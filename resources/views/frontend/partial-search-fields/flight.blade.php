@@ -2,27 +2,27 @@
     <ul class="nav nav-tabs" id="myTab3" role="tablist">
         <li class="nav-item">
             <a class="nav-link active" id="one-way-tab" data-toggle="tab" href="#one-way" role="tab" aria-controls="one-way" aria-selected="true">
-                One way
+                {{ __('One way') }}
             </a>
         </li>
         <li class="nav-item">
             <a class="nav-link" id="round-trip-tab" data-toggle="tab" href="#round-trip" role="tab" aria-controls="round-trip" aria-selected="false">
-                Round-trip
+                {{ __('Round-trip') }}
             </a>
         </li>
         <li class="nav-item">
             <a class="nav-link" id="multi-city-tab" data-toggle="tab" href="#multi-city" role="tab" aria-controls="multi-city" aria-selected="false">
-                Multi-city
+                {{ __('Multi-city') }}
             </a>
         </li>
         <li class="nav-item">
             <a class="nav-link" id="um-rah-tab" data-toggle="tab" href="#um-rah" role="tab" aria-controls="multi-city" aria-selected="false">
-                Um-rah
+                {{ __('Um-rah') }}
             </a>
         </li>
         <li class="nav-item">
             <a class="nav-link" id="group-ticket-tab" data-toggle="tab" href="#group-ticket" role="tab" aria-controls="multi-city" aria-selected="false">
-                Group Ticket
+                {{ __('Group Ticket') }}
             </a>
         </li>
     </ul>
@@ -33,7 +33,7 @@
             <form action="#" class="row align-items-center">
                 <div class="col-lg-6 pr-0">
                     <div class="input-box">
-                        <label class="label-text">Flying from</label>
+                        <label class="label-text">{{ __('Flying from') }}</label>
                         <div class="form-group">
                             <span class="la la-map-marker form-icon"></span>
                             <input class="form-control" type="text" id="one-way-search-origin" placeholder="City or airport">
@@ -42,7 +42,7 @@
                 </div><!-- end col-lg-3 -->
                 <div class="col-lg-6">
                     <div class="input-box">
-                        <label class="label-text">Flying to</label>
+                        <label class="label-text">{{ __('Flying to') }}</label>
                         <div class="form-group">
                             <span class="la la-map-marker form-icon"></span>
                             <input class="form-control" type="text" id="one-way-search-destination" placeholder="City or airport">
@@ -51,7 +51,7 @@
                 </div><!-- end col-lg-3 -->
                 <div class="col-lg-3 pr-0">
                     <div class="input-box">
-                        <label class="label-text">Departing</label>
+                        <label class="label-text">{{ __('Departing') }}</label>
                         <div class="form-group">
                             <span class="la la-calendar form-icon"></span>
                             <input class="date-range form-control" type="text" name="daterange-single" value="04/28/2020">
@@ -60,16 +60,16 @@
                 </div><!-- end col-lg-3 -->
                 <div class="col-lg-3 pr-0">
                     <div class="input-box">
-                        <label class="label-text">Passengers</label>
+                        <label class="label-text">{{ __('Passengers') }}</label>
                         <div class="form-group">
                             <div class="dropdown dropdown-contain">
                                 <a class="dropdown-toggle dropdown-btn" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
-                                    <span>Passengers <span class="qtyTotal guestTotal_2">0</span></span>
+                                    <span>{{ __('Passengers') }} <span class="qtyTotal guestTotal_2">0</span></span>
                                 </a>
                                 <div class="dropdown-menu dropdown-menu-wrap">
                                     <div class="dropdown-item">
                                         <div class="qty-box d-flex align-items-center justify-content-between">
-                                            <label>Adults</label>
+                                            <label>{{ __('Adults') }}</label>
                                             <div class="qtyBtn d-flex align-items-center">
                                                 <input type="text" name="qtyInput" value="0">
                                             </div>
@@ -77,7 +77,7 @@
                                     </div>
                                     <div class="dropdown-item">
                                         <div class="qty-box d-flex align-items-center justify-content-between">
-                                            <label>Children</label>
+                                            <label>{{ __('Children') }}</label>
                                             <div class="qtyBtn d-flex align-items-center">
                                                 <input type="text" name="qtyInput" value="0">
                                             </div>
@@ -85,7 +85,7 @@
                                     </div>
                                     <div class="dropdown-item">
                                         <div class="qty-box d-flex align-items-center justify-content-between">
-                                            <label>Infants</label>
+                                            <label>{{ __('Infants') }}</label>
                                             <div class="qtyBtn d-flex align-items-center">
                                                 <input type="text" name="qtyInput" value="0">
                                             </div>
@@ -98,18 +98,18 @@
                 </div><!-- end col-lg-3 -->
                 <div class="col-lg-3 pr-0">
                     <div class="input-box">
-                        <label class="label-text">Coach</label>
+                        <label class="label-text">{{ __('Coach') }}</label>
                         <div class="form-group select-contain w-auto">
                             <select class="select-contain-select">
-                                <option value="1" selected>Economy</option>
-                                <option value="2">Business</option>
-                                <option value="3">First class</option>
+                                <option value="1" selected>{{ __('Economy') }}</option>
+                                <option value="2">{{ __('Business') }}</option>
+                                <option value="3">{{ __('First class') }}</option>
                             </select>
                         </div>
                     </div>
                 </div><!-- end col-lg-3 -->
                 <div class="col-lg-3">
-                    <a href="#" class="theme-btn w-100 text-center margin-top-20px">Search Now</a>
+                    <a href="#" class="theme-btn w-100 text-center margin-top-20px">{{ __('Search Now') }}</a>
                 </div>
             </form>
         </div>
@@ -119,7 +119,7 @@
             <form action="#" class="row align-items-center">
                 <div class="col-lg-6 pr-0">
                     <div class="input-box">
-                        <label class="label-text">Flying from</label>
+                        <label class="label-text">{{ __('Flying from') }}</label>
                         <div class="form-group">
                             <span class="la la-map-marker form-icon"></span>
                             <input class="form-control" type="text" placeholder="City or airport">
@@ -128,7 +128,7 @@
                 </div><!-- end col-lg-3 -->
                 <div class="col-lg-6">
                     <div class="input-box">
-                        <label class="label-text">Flying to</label>
+                        <label class="label-text">{{ __('Flying to') }}</label>
                         <div class="form-group">
                             <span class="la la-map-marker form-icon"></span>
                             <input class="form-control" type="text" placeholder="City or airport">
@@ -137,7 +137,7 @@
                 </div><!-- end col-lg-3 -->
                 <div class="col-lg-3 pr-0">
                     <div class="input-box">
-                        <label class="label-text">Departing - Returning</label>
+                        <label class="label-text">{{ __('Departing - Returning') }}</label>
                         <div class="form-group">
                             <span class="la la-calendar form-icon"></span>
                             <input class="date-range form-control" type="text" name="daterange" value="04/28/2020">
@@ -146,16 +146,16 @@
                 </div><!-- end col-lg-3 -->
                 <div class="col-lg-3 pr-0">
                     <div class="input-box">
-                        <label class="label-text">Passengers</label>
+                        <label class="label-text">{{ __('Passengers') }}</label>
                         <div class="form-group">
                             <div class="dropdown dropdown-contain">
                                 <a class="dropdown-toggle dropdown-btn" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
-                                    <span>Passengers <span class="qtyTotal guestTotal_3">0</span></span>
+                                    <span>{{ __('Passengers') }} <span class="qtyTotal guestTotal_3">0</span></span>
                                 </a>
                                 <div class="dropdown-menu dropdown-menu-wrap">
                                     <div class="dropdown-item">
                                         <div class="qty-box d-flex align-items-center justify-content-between">
-                                            <label>Adults</label>
+                                            <label>{{ __('Adults') }}</label>
                                             <div class="qtyBtn d-flex align-items-center">
                                                 <input type="text" name="qtyInput" value="0">
                                             </div>
@@ -163,7 +163,7 @@
                                     </div>
                                     <div class="dropdown-item">
                                         <div class="qty-box d-flex align-items-center justify-content-between">
-                                            <label>Children</label>
+                                            <label>{{ __('Children') }}</label>
                                             <div class="qtyBtn d-flex align-items-center">
                                                 <input type="text" name="qtyInput" value="0">
                                             </div>
@@ -171,7 +171,7 @@
                                     </div>
                                     <div class="dropdown-item">
                                         <div class="qty-box d-flex align-items-center justify-content-between">
-                                            <label>Infants</label>
+                                            <label>{{ __('Infants') }}</label>
                                             <div class="qtyBtn d-flex align-items-center">
                                                 <input type="text" name="qtyInput" value="0">
                                             </div>
@@ -184,36 +184,36 @@
                 </div><!-- end col-lg-3 -->
                 <div class="col-lg-3 pr-0">
                     <div class="input-box">
-                        <label class="label-text">Coach</label>
+                        <label class="label-text">{{ __('Coach') }}</label>
                         <div class="form-group">
                             <div class="select-contain w-auto">
                                 <select class="select-contain-select">
-                                    <option value="1" selected>Economy</option>
-                                    <option value="2">Business</option>
-                                    <option value="3">First class</option>
+                                    <option value="1" selected>{{ __('Economy') }}</option>
+                                    <option value="2">{{ __('Business') }}</option>
+                                    <option value="3">{{ __('First class') }}</option>
                                 </select>
                             </div>
                         </div>
                     </div>
                 </div><!-- end col-lg-3 -->
                 <div class="col-lg-3">
-                    <a href="flight-search-result.html" class="theme-btn w-100 text-center margin-top-20px">Search Now</a>
+                    <a href="#" class="theme-btn w-100 text-center margin-top-20px">{{ __('Search Now') }}</a>
                 </div>
             </form>
         </div>
         <div class="advanced-wrap">
             <a class="btn collapse-btn theme-btn-hover-gray font-size-15" data-toggle="collapse" href="#collapseThree" role="button" aria-expanded="false" aria-controls="collapseThree">
-                Advanced options <i class="la la-angle-down ml-1"></i>
+                {{ __('Advanced options') }} <i class="la la-angle-down ml-1"></i>
             </a>
             <div class="collapse pt-3" id="collapseThree">
                 <div class="row">
                     <div class="col-lg-4">
                         <div class="input-box">
-                            <label class="label-text">Preferred airline</label>
+                            <label class="label-text">{{ __('Preferred airline') }}</label>
                             <div class="form-group">
                                 <div class="select-contain w-100">
                                     <select class="select-contain-select">
-                                        <option selected="selected" value=""> No preference</option>
+                                        <option selected="selected" value=""> {{ __('No preference') }}</option>
                                         <option value="AN">Advanced Air</option>
                                         <option value="A3">Aegean</option>
                                         <option value="EI">Aer Lingus</option>
@@ -232,7 +232,7 @@
             <form action="#" class="row flex-grow-1 align-items-center">
                 <div class="col-lg-4 pr-0">
                     <div class="input-box">
-                        <label class="label-text">Flying from</label>
+                        <label class="label-text">{{ __('Flying from') }}</label>
                         <div class="form-group">
                             <span class="la la-map-marker form-icon"></span>
                             <input class="form-control" type="text" placeholder="City or airport">
@@ -241,7 +241,7 @@
                 </div><!-- end col-lg-3 -->
                 <div class="col-lg-4 pr-0">
                     <div class="input-box">
-                        <label class="label-text">Flying to</label>
+                        <label class="label-text">{{ __('Flying to') }}</label>
                         <div class="form-group">
                             <span class="la la-map-marker form-icon"></span>
                             <input class="form-control" type="text" placeholder="City or airport">
@@ -250,7 +250,7 @@
                 </div><!-- end col-lg-3 -->
                 <div class="col-lg-4">
                     <div class="input-box">
-                        <label class="label-text">Departing</label>
+                        <label class="label-text">{{ __('Departing') }}</label>
                         <div class="form-group">
                             <span class="la la-calendar form-icon"></span>
                             <input class="date-range form-control date-multi-picker" type="text" name="daterange-single" value="04/28/2020">
@@ -265,21 +265,21 @@
         <div class="row align-items-center">
             <div class="col-lg-3 pr-0">
                 <div class="form-group">
-                    <button class="theme-btn add-flight-btn margin-top-40px w-100" type="button"><i class="la la-plus mr-1"></i>Add another flight</button>
+                    <button class="theme-btn add-flight-btn margin-top-40px w-100" type="button"><i class="la la-plus mr-1"></i>{{ __('Add another flight') }}</button>
                 </div>
             </div>
             <div class="col-lg-3 pr-0">
                 <div class="input-box">
-                    <label class="label-text">Passengers</label>
+                    <label class="label-text">{{ __('Passengers') }}</label>
                     <div class="form-group">
                         <div class="dropdown dropdown-contain">
                             <a class="dropdown-toggle dropdown-btn" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
-                                <span>Passengers <span class="qtyTotal guestTotal_4">0</span></span>
+                                <span>{{ __('Passengers') }} <span class="qtyTotal guestTotal_4">0</span></span>
                             </a>
                             <div class="dropdown-menu dropdown-menu-wrap">
                                 <div class="dropdown-item">
                                     <div class="qty-box d-flex align-items-center justify-content-between">
-                                        <label>Adults</label>
+                                        <label>{{ __('Adults') }}</label>
                                         <div class="qtyBtn d-flex align-items-center">
                                             <input type="text" name="qtyInput" value="0">
                                         </div>
@@ -287,7 +287,7 @@
                                 </div>
                                 <div class="dropdown-item">
                                     <div class="qty-box d-flex align-items-center justify-content-between">
-                                        <label>Children</label>
+                                        <label>{{ __('Children') }}</label>
                                         <div class="qtyBtn d-flex align-items-center">
                                             <input type="text" name="qtyInput" value="0">
                                         </div>
@@ -295,7 +295,7 @@
                                 </div>
                                 <div class="dropdown-item">
                                     <div class="qty-box d-flex align-items-center justify-content-between">
-                                        <label>Infants</label>
+                                        <label>{{ __('Infants') }}</label>
                                         <div class="qtyBtn d-flex align-items-center">
                                             <input type="text" name="qtyInput" value="0">
                                         </div>
@@ -308,20 +308,20 @@
             </div><!-- end col-lg-3 -->
             <div class="col-lg-3 pr-0">
                 <div class="input-box">
-                    <label class="label-text">Coach</label>
+                    <label class="label-text">{{ __('Coach') }}</label>
                     <div class="form-group">
                         <div class="select-contain w-auto">
                             <select class="select-contain-select">
-                                <option value="1" selected>Economy</option>
-                                <option value="2">Business</option>
-                                <option value="3">First class</option>
+                                <option value="1" selected>{{ __('Economy') }}</option>
+                                <option value="2">{{ __('Business') }}</option>
+                                <option value="3">{{ __('First class') }}</option>
                             </select>
                         </div>
                     </div>
                 </div>
             </div><!-- end col-lg-3 -->
             <div class="col-lg-3">
-                <a href="#" class="theme-btn w-100 text-center margin-top-20px">Search Now</a>
+                <a href="#" class="theme-btn w-100 text-center margin-top-20px">{{ __('Search Now') }}</a>
             </div>
         </div>
     </div><!-- end tab-pane -->
@@ -331,7 +331,7 @@
             <form action="#" class="row flex-grow-1 align-items-center">
                 <div class="col-lg-4 pr-0">
                     <div class="input-box">
-                        <label class="label-text">Flying from</label>
+                        <label class="label-text">{{ __('Flying from') }}</label>
                         <div class="form-group">
                             <span class="la la-map-marker form-icon"></span>
                             <input class="form-control" type="text" placeholder="City or airport">
@@ -340,7 +340,7 @@
                 </div><!-- end col-lg-3 -->
                 <div class="col-lg-4 pr-0">
                     <div class="input-box">
-                        <label class="label-text">Flying to</label>
+                        <label class="label-text">{{ __('Flying to') }}</label>
                         <div class="form-group">
                             <span class="la la-map-marker form-icon"></span>
                             <input class="form-control" type="text" placeholder="City or airport">
@@ -349,7 +349,7 @@
                 </div><!-- end col-lg-3 -->
                 <div class="col-lg-4">
                     <div class="input-box">
-                        <label class="label-text">Departing</label>
+                        <label class="label-text">{{ __('Departing') }}</label>
                         <div class="form-group">
                             <span class="la la-calendar form-icon"></span>
                             <input class="date-range form-control date-multi-picker" type="text" name="daterange-single" value="04/28/2020">
@@ -364,21 +364,21 @@
         <div class="row align-items-center">
             <div class="col-lg-3 pr-0">
                 <div class="form-group">
-                    <button class="theme-btn add-flight-btn margin-top-40px w-100" type="button"><i class="la la-plus mr-1"></i>Add another flight</button>
+                    <button class="theme-btn add-flight-btn margin-top-40px w-100" type="button"><i class="la la-plus mr-1"></i>{{ __('Add another flight') }}</button>
                 </div>
             </div>
             <div class="col-lg-3 pr-0">
                 <div class="input-box">
-                    <label class="label-text">Passengers</label>
+                    <label class="label-text">{{ __('Passengers') }}</label>
                     <div class="form-group">
                         <div class="dropdown dropdown-contain">
                             <a class="dropdown-toggle dropdown-btn" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
-                                <span>Passengers <span class="qtyTotal guestTotal_4">0</span></span>
+                                <span>{{ __('Passengers') }} <span class="qtyTotal guestTotal_4">0</span></span>
                             </a>
                             <div class="dropdown-menu dropdown-menu-wrap">
                                 <div class="dropdown-item">
                                     <div class="qty-box d-flex align-items-center justify-content-between">
-                                        <label>Adults</label>
+                                        <label>{{ __('Adults') }}</label>
                                         <div class="qtyBtn d-flex align-items-center">
                                             <input type="text" name="qtyInput" value="0">
                                         </div>
@@ -386,7 +386,7 @@
                                 </div>
                                 <div class="dropdown-item">
                                     <div class="qty-box d-flex align-items-center justify-content-between">
-                                        <label>Children</label>
+                                        <label>{{ __('Children') }}</label>
                                         <div class="qtyBtn d-flex align-items-center">
                                             <input type="text" name="qtyInput" value="0">
                                         </div>
@@ -394,7 +394,7 @@
                                 </div>
                                 <div class="dropdown-item">
                                     <div class="qty-box d-flex align-items-center justify-content-between">
-                                        <label>Infants</label>
+                                        <label>{{ __('Infants') }}</label>
                                         <div class="qtyBtn d-flex align-items-center">
                                             <input type="text" name="qtyInput" value="0">
                                         </div>
@@ -407,20 +407,20 @@
             </div><!-- end col-lg-3 -->
             <div class="col-lg-3 pr-0">
                 <div class="input-box">
-                    <label class="label-text">Coach</label>
+                    <label class="label-text">{{ __('Coach') }}</label>
                     <div class="form-group">
                         <div class="select-contain w-auto">
                             <select class="select-contain-select">
-                                <option value="1" selected>Economy</option>
-                                <option value="2">Business</option>
-                                <option value="3">First class</option>
+                                <option value="1" selected>{{ __('Economy') }}</option>
+                                <option value="2">{{ __('Business') }}</option>
+                                <option value="3">{{ __('First class') }}</option>
                             </select>
                         </div>
                     </div>
                 </div>
             </div><!-- end col-lg-3 -->
             <div class="col-lg-3">
-                <a href="flight-search-result.html" class="theme-btn w-100 text-center margin-top-20px">Search Now</a>
+                <a href="#" class="theme-btn w-100 text-center margin-top-20px">{{ __('Search Now') }}</a>
             </div>
         </div>
     </div><!-- end tab-pane -->

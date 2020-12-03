@@ -17,6 +17,7 @@
         "laravel/tinker": "^2.0",
         "laravel/ui": "2.4",
         "renatomarinho/laravel-page-speed": "^1.9",
+        "spatie/laravel-activitylog": "^3.16",
         "spatie/laravel-permission": "^3.17",
         "spatie/laravel-translatable": "^4.5",
         "yajra/laravel-datatables-oracle": "~9.0"

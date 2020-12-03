@@ -13,67 +13,67 @@
                         <ul class="nav nav-tabs" id="myTab" role="tablist">
                             <li class="nav-item">
                                 <a class="nav-link d-flex align-items-center active" id="flight-tab" data-toggle="tab" href="#flight" role="tab" aria-controls="flight" aria-selected="true">
-                                    <i class="la la-plane mr-1"></i>Flights Search
+                                    <i class="la la-plane mr-1"></i>{{ __('Flights Search')}}
                                 </a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link d-flex align-items-center" id="stay-tab" data-toggle="tab" href="#stay" role="tab" aria-controls="hotel" aria-selected="false">
-                                    <i class="la la-hotel mr-1"></i>Stays Search
+                                    <i class="la la-hotel mr-1"></i>{{ __('Stays Search')}}
                                 </a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link d-flex align-items-center" id="tour-tab" data-toggle="tab" href="#tour" role="tab" aria-controls="package" aria-selected="false">
-                                    <i class="la la-shopping-bag mr-1"></i>Tour
+                                    <i class="la la-shopping-bag mr-1"></i>{{ __('Tour')}}
                                 </a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link d-flex align-items-center" id="vacation-package-tab" data-toggle="tab" href="#vacation-package" role="tab" aria-controls="car" aria-selected="true">
-                                    <i class="la la-car mr-1"></i>Vacation Packages
+                                    <i class="la la-car mr-1"></i>{{ __('Vacation Packages')}}
                                 </a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link d-flex align-items-center" id="thing-to-do-tab" data-toggle="tab" href="#thing-to-do" role="tab" aria-controls="cruise" aria-selected="false">
-                                    <i class="la la-ship mr-1"></i>Things to do
+                                    <i class="la la-ship mr-1"></i>{{ __('Things to do')}}
                                 </a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link d-flex align-items-center" id="food-and-drink-tab" data-toggle="tab" href="#food-and-drink" role="tab" aria-controls="tour" aria-selected="false">
-                                    <i class="la la-globe mr-1"></i>Food & Drink
+                                    <i class="la la-globe mr-1"></i>{{ __('Food & Drink') }}
                                 </a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link d-flex align-items-center" id="spa-tab" data-toggle="tab" href="#spa" role="tab" aria-controls="package" aria-selected="false">
-                                    <i class="la la-shopping-bag mr-1"></i>Spa
+                                    <i class="la la-shopping-bag mr-1"></i>{{ __('Spa') }}
                                 </a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link d-flex align-items-center" id="online-activity-tab" data-toggle="tab" href="#online-activity" role="tab" aria-controls="car" aria-selected="true">
-                                    <i class="la la-car mr-1"></i>Online Activities
+                                    <i class="la la-car mr-1"></i>{{ __('Online Activities') }}
                                 </a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link d-flex align-items-center" id="ticket-tab" data-toggle="tab" href="#ticket" role="tab" aria-controls="cruise" aria-selected="false">
-                                    <i class="la la-ship mr-1"></i>Ticket
+                                    <i class="la la-ship mr-1"></i>{{ __('Ticket') }}
                                 </a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link d-flex align-items-center" id="car-rental-tab" data-toggle="tab" href="#car-rental" role="tab" aria-controls="tour" aria-selected="false">
-                                    <i class="la la-globe mr-1"></i>Car Rental
+                                    <i class="la la-globe mr-1"></i>{{ __('Car Rental') }}
                                 </a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link d-flex align-items-center" id="transfer-tab" data-toggle="tab" href="#transfer" role="tab" aria-controls="car" aria-selected="true">
-                                    <i class="la la-car mr-1"></i>Transfer
+                                    <i class="la la-car mr-1"></i>{{ __('Transfer') }}
                                 </a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link d-flex align-items-center" id="travel-gear-tab" data-toggle="tab" href="#travel-gear" role="tab" aria-controls="cruise" aria-selected="false">
-                                    <i class="la la-ship mr-1"></i>Travel Gear
+                                    <i class="la la-ship mr-1"></i>{{ __('Travel Gear') }}
                                 </a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link d-flex align-items-center" id="cruises-tab" data-toggle="tab" href="#cruises" role="tab" aria-controls="tour" aria-selected="false">
-                                    <i class="la la-globe mr-1"></i>Cruises
+                                    <i class="la la-globe mr-1"></i>{{ __('Cruises') }}
                                 </a>
                             </li>
                         </ul>

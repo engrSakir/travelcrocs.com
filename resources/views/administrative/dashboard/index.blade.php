@@ -1,22 +1,9 @@
 @extends('layouts.administrative.app')
 
 @section('content')
-
-
-    <h1>*Under development---</h1>
-    @if(auth()->user()->hasPermissionTo('user-access'))
-        <h1>*User--- {{ auth()->user()->getAllPermissions() }}</h1>
-    @endif
-    @if(auth()->user()->hasPermissionTo('administrative-access'))
-        <h1>*Permissions--- {{ auth()->user()->getAllPermissions() }}</h1>
-    @endif
-    @if(auth()->user()->hasRole('administrative'))
-        <h1>*Roles--- {{ auth()->user()->roles }}</h1>
-    @endif
-
-    <div class="content d-flex flex-column flex-column-fluid" id="kt_content" style="display: none">
-        <!--begin::Subheader-->
-        <div class="subheader py-2 py-lg-4 subheader-solid" id="kt_subheader" style="display: none">
+    <div class="content d-flex flex-column flex-column-fluid" id="kt_content">
+       <!--begin::Subheader-->
+       {{-- <div class="subheader py-2 py-lg-4 subheader-solid" id="kt_subheader">
             <div class="container-fluid d-flex align-items-center justify-content-between flex-wrap flex-sm-nowrap">
                 <!--begin::Info-->
                 <div class="d-flex align-items-center flex-wrap mr-2">
@@ -132,12 +119,12 @@
                 </div>
                 <!--end::Toolbar-->
             </div>
-        </div tyle="display: none">
+        </div>--}}
         <!--end::Subheader-->
         <!--begin::Entry-->
         <div class="d-flex flex-column-fluid" >
             <!--begin::Container-->
-            <div class="container" style="display: none">
+            <div class="container">
                 <!--begin::Dashboard-->
                 <!--begin::Row-->
                 <div class="row">
@@ -289,67 +276,9 @@
                             <!--begin::Header-->
                             <div class="card-header align-items-center border-0 mt-4">
                                 <h3 class="card-title align-items-start flex-column">
-                                    <span class="font-weight-bolder text-dark">My Activity</span>
-                                    <span class="text-muted mt-3 font-weight-bold font-size-sm">890,344 Sales</span>
+                                    <span class="font-weight-bolder text-dark">Activity</span>
+                                    <span class="text-muted mt-3 font-weight-bold font-size-sm">{{ \Spatie\Activitylog\Models\Activity::count() }}</span>
                                 </h3>
-                                <div class="card-toolbar">
-                                    <div class="dropdown dropdown-inline">
-                                        <a href="#" class="btn btn-clean btn-hover-light-primary btn-sm btn-icon" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            <i class="ki ki-bold-more-hor"></i>
-                                        </a>
-                                        <div class="dropdown-menu dropdown-menu-md dropdown-menu-right">
-                                            <!--begin::Navigation-->
-                                            <ul class="navi navi-hover">
-                                                <li class="navi-header font-weight-bold py-4">
-                                                    <span class="font-size-lg">Choose Label:</span>
-                                                    <i class="flaticon2-information icon-md text-muted" data-toggle="tooltip" data-placement="right" title="Click to learn more..."></i>
-                                                </li>
-                                                <li class="navi-separator mb-3 opacity-70"></li>
-                                                <li class="navi-item">
-                                                    <a href="#" class="navi-link">
-																		<span class="navi-text">
-																			<span class="label label-xl label-inline label-light-success">Customer</span>
-																		</span>
-                                                    </a>
-                                                </li>
-                                                <li class="navi-item">
-                                                    <a href="#" class="navi-link">
-																		<span class="navi-text">
-																			<span class="label label-xl label-inline label-light-danger">Partner</span>
-																		</span>
-                                                    </a>
-                                                </li>
-                                                <li class="navi-item">
-                                                    <a href="#" class="navi-link">
-																		<span class="navi-text">
-																			<span class="label label-xl label-inline label-light-warning">Suplier</span>
-																		</span>
-                                                    </a>
-                                                </li>
-                                                <li class="navi-item">
-                                                    <a href="#" class="navi-link">
-																		<span class="navi-text">
-																			<span class="label label-xl label-inline label-light-primary">Member</span>
-																		</span>
-                                                    </a>
-                                                </li>
-                                                <li class="navi-item">
-                                                    <a href="#" class="navi-link">
-																		<span class="navi-text">
-																			<span class="label label-xl label-inline label-light-dark">Staff</span>
-																		</span>
-                                                    </a>
-                                                </li>
-                                                <li class="navi-separator mt-3 opacity-70"></li>
-                                                <li class="navi-footer py-4">
-                                                    <a class="btn btn-clean font-weight-bold btn-sm" href="#">
-                                                        <i class="ki ki-plus icon-sm"></i>Add new</a>
-                                                </li>
-                                            </ul>
-                                            <!--end::Navigation-->
-                                        </div>
-                                    </div>
-                                </div>
                             </div>
                             <!--end::Header-->
                             <!--begin::Body-->
@@ -357,9 +286,10 @@
                                 <!--begin::Timeline-->
                                 <div class="timeline timeline-6 mt-3">
                                     <!--begin::Item-->
+                                    @foreach(\Spatie\Activitylog\Models\Activity::all() as $activity)
                                     <div class="timeline-item align-items-start">
                                         <!--begin::Label-->
-                                        <div class="timeline-label font-weight-bolder text-dark-75 font-size-lg">08:42</div>
+                                        <div class="timeline-label font-weight-bolder text-dark-75 font-size-lg">{{ $activity->created_at->format('h:m') }}</div>
                                         <!--end::Label-->
                                         <!--begin::Badge-->
                                         <div class="timeline-badge">
@@ -367,119 +297,10 @@
                                         </div>
                                         <!--end::Badge-->
                                         <!--begin::Text-->
-                                        <div class="font-weight-mormal font-size-lg timeline-content text-muted pl-3">Outlines keep you honest. And keep structure</div>
+                                        <div class="font-weight-mormal font-size-lg timeline-content text-muted pl-3">{{ $activity->description }}</div>
                                         <!--end::Text-->
                                     </div>
-                                    <!--end::Item-->
-                                    <!--begin::Item-->
-                                    <div class="timeline-item align-items-start">
-                                        <!--begin::Label-->
-                                        <div class="timeline-label font-weight-bolder text-dark-75 font-size-lg">10:00</div>
-                                        <!--end::Label-->
-                                        <!--begin::Badge-->
-                                        <div class="timeline-badge">
-                                            <i class="fa fa-genderless text-success icon-xl"></i>
-                                        </div>
-                                        <!--end::Badge-->
-                                        <!--begin::Content-->
-                                        <div class="timeline-content d-flex">
-                                            <span class="font-weight-bolder text-dark-75 pl-3 font-size-lg">AEOL meeting</span>
-                                        </div>
-                                        <!--end::Content-->
-                                    </div>
-                                    <!--end::Item-->
-                                    <!--begin::Item-->
-                                    <div class="timeline-item align-items-start">
-                                        <!--begin::Label-->
-                                        <div class="timeline-label font-weight-bolder text-dark-75 font-size-lg">14:37</div>
-                                        <!--end::Label-->
-                                        <!--begin::Badge-->
-                                        <div class="timeline-badge">
-                                            <i class="fa fa-genderless text-danger icon-xl"></i>
-                                        </div>
-                                        <!--end::Badge-->
-                                        <!--begin::Desc-->
-                                        <div class="timeline-content font-weight-bolder font-size-lg text-dark-75 pl-3">Make deposit
-                                            <a href="#" class="text-primary">USD 700</a>. to ESL</div>
-                                        <!--end::Desc-->
-                                    </div>
-                                    <!--end::Item-->
-                                    <!--begin::Item-->
-                                    <div class="timeline-item align-items-start">
-                                        <!--begin::Label-->
-                                        <div class="timeline-label font-weight-bolder text-dark-75 font-size-lg">16:50</div>
-                                        <!--end::Label-->
-                                        <!--begin::Badge-->
-                                        <div class="timeline-badge">
-                                            <i class="fa fa-genderless text-primary icon-xl"></i>
-                                        </div>
-                                        <!--end::Badge-->
-                                        <!--begin::Text-->
-                                        <div class="timeline-content font-weight-mormal font-size-lg text-muted pl-3">Indulging in poorly driving and keep structure keep great</div>
-                                        <!--end::Text-->
-                                    </div>
-                                    <!--end::Item-->
-                                    <!--begin::Item-->
-                                    <div class="timeline-item align-items-start">
-                                        <!--begin::Label-->
-                                        <div class="timeline-label font-weight-bolder text-dark-75 font-size-lg">21:03</div>
-                                        <!--end::Label-->
-                                        <!--begin::Badge-->
-                                        <div class="timeline-badge">
-                                            <i class="fa fa-genderless text-danger icon-xl"></i>
-                                        </div>
-                                        <!--end::Badge-->
-                                        <!--begin::Desc-->
-                                        <div class="timeline-content font-weight-bolder text-dark-75 pl-3 font-size-lg">New order placed
-                                            <a href="#" class="text-primary">#XF-2356</a>.</div>
-                                        <!--end::Desc-->
-                                    </div>
-                                    <!--end::Item-->
-                                    <!--begin::Item-->
-                                    <div class="timeline-item align-items-start">
-                                        <!--begin::Label-->
-                                        <div class="timeline-label font-weight-bolder text-dark-75 font-size-lg">23:07</div>
-                                        <!--end::Label-->
-                                        <!--begin::Badge-->
-                                        <div class="timeline-badge">
-                                            <i class="fa fa-genderless text-info icon-xl"></i>
-                                        </div>
-                                        <!--end::Badge-->
-                                        <!--begin::Text-->
-                                        <div class="timeline-content font-weight-mormal font-size-lg text-muted pl-3">Outlines keep and you honest. Indulging in poorly driving</div>
-                                        <!--end::Text-->
-                                    </div>
-                                    <!--end::Item-->
-                                    <!--begin::Item-->
-                                    <div class="timeline-item align-items-start">
-                                        <!--begin::Label-->
-                                        <div class="timeline-label font-weight-bolder text-dark-75 font-size-lg">16:50</div>
-                                        <!--end::Label-->
-                                        <!--begin::Badge-->
-                                        <div class="timeline-badge">
-                                            <i class="fa fa-genderless text-primary icon-xl"></i>
-                                        </div>
-                                        <!--end::Badge-->
-                                        <!--begin::Text-->
-                                        <div class="timeline-content font-weight-mormal font-size-lg text-muted pl-3">Indulging in poorly driving and keep structure keep great</div>
-                                        <!--end::Text-->
-                                    </div>
-                                    <!--end::Item-->
-                                    <!--begin::Item-->
-                                    <div class="timeline-item align-items-start">
-                                        <!--begin::Label-->
-                                        <div class="timeline-label font-weight-bolder text-dark-75 font-size-lg">21:03</div>
-                                        <!--end::Label-->
-                                        <!--begin::Badge-->
-                                        <div class="timeline-badge">
-                                            <i class="fa fa-genderless text-danger icon-xl"></i>
-                                        </div>
-                                        <!--end::Badge-->
-                                        <!--begin::Desc-->
-                                        <div class="timeline-content font-weight-bolder font-size-lg text-dark-75 pl-3">New order placed
-                                            <a href="#" class="text-primary">#XF-2356</a>.</div>
-                                        <!--end::Desc-->
-                                    </div>
+                                    @endforeach
                                     <!--end::Item-->
                                 </div>
                                 <!--end::Timeline-->
@@ -488,6 +309,7 @@
                         </div>
                         <!--end: List Widget 9-->
                     </div>
+                    {{--
                     <div class="col-lg-6 col-xxl-4">
                         <!--begin::Stats Widget 11-->
                         <div class="card card-custom card-stretch card-stretch-half gutter-b">
@@ -2946,10 +2768,11 @@
                         <!--end: Card-->
                         <!--end::List Widget 8-->
                     </div>
+                    --}}
                 </div>
                 <!--end::Row-->
                 <!--begin::Row-->
-                <div class="row">
+               {{-- <div class="row">
                     <div class="col-lg-4">
                         <!--begin::Mixed Widget 14-->
                         <div class="card card-custom card-stretch gutter-b">
@@ -3229,12 +3052,24 @@
                         </div>
                         <!--end::Advance Table Widget 4-->
                     </div>
-                </div>
+                </div>--}}
                 <!--end::Row-->
                 <!--end::Dashboard-->
             </div>
             <!--end::Container-->
-        </div tyle="display: none">
+        </div>
         <!--end::Entry-->
+
+        <h1>*Under development---</h1>
+        @if(auth()->user()->hasPermissionTo('user-access'))
+            <h1>*User--- {{ auth()->user()->getAllPermissions() }}</h1>
+        @endif
+        @if(auth()->user()->hasPermissionTo('administrative-access'))
+            <h1>*Permissions--- {{ auth()->user()->getAllPermissions() }}</h1>
+        @endif
+        @if(auth()->user()->hasRole('administrative'))
+            <h1>*Roles--- {{ auth()->user()->roles }}</h1>
+        @endif
+
     </div>
 @endsection

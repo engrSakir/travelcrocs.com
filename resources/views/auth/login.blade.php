@@ -92,7 +92,7 @@
                         <!--begin::Action-->
                         <div class="pb-lg-0 pb-5">
                             <button type="button" id="kt_login_signin_submit" class="btn btn-primary font-weight-bolder font-size-h6 px-8 py-4 my-3 mr-3 ">{{ __('Sign In') }}</button>
-                            <button type="button" class="btn btn-light-primary font-weight-bolder px-8 py-4 my-3 font-size-lg">
+                            <a href="{{ route('socialiteLogin', 'google') }}" class="btn btn-light-primary font-weight-bolder px-8 py-4 my-3 font-size-lg">
 									<span class="svg-icon svg-icon-md">
 										<!--begin::Svg Icon | path:assets/media/svg/social-icons/google.svg-->
 										<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
@@ -103,7 +103,7 @@
 										</svg>
                                         <!--end::Svg Icon-->
 									</span>{{ __('Sign in with Google') }}
-                            </button>
+                            </a>
                             <a href="{{ route('socialiteLogin', 'github') }}">Login with github</a>
                         </div>
                         <!--end::Action-->

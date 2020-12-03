@@ -24,18 +24,17 @@ class SocialiteController extends Controller
      * socialite Github Call Back
      */
     public function handleProviderCallback($driver){
-        //$driver = 'github';
         try {
             $getInfo = Socialite::driver($driver)->user();
         } catch (\Exception $e) {
             return redirect('/login');
         }
-        $user = $this->createUser($getInfo);
+        $user = $this->createOrGetUser($getInfo);
         auth()->login($user, true);
         return redirect()->route('home');
     }
 
-    function createUser($getInfo){
+    function createOrGetUser($getInfo){
         $user = User::where('email', $getInfo->email)->first();
         if(!$user){
             // create a new user

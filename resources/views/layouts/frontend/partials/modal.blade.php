@@ -57,10 +57,10 @@
                                 <p class="font-size-14">{{ __('Or Sign up Using') }}</p>
                                 <ul class="social-profile py-3">
                                     <li><a href="{{ route('socialiteLogin', 'google') }}" class="bg-5 text-white"><i class="lab la-google"></i></a></li>
-                                    <li><a href="#" class="bg-5 text-white"><i class="lab la-facebook-f"></i></a></li>
+                                    <li><a href="{{ route('socialiteLogin', 'facebook') }}" class="bg-5 text-white"><i class="lab la-facebook-f"></i></a></li>
                                     <li><a href="#" class="bg-6 text-white"><i class="lab la-twitter"></i></a></li>
                                     <li><a href="#" class="bg-7 text-white"><i class="lab la-instagram"></i></a></li>
-                                    <li><a href="#" class="bg-5 text-white"><i class="lab la-linkedin-in"></i></a></li>
+                                    <li><a href="{{ route('socialiteLogin', 'linkedin') }}" class="bg-5 text-white"><i class="lab la-linkedin-in"></i></a></li>
                                     <li><a href="{{ route('socialiteLogin', 'github') }}" class="bg-5 text-white"><i class="lab la-github"></i></a></li>
                                 </ul>
                             </div>
@@ -123,7 +123,7 @@
                             <div class="action-box text-center">
                                 <p class="font-size-14">{{ __('Sign in with Google') }}</p>
                                 <ul class="social-profile py-3">
-                                    <li><a href="#" class="bg-5 text-white"><i class="lab la-google"></i></a></li>
+                                    <li><a href="{{ route('socialiteLogin', 'google') }}" class="bg-5 text-white"><i class="lab la-google"></i></a></li>
                                 </ul>
                             </div>
                         </form>

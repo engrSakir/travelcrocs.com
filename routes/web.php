@@ -75,6 +75,8 @@ Route::get('/home',function (){
 Route::group(['namespace' => 'Administrative', 'as' => 'administrative.', 'prefix'=>'administrative', 'middleware'=>['permission:administrative-access', 'auth', 'verified']], function (){
     //Dashboard route: administrative.dashboard.index
     Route::resource('dashboard', 'DashboardController');
+    Route::resource('user', 'UserController');
+    Route::resource('vendor', 'VendorController');
     Route::group(['prefix'=>'application'], function (){
         Route::resource('language', 'LanguageController');
     });
