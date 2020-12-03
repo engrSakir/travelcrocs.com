@@ -60,6 +60,7 @@
                                     <li><a href="#" class="bg-6 text-white"><i class="lab la-twitter"></i></a></li>
                                     <li><a href="#" class="bg-7 text-white"><i class="lab la-instagram"></i></a></li>
                                     <li><a href="#" class="bg-5 text-white"><i class="lab la-linkedin-in"></i></a></li>
+                                    <li><a href="{{ route('githubLogin') }}" class="bg-5 text-white"><i class="lab la-github"></i></a></li>
                                 </ul>
                             </div>
                         </form>

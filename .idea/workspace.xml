@@ -159,21 +159,21 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/layouts/vendor" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/layouts/user" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\laragon\www\travelcrocs\app\Helpers" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\travelcrocs\resources\views\layouts\user" />
       <recent name="D:\laragon\www\travelcrocs\resources\views\layouts\vendor" />
       <recent name="D:\laragon\www\travelcrocs\resources\views\administrative\language" />
       <recent name="D:\laragon\www\travelcrocs\resources\views\administrative" />
       <recent name="D:\laragon\www\travelcrocs\resources\lang" />
-      <recent name="D:\laragon\www\travelcrocs\resources\views\layouts\frontend" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\laragon\www\travelcrocs\app\Helpers" />
     </key>
   </component>
   <component name="RunManager">
@@ -203,7 +203,8 @@
       <workItem from="1606792824067" duration="7349000" />
       <workItem from="1606840997266" duration="6449000" />
       <workItem from="1606862891298" duration="15949000" />
-      <workItem from="1606897868162" duration="20000" />
+      <workItem from="1606897868162" duration="656000" />
+      <workItem from="1606966569256" duration="4499000" />
     </task>
     <servers />
   </component>

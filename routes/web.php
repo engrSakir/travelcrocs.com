@@ -93,7 +93,7 @@ Route::group(['namespace' => 'Vendor', 'as' => 'vendor.', 'prefix'=>'vendor', 'm
 /**
  * All of user routes
  */
-Route::group(['namespace' => 'User', 'as' => 'user.', 'prefix'=>'vendor', 'middleware'=>['permission:user-access', 'auth', 'verified']], function (){
+Route::group(['namespace' => 'User', 'as' => 'user.', 'prefix'=>'user', 'middleware'=>['permission:user-access', 'auth', 'verified']], function (){
     //Dashboard route: user.dashboard.index
     Route::resource('dashboard', 'DashboardController');
 
