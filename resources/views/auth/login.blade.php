@@ -104,7 +104,7 @@
                                         <!--end::Svg Icon-->
 									</span>{{ __('Sign in with Google') }}
                             </button>
-                            <a href="{{ route('githubLogin') }}">Login with github</a>
+                            <a href="{{ route('socialiteLogin', 'github') }}">Login with github</a>
                         </div>
                         <!--end::Action-->
                     </form>

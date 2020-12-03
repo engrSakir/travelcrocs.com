@@ -81,35 +81,4 @@ class LoginController extends Controller
             ]);
         }
     }
-
-    /**
-     * socialite login githubLogin
-     */
-    public function githubLogin(){
-        //send user's request to github
-        return Socialite::driver('github')->redirect();
-    }
-
-    /**
-     * socialite login githubLoginRedirect
-     */
-    public function githubLoginRedirect(){
-        //get oauth request back from github to authenticated user
-        $socialUser = Socialite::driver('github')->user();
-        //dd($user);
-        if (User::where('email', $socialUser->email)->exists()){
-            Auth::login(User::where('email', $socialUser->email)->first(), true);
-        }else{
-            $user = new User();
-            $user->email        =   $socialUser->email;
-            $user->name         =   $socialUser->name;
-            $user->avatar       =   $socialUser->avatar;
-            $user->password     =   Hash::make(Str::random(24));
-            $user->api_token    =   Str::random(60);
-            $user->save();
-            Auth::login($user, true);
-        }
-        return redirect()->route('home');
-
-    }
 }

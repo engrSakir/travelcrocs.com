@@ -36,8 +36,10 @@ Route::group(['namespace' => 'Frontend', 'as' => 'frontend.'], function (){
  * All of authentication routes
  */
 Route::group(['namespace' => 'Auth', 'as' => '', 'middleware'=>['guest']], function (){
-    Route::get('/login/github', 'LoginController@githubLogin')->name('githubLogin');
-    Route::get('/login/github/redirect', 'LoginController@githubLoginRedirect')->name('githubLoginRedirect');
+    //Redirect to provider
+    Route::get('/socialite/redirect/{driver}', 'SocialiteController@redirectToProvider')->name('socialiteLogin');
+    //Call back
+    Route::get('/socialite/callback/{driver}', 'SocialiteController@handleProviderCallback')->name('socialiteCallback');
 });
 
 /***

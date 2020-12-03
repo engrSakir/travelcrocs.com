@@ -1,8 +1,12 @@
 <?php
 
 use App\Language;
+use App\User;
 use Illuminate\Support\Facades\App;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Http;
+use Illuminate\Support\Str;
 
 if (!function_exists('random_code')){
 
@@ -37,6 +41,22 @@ if (!function_exists('random_code')){
         //{ "type": "amadeusOAuth2Token", "username": "m.sakirahmed@gmail.com", "application_name": "travelcrocs",
         // "client_id": "pcnrYMNBPbZ2rVlUXES8j3AiAo1YEpiB", "token_type": "Bearer", "access_token": "oTWaTkNdh5xAcvx0VJAypLJ1ZqBC",
         // "expires_in": 1799, "state": "approved", "scope": "" }
+    }
+
+    function createOrLogin($socialUser){
+        if (User::where('email', $socialUser->email)->exists()){
+            Auth::login(User::where('email', $socialUser->email)->first(), true);
+        }else{
+            $user = new User();
+            $user->email        =   $socialUser->email;
+            $user->name         =   $socialUser->name;
+            $user->avatar       =   $socialUser->avatar;
+            $user->password     =   Hash::make(Str::random(24));
+            $user->api_token    =   Str::random(60);
+            $user->save();
+            Auth::login($user, true);
+        }
+        return redirect()->route('home');
     }
 
 }
