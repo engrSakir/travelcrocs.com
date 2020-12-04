@@ -1,6 +1,7 @@
 <?php
 
 use App\Language;
+use App\StaticOption;
 use App\User;
 use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Auth;
@@ -43,20 +44,50 @@ if (!function_exists('random_code')){
         // "expires_in": 1799, "state": "approved", "scope": "" }
     }
 
-    function createOrLogin($socialUser){
-        if (User::where('email', $socialUser->email)->exists()){
-            Auth::login(User::where('email', $socialUser->email)->first(), true);
-        }else{
-            $user = new User();
-            $user->email        =   $socialUser->email;
-            $user->name         =   $socialUser->name;
-            $user->avatar       =   $socialUser->avatar;
-            $user->password     =   Hash::make(Str::random(24));
-            $user->api_token    =   Str::random(60);
-            $user->save();
-            Auth::login($user, true);
+
+    function set_static_option($key, $value)
+    {
+        if (!StaticOption::where('option_name', $key)->first()) {
+            StaticOption::create([
+                'option_name' => $key,
+                'option_value' => $value
+            ]);
+            return true;
         }
-        return redirect()->route('home');
+        return false;
+    }
+
+    function get_static_option($key)
+    {
+        if (StaticOption::where('option_name', $key)->first()) {
+            $return_val = StaticOption::where('option_name', $key)->first();
+            return $return_val->option_value;
+        }
+        return null;
+    }
+
+    function update_static_option($key, $value)
+    {
+        if (!StaticOption::where('option_name', $key)->first()) {
+            StaticOption::create([
+                'option_name' => $key,
+                'option_value' => $value
+            ]);
+            return true;
+        } else {
+            StaticOption::where('option_name', $key)->update([
+                'option_name' => $key,
+                'option_value' => $value
+            ]);
+            return true;
+        }
+        return false;
+    }
+
+    function delete_static_option($key)
+    {
+        StaticOption::where('option_name', $key)->delete();
+        return true;
     }
 
 }

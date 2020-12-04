@@ -19,9 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="42c33c20-9443-4946-97ea-543c8a623b1d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="42c33c20-9443-4946-97ea-543c8a623b1d" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -208,7 +206,8 @@
       <workItem from="1606966569256" duration="8277000" />
       <workItem from="1606976638015" duration="9231000" />
       <workItem from="1607001004423" duration="20609000" />
-      <workItem from="1607061001573" duration="4944000" />
+      <workItem from="1607061001573" duration="8467000" />
+      <workItem from="1607078357928" duration="184000" />
     </task>
     <servers />
   </component>
@@ -232,6 +231,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="702" y="327" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1050/-1366.305.1366.738@0.0.1920.1050" timestamp="1606708565204" />
+    <state x="640" y="261" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1607078272116">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="640" y="261" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1050/-1366.305.1366.738@0.0.1920.1050" timestamp="1607078272116" />
     <state x="-875" y="501" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1607010875272">
       <screen x="-1366" y="305" width="1366" height="738" />
     </state>

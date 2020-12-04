@@ -12,20 +12,6 @@ class User extends Authenticatable implements MustVerifyEmail
 {
     use Notifiable, HasRoles, LogsActivity;
 
-    /**
-     * activity log
-     */
-    //Log name
-    protected static $logName = 'user';
-    //All of fillable store in log
-    public static $logFillable = true;
-    //Ignorable log
-    protected static $ignoreChangedAttributes = ['created_at', 'updated_at'];
-    //Log description
-    public function getDescriptionForEvent(string $eventName): string
-    {
-        return "You has been {$eventName} user";
-    }
 
     /**
      * The attributes that are mass assignable.
@@ -53,5 +39,21 @@ class User extends Authenticatable implements MustVerifyEmail
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+
+    /**
+     * activity log
+     */
+    //Log name
+    protected static $logName = 'user';
+    //All of fillable store in log
+    public static $logFillable = true;
+    //Ignorable log
+    protected static $ignoreChangedAttributes = ['created_at', 'updated_at'];
+    //Log description
+    public function getDescriptionForEvent(string $eventName): string
+    {
+        return "Has been {$eventName} user";
+    }
 
 }

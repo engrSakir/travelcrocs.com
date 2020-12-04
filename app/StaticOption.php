@@ -3,25 +3,17 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
-use Spatie\Activitylog\Traits\LogsActivity;
 
-class Language extends Model
+class StaticOption extends Model
 {
-    use LogsActivity;
-
-    protected $fillable =[
-        'status',
-        'name',
-        'code',
-        'flag',
-        'alignment',
-    ];
+    protected $table = 'static_options';
+    protected $fillable = ['option_name','option_value'];
 
     /**
      * activity log
      */
     //Log name
-    protected static $logName = 'Language';
+    protected static $logName = 'Static option';
     //All of fillable store in log
     public static $logFillable = true;
     //Ignorable log
@@ -29,6 +21,6 @@ class Language extends Model
     //Log description
     public function getDescriptionForEvent(string $eventName): string
     {
-        return auth()->user()->name." has been {$eventName} language";
+        return  auth()->user()->name." has been {$eventName} static option";
     }
 }
