@@ -110,3 +110,6 @@ Route::group(['namespace' => 'User', 'as' => 'user.', 'prefix'=>'user', 'middlew
     Route::resource('dashboard', 'DashboardController');
 
 });
+
+
+//Jhumu
