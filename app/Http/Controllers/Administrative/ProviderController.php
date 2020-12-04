@@ -15,8 +15,8 @@ class ProviderController extends Controller
      */
     public function index()
     {
-        $vendors = User::role('provider')->orderBy('id', 'desc')->get();
-        return view('administrative.provider.index', compact('vendors'));
+        $providers = User::role('provider')->orderBy('id', 'desc')->get();
+        return view('administrative.provider.index', compact('providers'));
     }
 
     /**

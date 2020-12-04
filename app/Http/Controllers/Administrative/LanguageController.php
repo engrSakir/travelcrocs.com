@@ -48,14 +48,14 @@ class LanguageController extends Controller
 
         $content = json_encode($request->word);
         if ($content === 'null') {
-            return back()->with(['message' => __('Please fill one minimum one field'),'type' => 'danger']);
+            return back()->withInfo('Please fill one minimum one field');
         }else{
             try {
                 $language->save();
                 file_put_contents(resource_path('lang/') . $language->code . '.json', $content);
-                return redirect()->route('administrative.language.edit', $language->id)->with(['message' => __('Successfully added '.$language->name),'type' => 'success']);
+                return redirect()->route('administrative.language.edit', $language->id)->withToastSuccess('Successfully added language-'.$language->name);
             }catch (\Exception $exception){
-                return back()->with(['message' => __('Something going wrong. Error: '.$exception),'type' => 'error']);
+                return back()->withErrors('Something going wrong.');
             }
         }
     }
@@ -71,13 +71,13 @@ class LanguageController extends Controller
             $contents = json_decode($content_of_json_file);
             return view('administrative.language.show', compact('language', 'contents'));
         }else{
-            return back()->with(['message' => __('Invalid language'),'type' => 'warning']);
+            return back()->withErrors( 'Something going wrong.');
         }
     }
 
     /**
      * @param $id
-     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\View\View
+     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Http\RedirectResponse|\Illuminate\View\View
      */
     public function edit($id)
     {
@@ -87,7 +87,7 @@ class LanguageController extends Controller
             $contents = json_decode($content_of_json_file);
             return view('administrative.language.edit', compact('language', 'contents'));
         }else{
-            return back()->with(['message' => __('Invalid language'),'type' => 'warning']);
+            return back()->withErrors('Something going wrong.');
         }
     }
 
@@ -108,7 +108,7 @@ class LanguageController extends Controller
             ]);
             $content = json_encode($request->word);
             if ($content === 'null') {
-                return back()->with(['message' => __('Please fill one minimum one field'),'type' => 'danger']);
+                return back()->withInfo('Please fill one minimum one field');
             }else{
                 if ($request->language_code != $language->code){
                     //if language code means json file name is changed need to rename first.
@@ -121,21 +121,18 @@ class LanguageController extends Controller
                 try {
                     $language->save();
                     file_put_contents(resource_path('lang/') . $language->code . '.json', $content);
-                    return back()->with(['message' => __('Successfully updated'),'type' => 'success']);
+                    return back()->withToastSuccess('Successfully updated!');
                 }catch (\Exception $exception){
-                    return back()->with(['message' => __('Something going wrong. Error: '.$exception),'type' => 'error']);
+                    return back()->withErrors( 'Something going wrong.');
                 }
             }
         }else{
-            return back()->with(['message' => __('Invalid language'),'type' => 'warning']);
+            return back()->withErrors('Something going wrong.');
         }
     }
 
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
+   /**
+    * eturn \Illuminate\Http\Response
      */
     public function destroy($id)
     {
@@ -151,7 +148,7 @@ class LanguageController extends Controller
             }catch (\Exception $exception){
                 return response()->json([
                     'type' => 'danger',
-                    'message' => 'Error !!! '.$exception->getMessage(),
+                    'message' => 'Error something going wrong!!! ',
                 ]);
             }
         }else{

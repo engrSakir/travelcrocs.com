@@ -19,10 +19,10 @@
                                 <a href="javascript:0;" class="text-muted">Applications</a>
                             </li>
                             <li class="breadcrumb-item">
-                                <a href="{{ route('administrative.language.index') }}" class="text-muted">Languages</a>
+                                <a href="{{ route('administrative.smtp.index') }}" class="text-muted">Mail</a>
                             </li>
                             <li class="breadcrumb-item">
-                                <a href="javascript:0;" class="text-muted">Create</a>
+                                <a href="javascript:0;" class="text-muted">SMTP</a>
                             </li>
                         </ul>
                         <!--end::Breadcrumb-->
@@ -194,7 +194,8 @@
                                </div>
                            </div>
                            <!--begin::Form-->
-                           <form>
+                           <form action="{{ route('administrative.smtp.update') }}" method="post">
+                               @csrf
                                <div class="card-body">
                                    <div class="form-group mb-8">
                                        <div class="alert alert-custom alert-default" role="alert">
@@ -206,40 +207,39 @@
                                    </div>
                                    <div class="form-group">
                                        <label>Email host <span class="text-danger">*</span></label>
-                                       <input type="text" class="form-control"  placeholder="mail@domain.com"/>
+                                       <input type="email" name="host" required class="form-control"  placeholder="mail@domain.com" value="{{ get_static_option('smtp_email_host') }}"/>
                                    </div>
                                    <div class="form-group">
                                        <label>Email port <span class="text-danger">*</span></label>
-                                       <input type="text" class="form-control"  placeholder="465"/>
+                                       <input type="text" name="port" required class="form-control"  placeholder="465" value="{{ get_static_option('smtp_email_port') }}"/>
                                    </div>
                                    <div class="form-group">
                                        <label>Email username <span class="text-danger">*</span></label>
-                                       <input type="text" class="form-control"  placeholder="mail@domain.com"/>
+                                       <input type="email" name="username" required class="form-control"  placeholder="mail@domain.com" value="{{ get_static_option('smtp_email_username') }}"/>
                                    </div>
                                    <div class="form-group">
                                        <label>Email password <span class="text-danger">*</span></label>
-                                       <input type="text" class="form-control"  placeholder="your smtp password"/>
+                                       <input type="text" name="password" required class="form-control"  placeholder="your smtp password" value="{{ get_static_option('smtp_email_password') }}"/>
                                    </div>
                                    <div class="form-group">
-                                       <label for="exampleSelect1">Mail encryption <span class="text-danger">*</span></label>
-                                       <select class="form-control" id="exampleSelect1">
-                                           <option>ssl</option>
-                                           <option>tls</option>
-                                           <option>none</option>
+                                       <label for="encryption">Mail encryption <span class="text-danger">*</span></label>
+                                       <select name="encryption" required class="form-control" id="encryption">
+                                           <option @if(get_static_option('smtp_email_encryption') == 'ssl') selected @endif value="ssl">ssl</option>
+                                           <option @if(get_static_option('smtp_email_encryption') == 'tls') selected @endif value="tls">tls</option>
+                                           <option @if(get_static_option('smtp_email_encryption') == 'none') selected @endif value="none">none</option>
                                        </select>
                                    </div>
                                    <div class="form-group">
                                        <label>From name<span class="text-danger">*</span></label>
-                                       <input type="text" class="form-control"  placeholder="brand name"/>
+                                       <input type="text" name="from_name" required class="form-control"  placeholder="brand name" value="{{ get_static_option('smtp_email_from_name') }}"/>
                                    </div>
                                    <div class="form-group">
                                        <label>From email<span class="text-danger">*</span></label>
-                                       <input type="text" class="form-control"  placeholder="mail@domain.com"/>
+                                       <input type="email" name="from_email" required class="form-control"  placeholder="mail@domain.com" value="{{ get_static_option('smtp_email_from_email') }}"/>
                                    </div>
                                </div>
                                <div class="card-footer">
-                                   <button type="reset" class="btn btn-primary mr-2">Submit</button>
-                                   <button type="reset" class="btn btn-secondary">Cancel</button>
+                                   <button type="submit" class="btn btn-primary mr-2">Submit SMTP configration</button>
                                </div>
                                <div class="card-footer">
                                    <div class="form-group">

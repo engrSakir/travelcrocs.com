@@ -1,5 +1,5 @@
 @extends('layouts.administrative.app')
-
+@push('title') {{ __('Providers') }} @endpush
 @section('content')
     <!--begin::Content-->
     <div class="content d-flex flex-column flex-column-fluid" id="kt_content">
@@ -56,22 +56,22 @@
                             </tr>
                             </thead>
                             <tbody>
-                            @foreach($vendors as $vendor)
+                            @foreach($providers as $provider)
                             <tr>
                                 <td>{{ $loop->iteration }}</td>
                                 <td>
                                     <div class="symbol symbol-40 mr-3">
-                                        <div class="symbol-label" style="background-image: url('{{ $vendor->avatar }}')"></div>
-                                        @if(!$vendor->email_verified_at)
+                                        <div class="symbol-label" style="background-image: url('{{ $provider->avatar }}')"></div>
+                                        @if(!$provider->email_verified_at)
                                         <i class="symbol-badge bg-danger"></i>
                                         @else
                                             <i class="symbol-badge bg-success"></i>
                                         @endif
                                     </div>
                                 </td>
-                                <td>{{ $vendor->name }}</td>
-                                <td>{{ $vendor->email }}</td>
-                                <td>{{ $vendor->created_at->format('M Y') }}</td>
+                                <td>{{ $provider->name }}</td>
+                                <td>{{ $provider->email }}</td>
+                                <td>{{ $provider->created_at->format('M Y') }}</td>
                                 <td nowrap="nowrap">
                                     <div class="dropdown dropdown-inline">
                                         <a href="javascript:;" class="btn btn-sm btn-clean btn-icon" data-toggle="dropdown">

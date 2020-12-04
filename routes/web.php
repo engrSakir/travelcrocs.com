@@ -85,6 +85,7 @@ Route::group(['namespace' => 'Administrative', 'as' => 'administrative.', 'prefi
     Route::group(['prefix'=>'application'], function (){
         Route::group(['prefix'=>'mail'], function (){
             Route::get('/smtp', 'EmailConfigController@smtpGetForm')->name('smtp.index');
+            Route::post('/smtp', 'EmailConfigController@smtpPostForm')->name('smtp.update');
         });
     });
 
