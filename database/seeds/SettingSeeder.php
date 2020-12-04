@@ -11,14 +11,7 @@ class SettingSeeder extends Seeder
      */
     public function run()
     {
-        $setting = new \App\Setting();
-        $setting->key   =   'smtp_email_host';
-        $setting->value =   '';
-        $setting->save();
 
-        $setting = new \App\Setting();
-        $setting->key   =   'smtp_email_port';
-        $setting->value =   '';
-        $setting->save();
+
     }
 }

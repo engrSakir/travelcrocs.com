@@ -57,5 +57,6 @@
 <!-- Template JS Files -->
 @include('layouts.user.partials.foot')
 @include('includes.logout')
+@include('sweetalert::alert')
 </body>
 </html>

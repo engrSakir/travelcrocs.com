@@ -1,5 +1,5 @@
 @extends('layouts.administrative.app')
-
+@push('title') {{ __('SMTP Setup') }} @endpush
 @section('content')
     <!--begin::Content-->
     <div class="content d-flex flex-column flex-column-fluid" id="kt_content">
@@ -174,10 +174,6 @@
                                        </div>
                                    </div>
                                </div>
-                               <div class="card-footer">
-                                   <button type="reset" class="btn btn-primary mr-2">Submit</button>
-                                   <button type="reset" class="btn btn-secondary">Cancel</button>
-                               </div>
                            </form>
                            <!--end::Form-->
                        </div>
@@ -244,6 +240,17 @@
                                <div class="card-footer">
                                    <button type="reset" class="btn btn-primary mr-2">Submit</button>
                                    <button type="reset" class="btn btn-secondary">Cancel</button>
+                               </div>
+                               <div class="card-footer">
+                                   <div class="form-group">
+                                       <label>Send test email to make sure that your SMTP settings is set correctly.</label>
+                                       <div class="input-group">
+                                           <input type="text" class="form-control" placeholder="Type your email .. ">
+                                           <div class="input-group-append">
+                                               <button class="btn btn-primary" type="button">Test!</button>
+                                           </div>
+                                       </div>
+                                   </div>
                                </div>
                            </form>
                            <!--end::Form-->

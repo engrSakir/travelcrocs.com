@@ -100,6 +100,7 @@
 <!--end::Page Scripts-->
 @stack('js')
 @include('includes.logout')
+@include('sweetalert::alert')
 </body>
 <!--end::Body-->
 </html>

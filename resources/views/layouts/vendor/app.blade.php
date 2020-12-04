@@ -62,5 +62,6 @@
 @include('layouts.vendor.partials.foot')
 @stack('js')
 @include('includes.logout')
+@include('sweetalert::alert')
 </body>
 </html>
