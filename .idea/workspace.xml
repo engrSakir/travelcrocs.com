@@ -19,11 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="42c33c20-9443-4946-97ea-543c8a623b1d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
-    </list>
+    <list default="true" id="42c33c20-9443-4946-97ea-543c8a623b1d" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -170,16 +166,16 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\travelcrocs\resources\views\provider" />
-      <recent name="D:\laragon\www\travelcrocs\app\Helpers" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\laragon\www\travelcrocs.com" />
       <recent name="D:\travelcrocs\resources\lang" />
       <recent name="D:\travelcrocs\resources\views\administrative" />
       <recent name="D:\travelcrocs\public\assets\administrative\js\pages\crud\datatables\data-sources" />
       <recent name="D:\travelcrocs\resources\views\layouts\user" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\travelcrocs\resources\views\provider" />
+      <recent name="D:\laragon\www\travelcrocs\app\Helpers" />
     </key>
   </component>
   <component name="RunManager">
@@ -188,7 +184,7 @@
       <method v="2" />
     </configuration>
   </component>
-  <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="false" />
   <component name="SvnConfiguration">
     <configuration />
   </component>

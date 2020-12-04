@@ -90,4 +90,53 @@ if (!function_exists('random_code')){
         return true;
     }
 
+    function setEnvValue(array $values)
+    {
+        $envFile = app()->environmentFilePath();
+        $str = file_get_contents($envFile);
+
+        if (count($values) > 0) {
+            foreach ($values as $envKey => $envValue) {
+                $str .= "\n"; // In case the searched variable is in the last line without \n
+                $keyPosition = strpos($str, "{$envKey}=");
+                $endOfLinePosition = strpos($str, "\n", $keyPosition);
+                $oldLine = substr($str, $keyPosition, $endOfLinePosition - $keyPosition);
+
+                // If key does not exist, add it
+                if (!$keyPosition || !$endOfLinePosition || !$oldLine) {
+                    $str .= "{$envKey}={$envValue}\n";
+                } else {
+                    $str = str_replace($oldLine, "{$envKey}={$envValue}", $str);
+                }
+            }
+        }
+
+        $str = substr($str, 0, -1);
+        if (!file_put_contents($envFile, $str)) return false;
+        return true;
+    }
+
+
+    function sendSmtpTest($to)
+    {
+
+        $subject= 'SMTP Test';
+        $message= 'SMTP working fine';
+        $name = get_static_option('smtp_email_from_name');
+        $from = get_static_option('smtp_email_from_email');
+        $headers = "From: " . $name . " \r\n";
+        $headers .= "Reply-To: <$from> \r\n";
+        $headers .= "Return-Path: " . ($from) . "\r\n";;
+        $headers .= "MIME-Version: 1.0\r\n";
+        $headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
+        $headers .= "X-Priority: 2\nX-MSmail-Priority: high";;
+        $headers .= "X-Mailer: PHP" . phpversion() . "\r\n";
+
+        if (mail($to, $subject, $message, $headers)) {
+            return true;
+        }else{
+            return false;
+        }
+
+    }
 }

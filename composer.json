@@ -21,7 +21,8 @@
         "spatie/laravel-activitylog": "^3.16",
         "spatie/laravel-permission": "^3.17",
         "spatie/laravel-translatable": "^4.5",
-        "yajra/laravel-datatables-oracle": "~9.0"
+        "yajra/laravel-datatables-oracle": "~9.0",
+      "ext-pdo": "*"
     },
     "require-dev": {
         "barryvdh/laravel-debugbar": "^3.5",

@@ -86,6 +86,7 @@ Route::group(['namespace' => 'Administrative', 'as' => 'administrative.', 'prefi
         Route::group(['prefix'=>'mail'], function (){
             Route::get('/smtp', 'EmailConfigController@smtpGetForm')->name('smtp.index');
             Route::post('/smtp', 'EmailConfigController@smtpPostForm')->name('smtp.update');
+            Route::post('/smtp/test', 'EmailConfigController@testSmtpMail')->name('smtp.test');
         });
     });
 
@@ -110,6 +111,3 @@ Route::group(['namespace' => 'User', 'as' => 'user.', 'prefix'=>'user', 'middlew
     Route::resource('dashboard', 'DashboardController');
 
 });
-
-
-//Jhumu
