@@ -187,6 +187,28 @@
                                     </ul>
                                 </div>
                             </li>
+                            <li class="menu-item menu-item-submenu @if(Request::is('*/mail')) menu-item-open menu-item-here @elseif(Request::is('*/mail/*')) menu-item-open menu-item-here @endif" aria-haspopup="true" data-menu-toggle="hover">
+                                <a href="javascript:;" class="menu-link menu-toggle">
+                                    <i class="menu-bullet menu-bullet-line">
+                                        <span></span>
+                                    </i>
+                                    <span class="menu-text">Manage mail</span>
+                                    <i class="menu-arrow"></i>
+                                </a>
+                                <div class="menu-submenu">
+                                    <i class="menu-arrow"></i>
+                                    <ul class="menu-subnav">
+                                        <li class="menu-item @if(Request::is('*/smtp')) menu-item-active @endif" aria-haspopup="true">
+                                            <a href="{{ route('administrative.smtp.index') }}" class="menu-link">
+                                                <i class="menu-bullet menu-bullet-dot">
+                                                    <span></span>
+                                                </i>
+                                                <span class="menu-text">SMTP - Setup</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
                         </ul>
                     </div>
                 </li>

@@ -81,6 +81,12 @@ Route::group(['namespace' => 'Administrative', 'as' => 'administrative.', 'prefi
         Route::resource('language', 'LanguageController');
     });
 
+    Route::group(['prefix'=>'application'], function (){
+        Route::group(['prefix'=>'mail'], function (){
+            Route::get('/smtp', 'EmailConfigController@smtpGetForm')->name('smtp.index');
+        });
+    });
+
 
 });
 
