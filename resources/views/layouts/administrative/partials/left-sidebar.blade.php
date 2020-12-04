@@ -62,8 +62,8 @@
                     </a>
                 </li>
                {{--Vendors--}}
-                <li class="menu-item @if(Request::is('*/vendor')) menu-item-active @endif" aria-haspopup="true">
-                    <a href="{{ route('administrative.vendor.index') }}" class="menu-link">
+                <li class="menu-item @if(Request::is('*/provider')) menu-item-active @endif" aria-haspopup="true">
+                    <a href="{{ route('administrative.provider.index') }}" class="menu-link">
 						<span class="svg-icon menu-icon">
                             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
                             <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -73,7 +73,7 @@
                             </g>
                             </svg><!--end::Svg Icon-->
                         </span>
-                        <span class="menu-text">Vendors</span>
+                        <span class="menu-text">Providers</span>
                     </a>
                 </li>
 

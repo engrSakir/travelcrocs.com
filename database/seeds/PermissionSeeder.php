@@ -14,16 +14,16 @@ class PermissionSeeder extends Seeder
     public function run()
     {
         $administrative= Role::find(1);
-        $vendor= Role::find(2);
+        $provider= Role::find(2);
         $user= Role::find(3);
 
         //administrative access
         $permission = Permission::create(['name' => 'administrative-access']);
         $administrative->givePermissionTo($permission);
 
-        //vendor access
-        $permission = Permission::create(['name' => 'vendor-access']);
-        $vendor->givePermissionTo($permission);
+        //provider access
+        $permission = Permission::create(['name' => 'provider-access']);
+        $provider->givePermissionTo($permission);
 
         //user access
         $permission = Permission::create(['name' => 'user-access']);

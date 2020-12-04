@@ -70,7 +70,7 @@
             </div>
         </div>
     </div>
-</div><!-- end vendor modal-popup -->
+</div><!-- end provider modal-popup -->
 
 <!-- start sign in modal-shared -->
 <div class="modal-popup">
@@ -147,10 +147,10 @@
             $('#registration-modal').modal('show');
         });
 
-        //vendor signup btn
-        $('#vendor-signup-btn').click(function(){
-            $('#registration-form').find("[name='type']").val('vendor')
-            $("#registration-modal-title").html('Register as an vendor')
+        //provider signup btn
+        $('#provider-signup-btn').click(function(){
+            $('#registration-form').find("[name='type']").val('provider')
+            $("#registration-modal-title").html('Register as an provider')
             $('#registration-modal').modal('show');
         });
 

@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    @include('layouts.vendor.partials.head')
+    @include('layouts.provider.partials.head')
     @stack('css')
 </head>
 <body class="section-bg">
 <!-- start cssload-loader -->
-@include('layouts.vendor.partials.loader')
+@include('layouts.provider.partials.loader')
 <!-- end cssload-loader -->
 
 <!-- ================================
        START USER CANVAS MENU
 ================================= -->
-@include('layouts.vendor.partials.user-canvas')
+@include('layouts.provider.partials.user-canvas')
 <!-- end user-canvas-container -->
 <!-- ================================
        END USER CANVAS MENU
@@ -21,7 +21,7 @@
 <!-- ================================
        START SIDEBAR NAV
 ================================= -->
-@include('layouts.vendor.partials.sidebar')
+@include('layouts.provider.partials.sidebar')
 <!-- end sidebar-nav -->
 <!-- ================================
        END SIDEBAR NAV
@@ -31,7 +31,7 @@
     START DASHBOARD AREA
 ================================= -->
 <section class="dashboard-area">
-{{--@include('layouts.vendor.partials.top-bar')--}}
+{{--@include('layouts.provider.partials.top-bar')--}}
     <!-- end dashboard-nav -->
     <div class="dashboard-content-wrap">
         @yield('header')
@@ -40,7 +40,7 @@
             <div class="container-fluid">
                 @yield('content')
                 <!-- end row -->
-               @include('layouts.vendor.partials.footer')
+               @include('layouts.provider.partials.footer')
                 <!-- end row -->
             </div><!-- end container-fluid -->
         </div><!-- end dashboard-main-content -->
@@ -59,7 +59,7 @@
 <!-- end scroll top -->
 
 <!-- Template JS Files -->
-@include('layouts.vendor.partials.foot')
+@include('layouts.provider.partials.foot')
 @stack('js')
 @include('includes.logout')
 @include('sweetalert::alert')

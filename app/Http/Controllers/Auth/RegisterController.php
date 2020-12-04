@@ -74,13 +74,13 @@ class RegisterController extends Controller
         $user->status       = 1;
 
         try {
-            //User and vendor type account
+            //User and provider type account
             if ($request->input('type') == 'user'){
                 $user->save();
                 $user->assignRole('user');
-            }elseif ($request->input('type') == 'vendor'){
+            }elseif ($request->input('type') == 'provider'){
                 $user->save();
-                $user->assignRole('vendor');
+                $user->assignRole('provider');
             }else{
                 return response()->json([
                     'type' => 'dander',

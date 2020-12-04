@@ -58,8 +58,8 @@ Route::get('/dashboard',function (){ return redirect()->route('login'); });
 Route::get('/home',function (){
     if (auth()->user()->hasPermissionTo('user-access')){
         return redirect()->route('user.dashboard.index');
-    }elseif (auth()->user()->hasPermissionTo('vendor-access')){
-        return redirect()->route('vendor.dashboard.index');
+    }elseif (auth()->user()->hasPermissionTo('provider-access')){
+        return redirect()->route('provider.dashboard.index');
     }elseif (auth()->user()->hasPermissionTo('administrative-access')){
         return redirect()->route('administrative.dashboard.index');
     }else{
@@ -77,7 +77,7 @@ Route::group(['namespace' => 'Administrative', 'as' => 'administrative.', 'prefi
     //Dashboard route: administrative.dashboard.index
     Route::resource('dashboard', 'DashboardController');
     Route::resource('user', 'UserController');
-    Route::resource('vendor', 'VendorController');
+    Route::resource('provider', 'ProviderController');
     Route::group(['prefix'=>'application'], function (){
         Route::resource('language', 'LanguageController');
     });
@@ -94,8 +94,8 @@ Route::group(['namespace' => 'Administrative', 'as' => 'administrative.', 'prefi
 /**
  * All of vendors routes
  */
-Route::group(['namespace' => 'Vendor', 'as' => 'vendor.', 'prefix'=>'vendor', 'middleware'=>['permission:vendor-access', 'auth', 'verified']], function (){
-    //Dashboard route: vendor.dashboard.index
+Route::group(['namespace' => 'Provider', 'as' => 'provider.', 'prefix'=>'provider', 'middleware'=>['permission:provider-access', 'auth', 'verified']], function (){
+    //Dashboard route: provider.dashboard.index
     Route::resource('dashboard', 'DashboardController');
 
 });

@@ -191,10 +191,10 @@
                         </div><!-- end main-menu-content -->
                         @guest
                         <div class="nav-btn">
-                            <a href="javascript:0" class="theme-btn" id="vendor-signup-btn">{{ __('Become a vendor') }}</a>
+                            <a href="javascript:0" class="theme-btn" id="provider-signup-btn">{{ __('Become a provider') }}</a>
                         </div>
                         @else
-                            @if(auth()->user()->hasPermissionTo('vendor-access'))
+                            @if(auth()->user()->hasPermissionTo('provider-access'))
                                 <div class="nav-btn">
                                     <a href="#" class="theme-btn" data-toggle="" data-target="">{{ __('Add a ticket') }}</a>
                                 </div>

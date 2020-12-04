@@ -29,7 +29,7 @@
                                     <li><h3 class="title">Account type</h3></li>
                                     <div class="nav-btn">
                                         <a href="{{ route('frontend.assignPermission', 'user') }}" class="theme-btn">Become a user</a>
-                                        <a href="{{ route('frontend.assignPermission', 'vendor') }}" class="theme-btn">Become a vendor</a>
+                                        <a href="{{ route('frontend.assignPermission', 'provider') }}" class="theme-btn">Become a provider</a>
                                     </div>
                                 </ul>
                             </div>

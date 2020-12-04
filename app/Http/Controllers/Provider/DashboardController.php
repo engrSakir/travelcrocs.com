@@ -1,12 +1,11 @@
 <?php
 
-namespace App\Http\Controllers\Administrative;
+namespace App\Http\Controllers\Provider;
 
 use App\Http\Controllers\Controller;
-use App\User;
 use Illuminate\Http\Request;
 
-class VendorController extends Controller
+class DashboardController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,8 +14,7 @@ class VendorController extends Controller
      */
     public function index()
     {
-        $vendors = User::role('vendor')->orderBy('id', 'desc')->get();
-        return view('administrative.vendor.index', compact('vendors'));
+        return view('provider.dashboard.index');
     }
 
     /**

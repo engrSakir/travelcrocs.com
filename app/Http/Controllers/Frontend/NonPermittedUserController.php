@@ -15,8 +15,8 @@ class NonPermittedUserController extends Controller
     public function assignPermission($permission){
         if ($permission == 'user'){
             Auth::user()->assignRole('user');
-        }elseif ($permission == 'vendor'){
-            Auth::user()->assignRole('vendor');
+        }elseif ($permission == 'provider'){
+            Auth::user()->assignRole('provider');
         }
         return redirect()->route('home');
     }

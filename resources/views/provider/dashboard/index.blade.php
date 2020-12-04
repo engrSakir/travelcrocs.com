@@ -1,4 +1,4 @@
-@extends('layouts.vendor.app')
+@extends('layouts.provider.app')
 @push('title') Dashboard @endpush
 @section('header')
     <div class="dashboard-bread dashboard-bread-2">

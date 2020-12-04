@@ -10547,7 +10547,7 @@ function fcamelCase( _all, letter ) {
 
 // Convert dashed to camelCase; used by the css and data modules
 // Support: IE <=9 - 11, Edge 12 - 15
-// Microsoft forgot to hump their vendor prefix (#9572)
+// Microsoft forgot to hump their provider prefix (#9572)
 function camelCase( string ) {
 	return string.replace( rmsPrefix, "ms-" ).replace( rdashAlpha, fcamelCase );
 }
@@ -12981,10 +12981,10 @@ var cssPrefixes = [ "Webkit", "Moz", "ms" ],
 	emptyStyle = document.createElement( "div" ).style,
 	vendorProps = {};
 
-// Return a vendor-prefixed property or undefined
+// Return a provider-prefixed property or undefined
 function vendorPropName( name ) {
 
-	// Check for vendor prefixed names
+	// Check for provider prefixed names
 	var capName = name[ 0 ].toUpperCase() + name.slice( 1 ),
 		i = cssPrefixes.length;
 
@@ -12996,7 +12996,7 @@ function vendorPropName( name ) {
 	}
 }
 
-// Return a potentially-mapped jQuery.cssProps or vendor prefixed property
+// Return a potentially-mapped jQuery.cssProps or provider prefixed property
 function finalPropName( name ) {
 	var final = jQuery.cssProps[ name ] || vendorProps[ name ];
 
@@ -35363,7 +35363,7 @@ function isModifierEnabled(modifiers, modifierName) {
  * @method
  * @memberof Popper.Utils
  * @argument {String} property (camelCase)
- * @returns {String} prefixed property (camelCase or PascalCase, depending on the vendor prefix)
+ * @returns {String} prefixed property (camelCase or PascalCase, depending on the provider prefix)
  */
 function getSupportedPropertyName(property) {
   var prefixes = [false, 'ms', 'Webkit', 'Moz', 'O'];

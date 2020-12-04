@@ -21,7 +21,7 @@ Admin
 Email: admin@travelcrocs.com
 Password: password
 
-Vendor
+Provider
 ............................................\
 Email: vendor@travelcrocs.com
 Password: password
