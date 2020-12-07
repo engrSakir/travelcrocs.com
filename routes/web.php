@@ -83,10 +83,17 @@ Route::group(['namespace' => 'Administrative', 'as' => 'administrative.', 'prefi
     });
 
     Route::group(['prefix'=>'application'], function (){
-        Route::group(['prefix'=>'mail'], function (){
-            Route::get('/smtp', 'EmailConfigController@smtpGetForm')->name('smtp.index');
-            Route::post('/smtp', 'EmailConfigController@smtpPostForm')->name('smtp.update');
-            Route::post('/smtp/test', 'EmailConfigController@testSmtpMail')->name('smtp.test');
+        Route::group(['prefix'=>'mail', 'as' => 'mail.'], function (){
+            Route::get('/smtp', 'EmailConfigController@smtp')->name('smtp');
+            Route::post('/smtp', 'EmailConfigController@updateSmtp')->name('smtp.update');
+            Route::post('/smtp/test', 'EmailConfigController@testSmtp')->name('smtp.test');
+        });
+    });
+
+    Route::group(['prefix'=>'application'], function (){
+        Route::group(['prefix'=>'setting', 'as' => 'setting.'], function (){
+            Route::get('/identity', 'SettingController@identity')->name('identity');
+            Route::post('/identity', 'SettingController@updateIdentity')->name('identity.update');
         });
     });
 

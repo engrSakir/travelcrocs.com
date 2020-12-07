@@ -52,7 +52,7 @@
                                 <div class="alert alert-custom alert-default" role="alert">
                                     <div class="alert-icon"><i class="flaticon-warning text-primary"></i></div>
                                     <div class="alert-text">
-                                        @include('includes.alert')
+                                        {{ __('Language adding note') }}
                                     </div>
                                 </div>
                             </div>

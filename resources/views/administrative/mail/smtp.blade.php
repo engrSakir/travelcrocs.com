@@ -19,7 +19,7 @@
                                 <a href="javascript:0;" class="text-muted">Applications</a>
                             </li>
                             <li class="breadcrumb-item">
-                                <a href="{{ route('administrative.smtp.index') }}" class="text-muted">Mail</a>
+                                <a href="{{ route('administrative.mail.smtp') }}" class="text-muted">Mail</a>
                             </li>
                             <li class="breadcrumb-item">
                                 <a href="javascript:0;" class="text-muted">SMTP</a>
@@ -66,111 +66,111 @@
                                    <div class="form-group row bg-light-success rounded ">
                                        <label for="example-search-input" class="col-6 col-form-label text-right">Permission name</label>
                                        <div class="col-6">
-                                           <div class="switch">
-                                               <label>
-                                                   <input type="checkbox" checked>
-                                                   <span class="lever"></span>
-                                               </label>
-                                           </div>
+                                            <span class="switch switch-success">
+												<label>
+													<input type="checkbox" checked="checked" name="select" />
+													<span></span>
+												</label>
+											</span>
                                        </div>
                                    </div>
                                    <div class="form-group row bg-light-success rounded ">
                                        <label for="example-search-input" class="col-6 col-form-label text-right">Permission name</label>
                                        <div class="col-6">
-                                           <div class="switch">
-                                               <label>
-                                                   <input type="checkbox" checked>
-                                                   <span class="lever"></span>
-                                               </label>
-                                           </div>
+                                            <span class="switch switch-success">
+												<label>
+													<input type="checkbox" checked="checked" name="select" />
+													<span></span>
+												</label>
+											</span>
                                        </div>
                                    </div>
                                    <div class="form-group row bg-light-success rounded ">
                                        <label for="example-search-input" class="col-6 col-form-label text-right">Permission name</label>
                                        <div class="col-6">
-                                           <div class="switch">
-                                               <label>
-                                                   <input type="checkbox" checked>
-                                                   <span class="lever"></span>
-                                               </label>
-                                           </div>
+                                            <span class="switch switch-success">
+												<label>
+													<input type="checkbox" checked="checked" name="select" />
+													<span></span>
+												</label>
+											</span>
                                        </div>
                                    </div>
                                    <div class="form-group row bg-light-success rounded ">
                                        <label for="example-search-input" class="col-6 col-form-label text-right">Permission name</label>
                                        <div class="col-6">
-                                           <div class="switch">
-                                               <label>
-                                                   <input type="checkbox" checked>
-                                                   <span class="lever"></span>
-                                               </label>
-                                           </div>
+                                            <span class="switch switch-success">
+												<label>
+													<input type="checkbox" checked="checked" name="select" />
+													<span></span>
+												</label>
+											</span>
                                        </div>
                                    </div>
                                    <div class="form-group row bg-light-success rounded ">
                                        <label for="example-search-input" class="col-6 col-form-label text-right">Permission name</label>
                                        <div class="col-6">
-                                           <div class="switch">
-                                               <label>
-                                                   <input type="checkbox" checked>
-                                                   <span class="lever"></span>
-                                               </label>
-                                           </div>
+                                            <span class="switch switch-success">
+												<label>
+													<input type="checkbox" checked="checked" name="select" />
+													<span></span>
+												</label>
+											</span>
                                        </div>
                                    </div>
                                    <div class="form-group row bg-light-success rounded ">
                                        <label for="example-search-input" class="col-6 col-form-label text-right">Permission name</label>
                                        <div class="col-6">
-                                           <div class="switch">
-                                               <label>
-                                                   <input type="checkbox" checked>
-                                                   <span class="lever"></span>
-                                               </label>
-                                           </div>
+                                            <span class="switch switch-success">
+												<label>
+													<input type="checkbox" checked="checked" name="select" />
+													<span></span>
+												</label>
+											</span>
                                        </div>
                                    </div>
                                    <div class="form-group row bg-light-success rounded ">
                                        <label for="example-search-input" class="col-6 col-form-label text-right">Permission name</label>
                                        <div class="col-6">
-                                           <div class="switch">
-                                               <label>
-                                                   <input type="checkbox" checked>
-                                                   <span class="lever"></span>
-                                               </label>
-                                           </div>
+                                            <span class="switch switch-success">
+												<label>
+													<input type="checkbox" checked="checked" name="select" />
+													<span></span>
+												</label>
+											</span>
                                        </div>
                                    </div>
                                    <div class="form-group row bg-light-success rounded ">
                                        <label for="example-search-input" class="col-6 col-form-label text-right">Permission name</label>
                                        <div class="col-6">
-                                           <div class="switch">
-                                               <label>
-                                                   <input type="checkbox" checked>
-                                                   <span class="lever"></span>
-                                               </label>
-                                           </div>
+                                            <span class="switch switch-success">
+												<label>
+													<input type="checkbox" checked="checked" name="select" />
+													<span></span>
+												</label>
+											</span>
                                        </div>
                                    </div>
                                    <div class="form-group row bg-light-success rounded ">
                                        <label for="example-search-input" class="col-6 col-form-label text-right">Permission name</label>
                                        <div class="col-6">
-                                           <div class="switch">
-                                               <label>
-                                                   <input type="checkbox" checked>
-                                                   <span class="lever"></span>
-                                               </label>
-                                           </div>
+                                            <span class="switch switch-success">
+												<label>
+													<input type="checkbox" checked="checked" name="select" />
+													<span></span>
+												</label>
+											</span>
                                        </div>
                                    </div>
                                    <div class="form-group row bg-light-success rounded ">
                                        <label for="example-search-input" class="col-6 col-form-label text-right">Permission name</label>
                                        <div class="col-6">
-                                           <div class="switch">
-                                               <label>
-                                                   <input type="checkbox" checked>
-                                                   <span class="lever"></span>
-                                               </label>
-                                           </div>
+                                            <span class="switch switch-success">
+												<label>
+													<input type="checkbox" checked="checked" name="select" />
+													<span></span>
+												</label>
+											</span>
                                        </div>
                                    </div>
                                </div>
@@ -203,7 +203,7 @@
                                            </div>
                                        </div>
                                    </div>
-                                   <form action="{{ route('administrative.smtp.update') }}" method="post">
+                                   <form action="{{ route('administrative.mail.smtp.update') }}" method="post">
                                        @csrf
                                        <div class="form-group">
                                            <label>Email host <span class="text-danger">*</span></label>
@@ -240,11 +240,11 @@
                                    </form>
                                </div>
                                <div class="card-footer">
-                                   <button type="submit" class="btn btn-primary mr-2">Submit SMTP configration</button>
+                                   <button type="submit" class="btn btn-primary mr-2">Submit SMTP configuration</button>
                                </div>
 
                                <div class="card-footer">
-                                   <form action="{{ route('administrative.smtp.test') }}" method="post">
+                                   <form action="{{ route('administrative.mail.smtp.test') }}" method="post">
                                        @csrf
                                        <div class="form-group">
                                            <label>Send test email to make sure that your SMTP settings is set correctly.</label>

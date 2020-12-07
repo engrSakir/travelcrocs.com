@@ -7,11 +7,11 @@ use Illuminate\Http\Request;
 
 class EmailConfigController extends Controller
 {
-    public function smtpGetForm(){
-        return view('administrative.smtp.index');
+    public function smtp(){
+        return view('administrative.mail.smtp');
     }
 
-    public function smtpPostForm(Request $request){
+    public function updateSmtp(Request $request){
         $request->validate([
             'host' => 'required',
             'port' => 'required',
@@ -52,12 +52,12 @@ class EmailConfigController extends Controller
         }
     }
 
-    public function testSmtpMail(Request $request){
+    public function testSmtp(Request $request){
         $request->validate([
             'email' => 'required|email'
         ]);
         if (sendSmtpTest($request->input('email')) == true){
-            return redirect()->back()->withSuccess('SMTP working Successfully !');
+            return redirect()->back()->withToastSuccess('SMTP working Successfully !');
         }else{
             return redirect()->back()->withErrors('SMTP is not working !');
         }

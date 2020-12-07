@@ -199,11 +199,33 @@
                                     <i class="menu-arrow"></i>
                                     <ul class="menu-subnav">
                                         <li class="menu-item @if(Request::is('*/smtp')) menu-item-active @endif" aria-haspopup="true">
-                                            <a href="{{ route('administrative.smtp.index') }}" class="menu-link">
+                                            <a href="{{ route('administrative.mail.smtp') }}" class="menu-link">
                                                 <i class="menu-bullet menu-bullet-dot">
                                                     <span></span>
                                                 </i>
                                                 <span class="menu-text">SMTP - Setup</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="menu-item menu-item-submenu @if(Request::is('*/setting')) menu-item-open menu-item-here @elseif(Request::is('*/setting/*')) menu-item-open menu-item-here @endif" aria-haspopup="true" data-menu-toggle="hover">
+                                <a href="javascript:;" class="menu-link menu-toggle">
+                                    <i class="menu-bullet menu-bullet-line">
+                                        <span></span>
+                                    </i>
+                                    <span class="menu-text">Setting</span>
+                                    <i class="menu-arrow"></i>
+                                </a>
+                                <div class="menu-submenu">
+                                    <i class="menu-arrow"></i>
+                                    <ul class="menu-subnav">
+                                        <li class="menu-item @if(Request::is('*/identity')) menu-item-active @endif" aria-haspopup="true">
+                                            <a href="{{ route('administrative.setting.identity') }}" class="menu-link">
+                                                <i class="menu-bullet menu-bullet-dot">
+                                                    <span></span>
+                                                </i>
+                                                <span class="menu-text">Identity - Setup</span>
                                             </a>
                                         </li>
                                     </ul>

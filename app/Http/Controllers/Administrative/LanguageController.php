@@ -112,7 +112,7 @@ class LanguageController extends Controller
             }else{
                 if ($request->language_code != $language->code){
                     //if language code means json file name is changed need to rename first.
-                    rename(resource_path('lang/').$language->code . '.json', $request->language_code . '.json');
+                    rename(resource_path('lang/').$language->code . '.json', resource_path('lang/').$request->language_code . '.json');
                     $language->code = $request->language_code;
                 }
                 $language->name     = $request->language_name;

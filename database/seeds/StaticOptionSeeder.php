@@ -11,6 +11,8 @@ class StaticOptionSeeder extends Seeder
      */
     public function run()
     {
+        set_static_option('session_lifetime', '');
+
         set_static_option('smtp_email_host', '');
         set_static_option('smtp_email_port', '');
         set_static_option('smtp_email_username', '');
@@ -18,5 +20,11 @@ class StaticOptionSeeder extends Seeder
         set_static_option('smtp_email_encryption', '');
         set_static_option('smtp_email_from_name', '');
         set_static_option('smtp_email_from_email', '');
+
+        set_static_option('website_hero_bg_color', '');
+        set_static_option('website_hero_bg_image', '');
+        set_static_option('website_hero_bg_lines', ''); // enable | disable
+        set_static_option('website_hero_bg_type', '');//image | color
+
     }
 }

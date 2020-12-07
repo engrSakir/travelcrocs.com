@@ -1,11 +1,13 @@
 <section class="hero-wrapper">
-    <div class="hero-box hero-bg">
+    <div @if(get_static_option('website_hero_bg_color')) class="hero-box" style="background-color: {{ get_static_option('website_hero_bg_color') }}" @else class="hero-box hero-bg" @endif>
+        @if(get_static_option('website_hero_bg_lines') != 'disable')
         <span class="line-bg line-bg1"></span>
         <span class="line-bg line-bg2"></span>
         <span class="line-bg line-bg3"></span>
         <span class="line-bg line-bg4"></span>
         <span class="line-bg line-bg5"></span>
         <span class="line-bg line-bg6"></span>
+        @endif
         <div class="container">
             <div class="row">
                 <div class="col-lg-10 mx-auto responsive--column-l">
