@@ -93,7 +93,11 @@ Route::group(['namespace' => 'Administrative', 'as' => 'administrative.', 'prefi
     Route::group(['prefix'=>'application'], function (){
         Route::group(['prefix'=>'setting', 'as' => 'setting.'], function (){
             Route::get('/identity', 'SettingController@identity')->name('identity');
-            Route::post('/identity', 'SettingController@updateIdentity')->name('identity.update');
+            Route::post('/identity/image', 'SettingController@updateIdentityImage')->name('identity_image.update');
+            Route::post('/identity/color', 'SettingController@updateIdentityColor')->name('identity_color.update');
+
+            Route::get('/contact', 'SettingController@contact')->name('contact');
+            Route::post('/contact', 'SettingController@updateContact')->name('contact.update');
         });
     });
 

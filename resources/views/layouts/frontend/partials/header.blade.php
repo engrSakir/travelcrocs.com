@@ -6,8 +6,30 @@
                     <div class="header-top-content">
                         <div class="header-left">
                             <ul class="list-items">
-                                <li><a href="#"><i class="la la-phone mr-1"></i>(123) 123-456</a></li>
-                                <li><a href="#"><i class="la la-envelope mr-1"></i>info@travelcrocs.com</a></li>
+                                <li>
+                                    @if(get_static_option('company_main_phone'))
+                                    <a href="tel:{{ get_static_option('company_main_phone') }}"><i class="la la-phone mr-1"></i>
+                                        {{ get_static_option('company_main_phone') }}
+                                    </a>
+                                    @else
+                                        <a href="#"><i class="la la-phone mr-1"></i>
+                                            (123) 123-456
+                                        </a>
+                                    @endif
+                                </li>
+                                <li>
+                                    @if(get_static_option('company_main_email'))
+                                        <a href="mailto:{{ get_static_option('company_main_email') }}">
+                                            <i class="la la-envelope mr-1"></i>
+                                            {{ get_static_option('company_main_email') }}
+                                        </a>
+                                    @else
+                                        <a href="#">
+                                            <i class="la la-envelope mr-1"></i>info@travelcrocs.com
+                                        </a>
+                                    @endif
+
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -56,7 +78,10 @@
                     <div class="menu-wrapper">
                         <a href="#" class="down-button"><i class="la la-angle-down"></i></a>
                         <div class="logo">
-                            <a href="{{ route('frontend.index') }}"><img src="{{ asset('assets/frontend/images/logo.png') }}" alt="logo"></a>
+                            <a href="{{ route('frontend.index') }}">
+                                <img @if(get_static_option('website_logo')) src="{{ asset(get_static_option('website_logo')) }}" alt=""
+                                     @else src="{{ asset('assets/frontend/images/logo.png') }}" alt="" @endif >
+                            </a>
                             <div class="menu-toggler">
                                 <i class="la la-bars"></i>
                                 <i class="la la-times"></i>

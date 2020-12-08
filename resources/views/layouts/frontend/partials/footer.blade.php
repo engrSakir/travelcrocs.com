@@ -4,7 +4,10 @@
             <div class="col-lg-3 responsive-column">
                 <div class="footer-item">
                     <div class="footer-logo padding-bottom-30px">
-                        <a href="#" class="foot__logo"><img src="{{ asset('assets/frontend/images/logo.png') }}" alt="logo"></a>
+                        <a href="#" class="foot__logo">
+                            <img @if(get_static_option('website_logo')) src="{{ asset(get_static_option('website_logo')) }}" alt=""
+                                 @else src="{{ asset('assets/frontend/images/logo.png') }}" alt="" @endif>
+                        </a>
                     </div><!-- end logo -->
                     <p class="footer__desc">Morbi convallis bibendum urna ut viverra. Maecenas consequat</p>
                     <ul class="list-items pt-3">
@@ -96,7 +99,8 @@
             <div class="col-lg-5">
                 <div class="copy-right-content d-flex align-items-center justify-content-end padding-top-30px">
                     <h3 class="title font-size-15 pr-2">We Accept</h3>
-                    <img src="{{ asset('assets/frontend/images/payment-img.png') }}" alt="">
+                    <img @if(get_static_option('we_accept')) src="{{ asset(get_static_option('we_accept')) }}" alt=""
+                         @else src="{{ asset('assets/frontend/images/logo.png') }}" alt="" @endif alt="">
                 </div><!-- end copy-right-content -->
             </div><!-- end col-lg-5 -->
         </div><!-- end row -->

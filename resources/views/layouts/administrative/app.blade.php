@@ -27,7 +27,7 @@
     <link href="{{ asset('assets/administrative/css/themes/layout/brand/dark.css') }}" rel="stylesheet" type="text/css" />
     <link href="{{ asset('assets/administrative/css/themes/layout/aside/dark.css') }}" rel="stylesheet" type="text/css" />
     <!--end::Layout Themes-->
-    <link rel="shortcut icon" href="#" />
+    <link rel="icon" @if(get_static_option('favicon')) href="{{ asset(get_static_option('favicon')) }}" @endif>
     <!--====== AJAX ======-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     @stack('css')

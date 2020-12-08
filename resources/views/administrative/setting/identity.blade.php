@@ -57,100 +57,104 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="form-group row rounded ">
-                                        <div class="col-12 text-center">
+                                   {{--Website Logo--}}
+                                    <div class="form-group row bg-light-success rounded ">
+                                         <div class="col-6 text-right">
+                                            <label for="example-search-input" class="col-form-label "><b>Website logo (134px, 38px)</b></label>
+                                        </div>
+                                        <div class="col-6">
                                             <div class="overlay">
-                                                <div class="overlay-wrapper rounded bg-success text-center">
+                                                <div class="overlay-wrapper rounded bg-light-success text-center">
+                                                    <img @if(get_static_option('website_logo'))  src="{{ asset(get_static_option('website_logo')) }}" @else src="{{ asset('assets/administrative/media/products/1.png') }}" @endif alt="" id="image-display" class="mw-100 w-200px image-display">
+                                                </div>
+                                                <div class="overlay-layer">
+                                                    <input style="display: none" type="file" accept="image/*" class="image-importer">
+                                                    <button type="button" class="btn btn-icon btn-info mr-2 image-chose-btn">
+                                                        <i class="ki ki-plus text-white"></i>
+                                                    </button>
+                                                    <button type="button" class="btn btn-icon btn-warning mr-2 image-reset-btn" @if(get_static_option('website_logo'))  value="{{ asset(get_static_option('website_logo')) }}" @else value="{{ asset('assets/administrative/media/products/1.png') }}" @endif>
+                                                        <i class="ki ki-reload text-white"></i>
+                                                    </button>
+                                                    <button type="button" class="btn btn-icon btn-info mr-2 submit-btn" value="website_logo">
+                                                        <i class="ki ki-bold-check text-white"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    {{--Favicon--}}
+                                    <div class="form-group row bg-light-success rounded ">
+                                         <div class="col-6 text-right">
+                                            <label for="example-search-input" class="col-form-label "><b>Favicon (16px, 16px)</b></label>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="overlay">
+                                                <div class="overlay-wrapper rounded bg-light-success text-center">
+                                                    <img @if(get_static_option('favicon'))  src="{{ asset(get_static_option('favicon')) }}" @else src="{{ asset('assets/administrative/media/products/1.png') }}" @endif alt="" id="image-display" class="mw-100 w-200px image-display">
+                                                </div>
+                                                <div class="overlay-layer">
+                                                    <input style="display: none" type="file" accept="image/*" class="image-importer">
+                                                    <button type="button" class="btn btn-icon btn-info mr-2 image-chose-btn">
+                                                        <i class="ki ki-plus text-white"></i>
+                                                    </button>
+                                                    <button type="button" class="btn btn-icon btn-warning mr-2 image-reset-btn" @if(get_static_option('favicon'))  value="{{ asset(get_static_option('favicon')) }}" @else value="{{ asset('assets/administrative/media/products/1.png') }}" @endif>
+                                                        <i class="ki ki-reload text-white"></i>
+                                                    </button>
+                                                    <button type="button" class="btn btn-icon btn-info mr-2 submit-btn" value="favicon">
+                                                        <i class="ki ki-bold-check text-white"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    {{--Breadcrumb--}}
+                                    <div class="form-group row bg-light-success rounded ">
+                                        <div class="col-6 text-right">
+                                            <label for="example-search-input" class="col-form-label "><b>Breadcrumb Image</b></label>
+                                            <br>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="overlay">
+                                                <div class="overlay-wrapper rounded bg-light-success text-center">
                                                     <img src="{{ asset('assets/administrative/media/products/1.png') }}" alt="" id="image-display" class="mw-100 w-200px image-display">
                                                 </div>
                                                 <div class="overlay-layer">
                                                     <input style="display: none" type="file" accept="image/*" class="image-importer">
-                                                    <button class="btn font-weight-bolder btn-sm btn-primary mr-2 image-chose-btn">Chose</button>
-                                                    <button class="btn font-weight-bolder btn-sm btn-primary mr-2 image-reset-btn" value="{{ asset('assets/administrative/media/products/1.png') }}">Reset</button>
-                                                    <button class="btn font-weight-bolder btn-sm btn-light-primary">Upload</button>
+                                                    <button type="button" class="btn btn-icon btn-info mr-2 image-chose-btn">
+                                                        <i class="ki ki-plus text-white"></i>
+                                                    </button>
+                                                    <button type="button" class="btn btn-icon btn-warning mr-2 image-reset-btn" value="{{ asset('assets/administrative/media/products/1.png') }}">
+                                                        <i class="ki ki-reload text-white"></i>
+                                                    </button>
+                                                    <button type="button" class="btn btn-icon btn-info mr-2">
+                                                        <i class="ki ki-bold-check text-white"></i>
+                                                    </button>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="form-group row rounded ">
-                                        <div class="col-12 text-center">
+                                    {{--We Accept--}}
+                                    <div class="form-group row bg-light-success rounded ">
+                                        <div class="col-6 text-right">
+                                            <label for="example-search-input" class="col-form-label "><b>We accept (100px, 21px)</b></label>
+                                        </div>
+                                        <div class="col-6">
                                             <div class="overlay">
-                                                <div class="overlay-wrapper rounded bg-success text-center">
-                                                    <img src="{{ asset('assets/administrative/media/products/1.png') }}" alt="" id="image-display" class="mw-100 w-200px image-display">
+                                                <div class="overlay-wrapper rounded bg-light-success text-center">
+                                                    <img @if(get_static_option('we_accept'))  src="{{ asset(get_static_option('we_accept')) }}" @else src="{{ asset('assets/administrative/media/products/1.png') }}" @endif alt="" id="image-display" class="mw-100 w-200px image-display">
                                                 </div>
                                                 <div class="overlay-layer">
                                                     <input style="display: none" type="file" accept="image/*" class="image-importer">
-                                                    <button class="btn font-weight-bolder btn-sm btn-primary mr-2 image-chose-btn">Chose</button>
-                                                    <button class="btn font-weight-bolder btn-sm btn-primary mr-2 image-reset-btn" value="{{ asset('assets/administrative/media/products/1.png') }}">Reset</button>
-                                                    <button class="btn font-weight-bolder btn-sm btn-light-primary">Upload</button>
+                                                    <button type="button" class="btn btn-icon btn-info mr-2 image-chose-btn">
+                                                        <i class="ki ki-plus text-white"></i>
+                                                    </button>
+                                                    <button type="button" class="btn btn-icon btn-warning mr-2 image-reset-btn" @if(get_static_option('we_accept'))  value="{{ asset(get_static_option('we_accept')) }}" @else value="{{ asset('assets/administrative/media/products/1.png') }}" @endif>
+                                                        <i class="ki ki-reload text-white"></i>
+                                                    </button>
+                                                    <button type="button" class="btn btn-icon btn-info mr-2 submit-btn" value="we_accept">
+                                                        <i class="ki ki-bold-check text-white"></i>
+                                                    </button>
                                                 </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="form-group row bg-light-success rounded ">
-                                         <div class="col-6 text-right">
-                                            <label for="example-search-input" class="col-form-label ">Favicon</label>
-                                            <br>
-                                            <a href="#" class="btn btn-info font-weight-bold mr-2">
-                                                <i class="flaticon-upload-1"></i>
-                                            </a>
-                                        </div>
-                                        <div class="col-6">
-                                            <div class="image-input image-input-outline" id="favicon">
-                                                <div class="image-input-wrapper" style="background-image: url({{ asset('assets/administrative/media/users/100_1.jpg') }})"></div>
-                                                <label class="btn btn-xs btn-icon btn-circle btn-white btn-hover-text-primary btn-shadow" data-action="change" data-toggle="tooltip" title="" data-original-title="Change avatar">
-                                                    <i class="fa fa-pen icon-sm text-muted"></i>
-                                                    <input type="file" name="profile_avatar" accept=".png, .jpg, .jpeg"/>
-                                                    <input type="hidden" name="profile_avatar_remove"/>
-                                                </label>
-                                                <span class="btn btn-xs btn-icon btn-circle btn-white btn-hover-text-primary btn-shadow" data-action="cancel" data-toggle="tooltip" title="Cancel avatar">
-                                                  <i class="ki ki-bold-close icon-xs text-muted"></i>
-                                                </span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="form-group row bg-light-success rounded ">
-                                         <div class="col-6 text-right">
-                                            <label for="example-search-input" class="col-form-label ">Breadcrumb Image</label>
-                                            <br>
-                                            <a href="#" class="btn btn-info font-weight-bold mr-2">
-                                                <i class="flaticon-upload-1"></i>
-                                            </a>
-                                        </div>
-                                        <div class="col-6">
-                                            <div class="image-input image-input-outline" id="kt_image_1">
-                                                <div class="image-input-wrapper" style="background-image: url({{ asset('assets/administrative/media/users/100_1.jpg') }})"></div>
-                                                <label class="btn btn-xs btn-icon btn-circle btn-white btn-hover-text-primary btn-shadow" data-action="change" data-toggle="tooltip" title="" data-original-title="Change avatar">
-                                                    <i class="fa fa-pen icon-sm text-muted"></i>
-                                                    <input type="file" name="profile_avatar" accept=".png, .jpg, .jpeg"/>
-                                                    <input type="hidden" name="profile_avatar_remove"/>
-                                                </label>
-                                                <span class="btn btn-xs btn-icon btn-circle btn-white btn-hover-text-primary btn-shadow" data-action="cancel" data-toggle="tooltip" title="Cancel avatar">
-                                                  <i class="ki ki-bold-close icon-xs text-muted"></i>
-                                                </span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="form-group row bg-light-success rounded ">
-                                         <div class="col-6 text-right">
-                                            <label for="example-search-input" class="col-form-label ">We Accept</label>
-                                            <br>
-                                            <a href="#" class="btn btn-info font-weight-bold mr-2">
-                                                <i class="flaticon-upload-1"></i>
-                                            </a>
-                                        </div>
-                                        <div class="col-6">
-                                            <div class="image-input image-input-outline" id="kt_image_1">
-                                                <div class="image-input-wrapper" style="background-image: url({{ asset('assets/administrative/media/users/100_1.jpg') }})"></div>
-                                                <label class="btn btn-xs btn-icon btn-circle btn-white btn-hover-text-primary btn-shadow" data-action="change" data-toggle="tooltip" title="" data-original-title="Change avatar">
-                                                    <i class="fa fa-pen icon-sm text-muted"></i>
-                                                    <input type="file" name="profile_avatar" accept=".png, .jpg, .jpeg"/>
-                                                    <input type="hidden" name="profile_avatar_remove"/>
-                                                </label>
-                                                <span class="btn btn-xs btn-icon btn-circle btn-white btn-hover-text-primary btn-shadow" data-action="cancel" data-toggle="tooltip" title="Cancel avatar">
-                                                  <i class="ki ki-bold-close icon-xs text-muted"></i>
-                                                </span>
                                             </div>
                                         </div>
                                     </div>
@@ -178,12 +182,12 @@
                                         </div>
                                     </div>
                                 </div>
-                                <form action="{{ route('administrative.mail.smtp.update') }}" method="post">
+                                <form action="{{ route('administrative.setting.identity_color.update') }}" method="post">
                                     @csrf
                                     <div class="form-group row">
                                         <label for="hero-bg-color" class="col-2 col-form-label">Hero bg</label>
                                         <div class="col-10">
-                                            <input class="form-control" type="color" value="{{ get_static_option('website_hero_bg_color') }}" id="hero-bg-color"/>
+                                            <input class="form-control" type="color" name="hero_bg" value="{{ get_static_option('website_hero_bg_color') }}" id="hero-bg-color"/>
                                         </div>
                                     </div>
                                     <div class="form-group row">
@@ -226,12 +230,15 @@
                                         <label for="example-color-input" class="col-2 col-form-label">Color</label>
                                         <div class="col-10">
                                             <input class="form-control" type="color" value="#563d7c" id="example-color-input"/>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="example-color-input" class="col-2 col-form-label"></label>
+                                        <div class="col-10">
+                                            <button type="submit" class="btn btn-primary mr-2">Submit colors</button>
                                         </div>
                                     </div>
                                 </form>
-                            </div>
-                            <div class="card-footer">
-                                <button type="submit" class="btn btn-primary mr-2">Submit SMTP configuration</button>
                             </div>
                             <!--end::Form-->
                         </div>
@@ -246,6 +253,67 @@
     <!--end::Content-->
 @endsection
 @push('js')
+    <script>
+        $(document).ready(function() {
+            //Submit image without reload
+            $('.submit-btn').click(function(){
+                var formData = new FormData();
+                formData.append('type', $(this).val())
+                formData.append($(this).val(), $(this).parent().parent().find('.image-importer')[0].files[0])
+                var this_button = $(this);
+                $.ajax({
+                    method: 'POST',
+                    url: "{{ route('administrative.setting.identity_image.update') }}",
+                    headers: {'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')},
+                    data: formData,
+                    processData: false,
+                    contentType: false,
+                    beforeSend: function (){
+                        this_button.prop("disabled", true)
+                    },
+                    complete: function (){
+                        this_button.prop("disabled", false)
+                    },
+                    success: function (response_data) {
+                        if (response_data.type == 'success'){
+                            this_button.parent().parent().find('.image-display').attr("src",'{{ url('/') }}/'+response_data.image_src);
+                            this_button.parent().find('.image-reset-btn').val('{{ url('/') }}/'+response_data.image_src);
+                            this_button.parent().find('.image-importer').val('');
+                            Swal.fire({
+                                position: 'top-end',
+                                icon: response_data.type,
+                                title: response_data.message,
+                                showConfirmButton: false,
+                                timer: 1500
+                            })
+                        }else{
+                            Swal.fire({
+                                icon: response_data.type,
+                                title: 'Oops...',
+                                text: response_data.message,
+                            })
+                        }
+                    },
+                    error: function (xhr) {
+                        var errorMessage = '<div class="card bg-danger">\n' +
+                            '                        <div class="card-body text-center p-5">\n' +
+                            '                            <span class="text-white">';
+                        $.each(xhr.responseJSON.errors, function(key,value) {
+                            errorMessage +=(''+value+'<br>');
+                        });
+                        errorMessage +='</span>\n' +
+                            '                        </div>\n' +
+                            '                    </div>';
+                        Swal.fire({
+                            icon: 'error',
+                            title: 'Oops...',
+                            footer: errorMessage
+                        })
+                    },
+                })
+            });
+        });
+    </script>
     @include('includes.image-upload-helper')
     <!--begin::Page Scripts(used by this page)-->
     <script src="{{ asset('assets/administrative/js/pages/crud/file-upload/image-input.js') }}"></script>
