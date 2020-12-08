@@ -100,7 +100,7 @@
                 <div class="copy-right-content d-flex align-items-center justify-content-end padding-top-30px">
                     <h3 class="title font-size-15 pr-2">We Accept</h3>
                     <img @if(get_static_option('we_accept')) src="{{ asset(get_static_option('we_accept')) }}" alt=""
-                         @else src="{{ asset('assets/frontend/images/logo.png') }}" alt="" @endif alt="">
+                         @else src="{{ asset('assets/frontend/images/payment-img.png') }}" alt="" @endif alt="">
                 </div><!-- end copy-right-content -->
             </div><!-- end col-lg-5 -->
         </div><!-- end row -->
