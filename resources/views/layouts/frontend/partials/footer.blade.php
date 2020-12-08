@@ -84,16 +84,22 @@
                 </div>
             </div><!-- end col-lg-4 -->
         </div><!-- end row -->
-    </div sty><!-- end container -->
+    </div><!-- end container -->
     <div class="section-block mt-4"></div>
     <div class="container">
         <div class="row align-items-center">
             <div class="col-lg-7">
                 <div class="copy-right padding-top-30px">
+                    @if(get_static_option('website_footer_credit'))
                     <p class="copy__desc">
-                        &copy; Copyright {{ now()->year }} Reserved
-                        <span class="la la-plane"></span> by <a href="{{ url('/') }}">{{ config('app.name') }}</a>
+                       {!! get_static_option('website_footer_credit') !!}
                     </p>
+                    @else
+                        <p class="copy__desc">
+                            &copy; Copyright {{ now()->year }} Reserved
+                            <span class="la la-plane"></span> by <a href="{{ url('/') }}">{{ config('app.name') }}</a>
+                        </p>
+                    @endif
                 </div><!-- end copy-right -->
             </div><!-- end col-lg-7 -->
             <div class="col-lg-5">
