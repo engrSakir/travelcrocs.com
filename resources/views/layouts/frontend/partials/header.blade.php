@@ -40,9 +40,9 @@
                             <div class="header-right-action">
                                 <div class="select-contain select--contain w-auto">
                                     <select class="select-contain-select" onchange="location = this.value;">
-                                        @foreach(activeLanguages() as $activeLanguage)
-                                            <option value="{{ route('languageSwitcher', $activeLanguage->code) }}" @if(currentLanguage()->code == $activeLanguage->code) selected @endif data-content='<span class="flag-icon flag-icon-us mr-1"></span> {{ $activeLanguage->name }}'>
-                                                {{ $activeLanguage->name }}
+                                        @foreach(active_languages() as $active_language)
+                                            <option value="{{ route('languageSwitcher', $active_language->code) }}" @if(current_language()->code == $active_language->code) selected @endif data-content='<span class="flag-icon flag-icon-us mr-1"></span> {{ $active_language->name }}'>
+                                                {{ $active_language->name }}
                                             </option>
                                         @endforeach
                                     </select>

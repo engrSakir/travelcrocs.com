@@ -98,6 +98,9 @@ Route::group(['namespace' => 'Administrative', 'as' => 'administrative.', 'prefi
 
             Route::get('/contact', 'SettingController@contact')->name('contact');
             Route::post('/contact', 'SettingController@updateContact')->name('contact.update');
+
+            Route::get('/seo', 'SettingController@seo')->name('seo');
+            Route::post('/seo', 'SettingController@updateSeo')->name('seo.update');
         });
     });
 

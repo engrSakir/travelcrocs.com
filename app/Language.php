@@ -31,4 +31,12 @@ class Language extends Model
     {
         return auth()->user()->name." has been {$eventName} language";
     }
+
+    /**
+     * Relation
+     */
+    //Accounts
+    public function application_seo(){
+        return $this->hasOne(ApplicationSeo::class,'language_code','code');
+    }
 }

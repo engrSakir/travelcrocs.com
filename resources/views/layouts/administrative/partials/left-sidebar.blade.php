@@ -243,6 +243,19 @@
                                         </li>
                                     </ul>
                                 </div>
+                                <div class="menu-submenu">
+                                    <i class="menu-arrow"></i>
+                                    <ul class="menu-subnav">
+                                        <li class="menu-item @if(Request::is('*/seo')) menu-item-active @endif" aria-haspopup="true">
+                                            <a href="{{ route('administrative.setting.seo') }}" class="menu-link">
+                                                <i class="menu-bullet menu-bullet-dot">
+                                                    <span></span>
+                                                </i>
+                                                <span class="menu-text">SEO - Setup</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
                             </li>
                         </ul>
                     </div>

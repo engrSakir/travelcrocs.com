@@ -1337,13 +1337,13 @@
                     <!--begin::Nav-->
                     <ul class="navi navi-hover py-4">
                         <!--begin::Item-->
-                        @foreach(activeLanguages() as $activeLanguage)
+                        @foreach(active_languages() as $active_language)
                         <li class="navi-item">
-                            <a href="{{ route('languageSwitcher', $activeLanguage->code) }}" class="navi-link">
+                            <a href="{{ route('languageSwitcher', $active_language->code) }}" class="navi-link">
 													<span class="symbol symbol-20 mr-3">
 														<img src="{{ asset('assets/administrative/media/svg/flags/226-united-states.svg') }}" alt="" />
 													</span>
-                                <span class="navi-text">{{ $activeLanguage->name }}</span>
+                                <span class="navi-text">{{ $active_language->name }}</span>
                             </a>
                         </li>
                         @endforeach

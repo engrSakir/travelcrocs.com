@@ -11,21 +11,21 @@ use Illuminate\Support\Str;
 
 if (!function_exists('random_code')){
 
-    function allLanguages(){
+    function all_languages(){
         return Language::where('status', true)->get();
     }
 
-    function activeLanguages(){
+    function active_languages(){
         return Language::where('status', true)->get();
     }
 
-    function currentLanguage()
+    function current_language()
     {
         $locale = App::getLocale();
         return Language::where("code", $locale)->first();
     }
 
-    function LangFromCode($code)
+    function language_code($code)
     {
         return Language::where("code", $code)->first();
     }
