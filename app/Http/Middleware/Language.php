@@ -6,7 +6,7 @@ use Closure;
 use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Session;
 
-class Local
+class Language
 {
     /**
      * Handle an incoming request.
