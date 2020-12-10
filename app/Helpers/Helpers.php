@@ -25,9 +25,28 @@ if (!function_exists('random_code')){
         return Language::where("code", $locale)->first();
     }
 
+    function en_language()
+    {
+        return Language::where("code", 'en')->first();
+    }
+
     function language_code($code)
     {
         return Language::where("code", $code)->first();
+    }
+
+    /**
+     * @param $table
+     * @param $column
+     * @return mixed
+     *
+     */
+    function get_content_by_language($table){
+        if ( current_language()->$table ){
+            return current_language()->$table;
+        }else{
+            return en_language()->$table;
+        }
     }
 
     //Generate access token and return
