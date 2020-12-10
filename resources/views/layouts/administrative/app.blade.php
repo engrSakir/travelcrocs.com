@@ -4,8 +4,8 @@
 <head>
     <meta charset="utf-8"/>
     <title>{{ config('app.name') }} | @stack('title')</title>
-    <meta name="author" content="{{ get_content_by_language('application_seo')['author'] }}">
-    <meta name="description" content="{{ get_content_by_language('application_seo')['description'] }}"/>
+    <meta name="author" content="{{ get_content_by_language('application_seo')['author'] ?? 'No author' }}">
+    <meta name="description" content="{{ get_content_by_language('application_seo')['description'] ?? 'No description' }}"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <!--begin::CSRF-->
     <meta name="csrf-token" content="{{ csrf_token() }}">
