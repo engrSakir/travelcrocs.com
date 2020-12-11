@@ -36,5 +36,24 @@ class StaticOptionSeeder extends Seeder
 
         set_static_option('website_footer_credit', '');
 
+        set_static_option('google_client_id', '');          //google
+        set_static_option('google_client_secret', '');
+        set_static_option('google_o_auth_status', '');      //Enable/Disable
+        set_static_option('facebook_client_id', '');        //facebook
+        set_static_option('facebook_client_secret', '');
+        set_static_option('facebook_o_auth_status', '');
+        set_static_option('instagram_client_id', '');       //instagram
+        set_static_option('instagram_client_secret', '');
+        set_static_option('instagram_o_auth_status', '');
+        set_static_option('twitter_client_id', '');         //twitter
+        set_static_option('twitter_client_secret', '');
+        set_static_option('twitter_o_auth_status', '');
+        set_static_option('github_client_id', '');          //github
+        set_static_option('github_client_secret', '');
+        set_static_option('github_o_auth_status', '');
+        set_static_option('linkedin_client_id', '');        //linkedin
+        set_static_option('linkedin_client_secret', '');
+        set_static_option('linkedin_o_auth_status', '');
+
     }
 }

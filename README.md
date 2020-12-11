@@ -56,3 +56,9 @@ API
 2. https://test.api.amadeus.com/v1/reference-data/locations?subType=CITY,AIRPORT&keyword=UK // search by city or airport keyword 
         subType :CITY,AIRPORT 
         keyword :----- 
+
+
+#Status
+Enable/Disable
+#User_status
+0/1

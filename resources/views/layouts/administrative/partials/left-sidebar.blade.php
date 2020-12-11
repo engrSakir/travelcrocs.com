@@ -259,12 +259,12 @@
                                 <div class="menu-submenu">
                                     <i class="menu-arrow"></i>
                                     <ul class="menu-subnav">
-                                        <li class="menu-item @if(Request::is('*/seo')) menu-item-active @endif" aria-haspopup="true">
-                                            <a href="{{ route('administrative.setting.seo') }}" class="menu-link">
+                                        <li class="menu-item @if(Request::is('*/o-auth')) menu-item-active @endif" aria-haspopup="true">
+                                            <a href="{{ route('administrative.setting.oAuth') }}" class="menu-link">
                                                 <i class="menu-bullet menu-bullet-dot">
                                                     <span></span>
                                                 </i>
-                                                <span class="menu-text">SEO - Setup</span>
+                                                <span class="menu-text">oAuth - Setup</span>
                                             </a>
                                         </li>
                                     </ul>

@@ -56,12 +56,24 @@
                             <div class="action-box text-center">
                                 <p class="font-size-14">{{ __('Or Sign up Using') }}</p>
                                 <ul class="social-profile py-3">
-                                    <li><a href="{{ route('socialiteLogin', 'google') }}" class="bg-5 text-white"><i class="lab la-google"></i></a></li>
-                                    <li><a href="{{ route('socialiteLogin', 'facebook') }}" class="bg-5 text-white"><i class="lab la-facebook-f"></i></a></li>
-                                    <li><a href="#" class="bg-6 text-white"><i class="lab la-twitter"></i></a></li>
-                                    <li><a href="#" class="bg-7 text-white"><i class="lab la-instagram"></i></a></li>
-                                    <li><a href="{{ route('socialiteLogin', 'linkedin') }}" class="bg-5 text-white"><i class="lab la-linkedin-in"></i></a></li>
-                                    <li><a href="{{ route('socialiteLogin', 'github') }}" class="bg-5 text-white"><i class="lab la-github"></i></a></li>
+                                    @if(get_static_option('google_o_auth_status') == 'Enable')
+                                        <li><a href="{{ route('socialiteLogin', 'google') }}" class="bg-5 text-white"><i class="lab la-google"></i></a></li>
+                                    @endif
+                                    @if(get_static_option('facebook_o_auth_status') == 'Enable')
+                                        <li><a href="{{ route('socialiteLogin', 'facebook') }}" class="bg-5 text-white"><i class="lab la-facebook-f"></i></a></li>
+                                    @endif
+                                    @if(get_static_option('instagram_o_auth_status') == 'Enable')
+                                        <li><a href="#" class="bg-7 text-white"><i class="lab la-instagram"></i></a></li>
+                                    @endif
+                                    @if(get_static_option('twitter_o_auth_status') == 'Enable')
+                                        <li><a href="#" class="bg-6 text-white"><i class="lab la-twitter"></i></a></li>
+                                    @endif
+                                    @if(get_static_option('linkedin_o_auth_status') == 'Enable')
+                                        <li><a href="{{ route('socialiteLogin', 'linkedin') }}" class="bg-5 text-white"><i class="lab la-linkedin-in"></i></a></li>
+                                    @endif
+                                    @if(get_static_option('github_o_auth_status') == 'Enable')
+                                        <li><a href="{{ route('socialiteLogin', 'github') }}" class="bg-5 text-white"><i class="lab la-github"></i></a></li>
+                                    @endif
                                 </ul>
                             </div>
                         </form>
@@ -123,7 +135,26 @@
                             <div class="action-box text-center">
                                 <p class="font-size-14">{{ __('Sign in with Google') }}</p>
                                 <ul class="social-profile py-3">
-                                    <li><a href="{{ route('socialiteLogin', 'google') }}" class="bg-5 text-white"><i class="lab la-google"></i></a></li>
+                                    <ul class="social-profile py-3">
+                                        @if(get_static_option('google_o_auth_status') == 'Enable')
+                                            <li><a href="{{ route('socialiteLogin', 'google') }}" class="bg-5 text-white"><i class="lab la-google"></i></a></li>
+                                        @endif
+                                        @if(get_static_option('facebook_o_auth_status') == 'Enable')
+                                            <li><a href="{{ route('socialiteLogin', 'facebook') }}" class="bg-5 text-white"><i class="lab la-facebook-f"></i></a></li>
+                                        @endif
+                                        @if(get_static_option('instagram_o_auth_status') == 'Enable')
+                                            <li><a href="#" class="bg-7 text-white"><i class="lab la-instagram"></i></a></li>
+                                        @endif
+                                        @if(get_static_option('twitter_o_auth_status') == 'Enable')
+                                            <li><a href="#" class="bg-6 text-white"><i class="lab la-twitter"></i></a></li>
+                                        @endif
+                                        @if(get_static_option('linkedin_o_auth_status') == 'Enable')
+                                            <li><a href="{{ route('socialiteLogin', 'linkedin') }}" class="bg-5 text-white"><i class="lab la-linkedin-in"></i></a></li>
+                                        @endif
+                                        @if(get_static_option('github_o_auth_status') == 'Enable')
+                                            <li><a href="{{ route('socialiteLogin', 'github') }}" class="bg-5 text-white"><i class="lab la-github"></i></a></li>
+                                        @endif
+                                    </ul>
                                 </ul>
                             </div>
                         </form>

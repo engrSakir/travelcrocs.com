@@ -71,7 +71,7 @@ class RegisterController extends Controller
         $user->email        = $request->input('email');
         $user->password     = Hash::make($request->input('password'));
         $user->api_token    = Str::random(60);
-        $user->status       = 1;
+        $user->status       = 1;    //register as enable
 
         try {
             //User and provider type account

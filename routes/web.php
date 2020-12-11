@@ -101,6 +101,9 @@ Route::group(['namespace' => 'Administrative', 'as' => 'administrative.', 'prefi
 
             Route::get('/seo', 'SettingController@seo')->name('seo');
             Route::post('/seo', 'SettingController@updateSeo')->name('seo.update');
+
+            Route::get('/o-auth', 'SettingController@oAuth')->name('oAuth');
+            Route::post('/o-auth', 'SettingController@updateOAuth')->name('oAuth.update');
         });
     });
 

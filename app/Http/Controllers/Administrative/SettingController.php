@@ -27,6 +27,14 @@ class SettingController extends Controller
         return view('administrative.setting.seo', compact('seo'));
     }
 
+    // get oAuth page
+    public function oAuth(){
+        return view('administrative.setting.oauth');
+    }
+    /**
+     * @param Request $request
+     * @return \Illuminate\Http\JsonResponse
+     */
     // Static image of application
     public function updateIdentityImage(Request $request){
         $request->validate([
@@ -130,7 +138,10 @@ class SettingController extends Controller
             ]);
         }
     }
-
+    /**
+     * @param Request $request
+     * @return \Illuminate\Http\RedirectResponse
+     */
     // Static color of application
     public function updateIdentityColor(Request $request){
         $request->validate([
@@ -143,7 +154,10 @@ class SettingController extends Controller
             return back()->withErrors( 'Something going wrong.');
         }
     }
-
+    /**
+     * @param Request $request
+     * @return \Illuminate\Http\RedirectResponse
+     */
     // company contact information
     public function updateContact(Request $request){
         $request->validate([
@@ -160,7 +174,10 @@ class SettingController extends Controller
             return back()->withErrors( 'Something going wrong.');
         }
     }
-
+    /**
+     * @param Request $request
+     * @return \Illuminate\Http\RedirectResponse
+     */
     // meta tag and description
     public function updateSeo(Request $request){
         $request->validate([
@@ -183,6 +200,47 @@ class SettingController extends Controller
             return back()->withToastSuccess('Successfully updated!');
         }catch (\Exception $exception){
             return back()->withErrors( 'Something going wrong.');
+        }
+    }
+
+    /**
+     * @param Request $request
+     * type, status, google, facebook, instagram, twitter, github, linkedin
+     * status can be Enable|Disable
+     * type can be google, facebook, instagram, twitter, github, linkedin
+     */
+    public function updateOAuth(Request $request){
+        $request->validate([
+            'type' => 'required|string',
+            'client_id' => 'required|string',
+            'client_secret' => 'required|string',
+            'status' => 'nullable|string',
+        ]);
+
+        if ($request->input('type') == 'google' || $request->input('type') == 'facebook' || $request->input('type') == 'instagram' || $request->input('type') == 'twitter' || $request->input('type') == 'github' || $request->input('type') == 'linkedin'){
+            try {
+                if ($request->input('status') == 'Enable'){
+                    update_static_option($request->input('type').'_o_auth_status', 'Enable');
+                }else{
+                    update_static_option($request->input('type').'_o_auth_status', 'Disable');
+                }
+                update_static_option($request->input('type').'_client_id', $request->input('client_id'));
+                update_static_option($request->input('type').'_client_secret', $request->input('client_secret'));
+
+                $env_val[strtoupper($request->input('type')).'_CLIENT_ID'] = !empty($request->client_id) ? $request->client_id : 'YOUR_CLIENT_ID';
+                $env_val[strtoupper($request->input('type')).'_CLIENT_SECRET'] = !empty($request->client_secret) ? $request->client_secret : 'YOUR_SECRET';
+
+                setEnvValue([
+                    strtoupper($request->input('type')).'_CLIENT_ID' => '"'.$env_val[strtoupper($request->input('type')).'_CLIENT_ID'].'"',
+                    strtoupper($request->input('type')).'_CLIENT_SECRET' =>  '"'.$env_val[strtoupper($request->input('type')).'_CLIENT_SECRET'].'"'
+                ]);
+
+                return redirect()->back()->withToastSuccess('Successfully oAuth updated!');
+            }catch (\Exception $exception){
+                return redirect()->back()->withErrors('Something going wrong. Error:'.$exception->getMessage());
+            }
+        }else{
+            return redirect()->back()->withErrors('Type unknown');
         }
     }
 }
