@@ -33,7 +33,7 @@ class SettingController extends Controller
            'type' => 'required|string',
             $request->type => 'required|image'
         ]);
-        if ($request->type == 'website_logo' && $request->hasFile($request->type)) {
+        if ($request->type == 'website_logo' && $request->hasFile($request->type)) {        //****Website logo
             $image             = $request->file($request->type);
             $folder_path       = 'assets/uploads/images/setting/';
             $image_new_name    = $request->type.'-'.Carbon::now()->format('d-m-Y H-i-s') .'.'. $image->getClientOriginalExtension();
@@ -57,7 +57,7 @@ class SettingController extends Controller
                     'message' => 'Something going wrong',
                 ]);
             }
-        }else if ($request->type == 'favicon' && $request->hasFile($request->type)) {
+        }else if ($request->type == 'favicon' && $request->hasFile($request->type)) {           //****Favicon
             $image             = $request->file($request->type);
             $folder_path       = 'assets/uploads/images/setting/';
             $image_new_name    = $request->type.'-'.Carbon::now()->format('d-m-Y H-i-s') .'.'. $image->getClientOriginalExtension();
@@ -79,7 +79,7 @@ class SettingController extends Controller
                     'message' => 'Something going wrong',
                 ]);
             }
-        }else if ($request->type == 'we_accept' && $request->hasFile($request->type)) {
+        }else if ($request->type == 'we_accept' && $request->hasFile($request->type)) {         //****We accept
             $image             = $request->file($request->type);
             $folder_path       = 'assets/uploads/images/setting/';
             $image_new_name    = $request->type.'-'.Carbon::now()->format('d-m-Y H-i-s') .'.'. $image->getClientOriginalExtension();
@@ -90,6 +90,28 @@ class SettingController extends Controller
                 if (get_static_option('we_accept') != null)
                     File::delete(public_path(get_static_option('we_accept'))); //Old image delete
                 update_static_option('we_accept', $folder_path.$image_new_name);
+                return response()->json([
+                    'type' => 'success',
+                    'message' => 'Successfully updated',
+                    'image_src' => $folder_path.$image_new_name,
+                ]);
+            }catch (\Exception $exception){
+                return response()->json([
+                    'type' => 'error',
+                    'message' => 'Something going wrong',
+                ]);
+            }
+        }else if ($request->type == 'meta_image' && $request->hasFile($request->type)) {            //****Meta image
+            $image             = $request->file($request->type);
+            $folder_path       = 'assets/uploads/images/setting/';
+            $image_new_name    = $request->type.'-'.Carbon::now()->format('d-m-Y H-i-s') .'.'. $image->getClientOriginalExtension();
+            //resize and save to server
+            Image::make($image->getRealPath())->fit(1200, 627 )->save($folder_path.$image_new_name);
+            //to db
+            try {
+                if (get_static_option('meta_image') != null)
+                    File::delete(public_path(get_static_option('meta_image'))); //Old image delete
+                update_static_option('meta_image', $folder_path.$image_new_name);
                 return response()->json([
                     'type' => 'success',
                     'message' => 'Successfully updated',

@@ -26,6 +26,7 @@ class StaticOptionSeeder extends Seeder
 
         set_static_option('website_logo', '');
         set_static_option('favicon', '');
+        set_static_option('meta_image', '');
         set_static_option('we_accept', '');
 
         set_static_option('website_hero_bg_color', '');

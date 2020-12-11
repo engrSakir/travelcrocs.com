@@ -158,6 +158,31 @@
                                             </div>
                                         </div>
                                     </div>
+                                    {{--Meta image--}}
+                                    <div class="form-group row bg-light-success rounded ">
+                                        <div class="col-6 text-right">
+                                            <label for="example-search-input" class="col-form-label "><b>Meta image (1200px, 627 px)</b></label>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="overlay">
+                                                <div class="overlay-wrapper rounded bg-light-success text-center">
+                                                    <img @if(get_static_option('meta_image'))  src="{{ asset(get_static_option('meta_image')) }}" @else src="{{ asset('assets/administrative/media/products/1.png') }}" @endif alt="" id="image-display" class="mw-100 w-200px image-display">
+                                                </div>
+                                                <div class="overlay-layer">
+                                                    <input style="display: none" type="file" accept="image/*" class="image-importer">
+                                                    <button type="button" class="btn btn-icon btn-info mr-2 image-chose-btn">
+                                                        <i class="ki ki-plus text-white"></i>
+                                                    </button>
+                                                    <button type="button" class="btn btn-icon btn-warning mr-2 image-reset-btn" @if(get_static_option('meta_image'))  value="{{ asset(get_static_option('meta_image')) }}" @else value="{{ asset('assets/administrative/media/products/1.png') }}" @endif>
+                                                        <i class="ki ki-reload text-white"></i>
+                                                    </button>
+                                                    <button type="button" class="btn btn-icon btn-info mr-2 submit-btn" value="meta_image">
+                                                        <i class="ki ki-bold-check text-white"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </form>
                             <!--end::Form-->
