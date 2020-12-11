@@ -3,7 +3,7 @@
 <title>{{ config('app.name') }} | @stack('title')</title>
 <meta name="author" content="{{ get_content_by_language('application_seo')['author'] ?? 'No author' }}">
 <meta name="description" content="{{ get_content_by_language('application_seo')['description'] ?? 'No description' }}"/>
-<meta property="og:image" content="{{ get_static_option('meta_image') }}" />
+<meta property="og:image" content="{{ asset(get_static_option('meta_image')) }}" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <!-- Favicon -->
