@@ -58,7 +58,7 @@
                                     <i class="flaticon2-information icon-md text-muted" data-toggle="tooltip" data-placement="right" title="Click to learn more..."></i>
                                 </li>
                                 <li class="navi-separator mb-3 opacity-70"></li>
-                                @foreach(allLanguages() as $allLanguage)
+                                @foreach(all_languages() as $allLanguage)
                                 <li class="navi-item">
                                     <a href="{{ route('administrative.language.edit', $allLanguage->id) }}" class="navi-link">
 														<span class="navi-text">

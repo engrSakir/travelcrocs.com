@@ -49,6 +49,18 @@ if (!function_exists('random_code')){
         }
     }
 
+    function get_rate_of_currency_by_code($currency_core){
+        $current_currency_data =  Http::get('https://openexchangerates.org/api/latest.json', [
+            'app_id' => '6f3c784068814d8ab27caa3e4f20425c'
+        ]);
+        $rate = json_decode($current_currency_data, true)['rates']["$currency_core"];
+        if ($rate){
+            return $rate;
+        }else{
+            return false;
+        }
+    }
+
     //Generate access token and return
     function getAmadeusAccessToken(){
         $url = "https://test.api.amadeus.com/v1/security/oauth2/token";

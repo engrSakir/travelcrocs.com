@@ -12,7 +12,7 @@ class LanguageController extends Controller
     /**
      * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\View\View
      */
-    public function index(Request $request)
+    public function index()
     {
         $languages = Language::orderBy('id', 'desc')->get();
         return view('administrative.language.index', compact('languages'));
@@ -138,17 +138,24 @@ class LanguageController extends Controller
     {
         if (Language::where('id', $id)->exists()){
             $language = Language::find($id);
-            try {
-                unlink(resource_path('lang/').$language->code . '.json');
-                $language->delete();
-                return response()->json([
-                    'type' => 'success',
-                    'message' => 'successfully deleted !!! ',
-                ]);
-            }catch (\Exception $exception){
+            if ($language->code != 'en'){
+                try {
+                    unlink(resource_path('lang/').$language->code . '.json');
+                    $language->delete();
+                    return response()->json([
+                        'type' => 'success',
+                        'message' => 'successfully deleted !!! ',
+                    ]);
+                }catch (\Exception $exception) {
+                    return response()->json([
+                        'type' => 'danger',
+                        'message' => 'Error something going wrong!!! ',
+                    ]);
+                }
+            }else{
                 return response()->json([
                     'type' => 'danger',
-                    'message' => 'Error something going wrong!!! ',
+                    'message' => 'Default language can\'t be deleted !!! ',
                 ]);
             }
         }else{

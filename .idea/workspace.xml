@@ -161,18 +161,18 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/administrative/setting" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/administrative" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\travelcrocs\resources\views\administrative" />
       <recent name="D:\travelcrocs\resources\views\administrative\setting" />
       <recent name="D:\travelcrocs\resources\views\administrative\mail" />
       <recent name="C:\laragon\www\travelcrocs.com" />
       <recent name="D:\travelcrocs\resources\lang" />
-      <recent name="D:\travelcrocs\resources\views\administrative" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\travelcrocs\resources\views\administrative\mail" />
@@ -227,7 +227,8 @@
       <workItem from="1607584935871" duration="5308000" />
       <workItem from="1607617753039" duration="3542000" />
       <workItem from="1607662201152" duration="12999000" />
-      <workItem from="1607689156086" duration="4924000" />
+      <workItem from="1607689156086" duration="6309000" />
+      <workItem from="1607729670421" duration="17566000" />
     </task>
     <servers />
   </component>

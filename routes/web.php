@@ -78,11 +78,11 @@ Route::group(['namespace' => 'Administrative', 'as' => 'administrative.', 'prefi
     Route::resource('dashboard', 'DashboardController');
     Route::resource('user', 'UserController');
     Route::resource('provider', 'ProviderController');
-    Route::group(['prefix'=>'application'], function (){
-        Route::resource('language', 'LanguageController');
-    });
 
     Route::group(['prefix'=>'application'], function (){
+        Route::resource('language', 'LanguageController');
+        Route::resource('currency', 'CurrencyController');
+
         Route::group(['prefix'=>'mail', 'as' => 'mail.'], function (){
             Route::get('/smtp', 'EmailConfigController@smtp')->name('smtp');
             Route::post('/smtp', 'EmailConfigController@updateSmtp')->name('smtp.update');

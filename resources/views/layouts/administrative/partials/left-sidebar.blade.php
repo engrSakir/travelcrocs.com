@@ -187,6 +187,14 @@
                                     </ul>
                                 </div>
                             </li>
+                            <li class="menu-item menu-item-submenu @if(Request::is('*/currency')) menu-item-open menu-item-here @elseif(Request::is('*/currency/*')) menu-item-open menu-item-here @endif" aria-haspopup="true" data-menu-toggle="hover">
+                                <a href="{{ route('administrative.currency.index') }}" class="menu-link menu-toggle">
+                                    <i class="menu-bullet menu-bullet-line">
+                                        <span></span>
+                                    </i>
+                                    <span class="menu-text">Manage Currency</span>
+                                </a>
+                            </li>
                             <li class="menu-item menu-item-submenu @if(Request::is('*/mail')) menu-item-open menu-item-here @elseif(Request::is('*/mail/*')) menu-item-open menu-item-here @endif" aria-haspopup="true" data-menu-toggle="hover">
                                 <a href="javascript:;" class="menu-link menu-toggle">
                                     <i class="menu-bullet menu-bullet-line">
