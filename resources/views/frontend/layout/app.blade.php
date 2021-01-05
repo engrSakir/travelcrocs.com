@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="{{  App::getLocale() }}">
 <head>
-    @include('layouts.frontend.partials.head')
+    @include('frontend.layout.partials.head')
 </head>
 <body>
 <!-- start cssload-loader -->
-@include('layouts.frontend.partials.loader')
+@include('frontend.layout.partials.loader')
 <!-- end cssload-loader -->
 <a href="#" class="rtl-btn">Right Button</a>
 
 <!-- ================================
             START HEADER AREA
 ================================= -->
-@include('layouts.frontend.partials.header')
+@include('frontend.layout.partials.header')
 <!-- ================================
          END HEADER AREA
 ================================= -->
@@ -28,7 +28,7 @@
 <!-- ================================
        START FOOTER AREA
 ================================= -->
-@include('layouts.frontend.partials.footer')
+@include('frontend.layout.partials.footer')
 <!-- end footer-area -->
 <!-- ================================
        START FOOTER AREA
@@ -43,13 +43,13 @@
 <!-- ================================
        START MODAL
 ================================= -->
-@include('layouts.frontend.partials.modal')
+@include('frontend.layout.partials.modal')
 <!-- ================================
        END MODAL
 ================================= -->
 
 <!-- Template JS Files -->
-@include('layouts.frontend.partials.foot')
+@include('frontend.layout.partials.foot')
 @include('includes.alert')
 @include('sweetalert::alert')
 </body>

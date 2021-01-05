@@ -1,4 +1,4 @@
-@extends('layouts.frontend.app')
+@extends('frontend.layout.app')
 @push('title') User Type @endpush
 @push('description')
 

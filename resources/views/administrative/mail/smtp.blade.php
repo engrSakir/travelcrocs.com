@@ -1,4 +1,4 @@
-@extends('layouts.administrative.app')
+@extends('administrative.layout.app')
 @push('title') {{ __('SMTP Setup') }} @endpush
 @section('content')
     <!--begin::Content-->

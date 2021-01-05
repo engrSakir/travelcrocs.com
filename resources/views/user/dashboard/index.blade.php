@@ -1,4 +1,4 @@
-@extends('layouts.user.app')
+@extends('user.layout.app')
 
 @section('header')
     <div class="dashboard-bread">

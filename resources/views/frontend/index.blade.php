@@ -1,4 +1,4 @@
-@extends('layouts.frontend.app')
+@extends('frontend.layout.app')
 @push('title') Index @endpush
 @push('description')
 

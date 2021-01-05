@@ -1,4 +1,4 @@
-@extends('layouts.administrative.app')
+@extends('administrative.layout.app')
 @push('title') {{ __('Currency setup') }} @endpush
 @section('content')
     <!--begin::Content-->
@@ -71,7 +71,7 @@
                                     <td>{{ $currency->name }}</td>
                                     <td>{{ $currency->code }}</td>
                                     <td>{{ $currency->sign }}</td>
-                                    <td>{{ $rate[$currency->code].' $' ?? '-' }}</td>
+                                    <td>{{ $rate[$currency->code] ?? '-' }}</td>
                                     <td>
                                         @if($currency->status == true)
                                         <span class="label label-inline label-light-success font-weight-bold">
@@ -131,7 +131,7 @@
                             <div class="alert alert-custom alert-default" role="alert">
                                 <div class="alert-icon"><i class="flaticon-warning text-primary"></i></div>
                                 <div class="alert-text">
-                                    For even more customization and cross browser consistency, use our completely custom form elements to replace the browser defaults. They’re built on top of semantic and accessible markup, so they’re solid replacements for any default form control.
+                                    Note about currency add
                                 </div>
                             </div>
                         </div>

@@ -1,4 +1,4 @@
-@extends('layouts.administrative.app')
+@extends('administrative.layout.app')
 @push('title') {{ __('Dashboard') }} @endpush
 @section('content')
     <div class="content d-flex flex-column flex-column-fluid" id="kt_content">

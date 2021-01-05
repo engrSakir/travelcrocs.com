@@ -38,24 +38,24 @@
 <body id="kt_body" class="header-fixed header-mobile-fixed subheader-enabled subheader-fixed aside-enabled aside-fixed aside-minimize-hoverable page-loading">
 <!--begin::Main-->
 <!--begin::Header Mobile-->
-@include('layouts.administrative.partials.header')
+@include('administrative.layout.partials.header')
 <!--end::Header Mobile-->
 <div class="d-flex flex-column flex-root">
     <!--begin::Page-->
     <div class="d-flex flex-row flex-column-fluid page">
         <!--begin::Aside-->
-        @include('layouts.administrative.partials.left-sidebar')
+        @include('administrative.layout.partials.left-sidebar')
         <!--end::Aside-->
         <!--begin::Wrapper-->
         <div class="d-flex flex-column flex-row-fluid wrapper" id="kt_wrapper">
             <!--begin::Header-->
-            @include('layouts.administrative.partials.top-bar')
+            @include('administrative.layout.partials.top-bar')
             <!--end::Header-->
             <!--begin::Content-->
             @yield('content')
             <!--end::Content-->
             <!--begin::Footer-->
-            @include('layouts.administrative.partials.footer')
+            @include('administrative.layout.partials.footer')
             <!--end::Footer-->
         </div>
         <!--end::Wrapper-->
@@ -64,25 +64,25 @@
 </div>
 <!--end::Main-->
 <!-- begin::User Panel-->
-@include('layouts.administrative.panels.user-panel')
+@include('administrative.layout.panels.user-panel')
 <!-- end::User Panel-->
 <!--begin::Quick Cart-->
-@include('layouts.administrative.panels.quick-cart')
+@include('administrative.layout.panels.quick-cart')
 <!--end::Quick Cart-->
 <!--begin::Quick Panel-->
-@include('layouts.administrative.panels.quick-panel')
+@include('administrative.layout.panels.quick-panel')
 <!--end::Quick Panel-->
 <!--begin::Chat Panel-->
-@include('layouts.administrative.panels.chat-panel')
+@include('administrative.layout.panels.chat-panel')
 <!--end::Chat Panel-->
 <!--begin::Scrolltop-->
-@include('layouts.administrative.panels.scroll-top')
+@include('administrative.layout.panels.scroll-top')
 <!--end::Scrolltop-->
 <!--begin::Sticky Toolbar-->
 {{--@include('layouts.administrative.panels.sticky-tool-bar')--}}
 <!--end::Sticky Toolbar-->
 <!--begin::Demo Panel-->
-@include('layouts.administrative.panels.demo-panel')
+@include('administrative.layout.panels.demo-panel')
 <!--end::Demo Panel-->
 <script>var HOST_URL = "https://preview.keenthemes.com/metronic/theme/html/tools/preview";</script>
 <!--begin::Global Config(global config for global JS scripts)-->

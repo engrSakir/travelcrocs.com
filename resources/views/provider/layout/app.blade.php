@@ -1,49 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    @include('layouts.user.partials.head')
+    @include('provider.layout.partials.head')
+    @stack('css')
 </head>
 <body class="section-bg">
 <!-- start cssload-loader -->
-@include('layouts.user.partials.loader')
+@include('provider.layout.partials.loader')
 <!-- end cssload-loader -->
 
 <!-- ================================
        START USER CANVAS MENU
 ================================= -->
-@include('layouts.user.partials.user-canvas')
+@include('provider.layout.partials.user-canvas')
+<!-- end user-canvas-container -->
 <!-- ================================
        END USER CANVAS MENU
 ================================= -->
 
 <!-- ================================
-       START DASHBOARD NAV
+       START SIDEBAR NAV
 ================================= -->
-@include('layouts.user.partials.sidebar')
+@include('provider.layout.partials.sidebar')
+<!-- end sidebar-nav -->
 <!-- ================================
-       END DASHBOARD NAV
+       END SIDEBAR NAV
 ================================= -->
 
 <!-- ================================
     START DASHBOARD AREA
 ================================= -->
 <section class="dashboard-area">
-{{--@include('layouts.user.partials.top-bar')--}}
-<!-- end dashboard-nav -->
+{{--@include('layouts.provider.partials.top-bar')--}}
+    <!-- end dashboard-nav -->
     <div class="dashboard-content-wrap">
-    @yield('header')
-    <!-- end dashboard-bread -->
+        @yield('header')
+        <!-- end dashboard-bread -->
         <div class="dashboard-main-content">
             <div class="container-fluid">
-            @yield('content')
-            <!-- end row -->
-            @include('layouts.user.partials.footer')
-            <!-- end row -->
+                @yield('content')
+                <!-- end row -->
+               @include('provider.layout.partials.footer')
+                <!-- end row -->
             </div><!-- end container-fluid -->
         </div><!-- end dashboard-main-content -->
     </div>
     <!-- end dashboard-content-wrap -->
 </section>
+<!-- end dashboard-area -->
 <!-- ================================
     END DASHBOARD AREA
 ================================= -->
@@ -55,7 +59,8 @@
 <!-- end scroll top -->
 
 <!-- Template JS Files -->
-@include('layouts.user.partials.foot')
+@include('provider.layout.partials.foot')
+@stack('js')
 @include('includes.logout')
 @include('sweetalert::alert')
 </body>
