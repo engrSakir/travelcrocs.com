@@ -21,59 +21,8 @@
   <component name="ChangeListManager">
     <list default="true" id="42c33c20-9443-4946-97ea-543c8a623b1d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/administrative/currency/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/administrative/currency/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/administrative/dashboard/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/administrative/dashboard/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/administrative/language/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/administrative/language/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/administrative/language/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/administrative/language/edit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/administrative/language/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/administrative/language/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/administrative/language/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/administrative/language/show.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/administrative/mail/smtp.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/administrative/mail/smtp.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/administrative/provider/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/administrative/provider/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/administrative/setting/contact.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/administrative/setting/contact.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/administrative/setting/identity.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/administrative/setting/identity.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/administrative/setting/oauth.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/administrative/setting/oauth.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/administrative/setting/seo.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/administrative/setting/seo.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/administrative/user/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/administrative/user/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/frontend/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontend/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/frontend/non-permitted.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontend/non-permitted.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/administrative/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/administrative/layout/app.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/administrative/panels/chat-panel.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/administrative/layout/panels/chat-panel.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/administrative/panels/demo-panel.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/administrative/layout/panels/demo-panel.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/administrative/panels/quick-cart.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/administrative/layout/panels/quick-cart.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/administrative/panels/quick-panel.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/administrative/layout/panels/quick-panel.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/administrative/panels/scroll-top.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/administrative/layout/panels/scroll-top.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/administrative/panels/sticky-tool-bar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/administrative/layout/panels/sticky-tool-bar.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/administrative/panels/user-panel.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/administrative/layout/panels/user-panel.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/administrative/partials/footer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/administrative/layout/partials/footer.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/administrative/partials/header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/administrative/layout/partials/header.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/administrative/partials/left-sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/administrative/layout/partials/left-sidebar.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/administrative/partials/top-bar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/administrative/layout/partials/top-bar.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/auth/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/layout/app.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/frontend/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontend/layout/app.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/frontend/partials/foot.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontend/layout/partials/foot.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/frontend/partials/footer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontend/layout/partials/footer.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/frontend/partials/head.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontend/layout/partials/head.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/frontend/partials/header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontend/layout/partials/header.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/frontend/partials/loader.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontend/layout/partials/loader.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/frontend/partials/modal.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontend/layout/partials/modal.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/provider/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/provider/layout/app.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/provider/partials/foot.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/provider/layout/partials/foot.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/provider/partials/footer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/provider/layout/partials/footer.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/provider/partials/head.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/provider/layout/partials/head.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/provider/partials/loader.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/provider/layout/partials/loader.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/provider/partials/sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/provider/layout/partials/sidebar.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/provider/partials/top-bar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/provider/layout/partials/top-bar.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/provider/partials/user-canvas.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/provider/layout/partials/user-canvas.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/user/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/user/layout/app.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/user/partials/foot.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/user/layout/partials/foot.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/user/partials/footer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/user/layout/partials/footer.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/user/partials/head.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/user/layout/partials/head.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/user/partials/loader.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/user/layout/partials/loader.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/user/partials/sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/user/layout/partials/sidebar.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/user/partials/top-bar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/user/layout/partials/top-bar.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/user/partials/user-canvas.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/user/layout/partials/user-canvas.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/provider/dashboard/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/provider/dashboard/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/user/dashboard/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/user/dashboard/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/provider/layout/partials/sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/provider/layout/partials/sidebar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/user/layout/partials/sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/user/layout/partials/sidebar.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -287,7 +236,7 @@
       <workItem from="1607689156086" duration="6309000" />
       <workItem from="1607729670421" duration="18163000" />
       <workItem from="1607923675905" duration="4492000" />
-      <workItem from="1609819881262" duration="492000" />
+      <workItem from="1609819881262" duration="1704000" />
     </task>
     <servers />
   </component>
