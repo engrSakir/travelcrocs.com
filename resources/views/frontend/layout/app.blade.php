@@ -52,5 +52,6 @@
 @include('frontend.layout.partials.foot')
 @include('includes.alert')
 @include('sweetalert::alert')
+@include('includes.logout')
 </body>
 </html>

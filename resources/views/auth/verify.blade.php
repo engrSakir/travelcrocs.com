@@ -1,124 +1,116 @@
-<!DOCTYPE html>
-<html lang="{{ config('app.locale') }}">
-<!--begin::Head-->
-<head>
-    <meta charset="utf-8" />
-    <title>{{ config('app.name') }} | {{ __('Verify') }}</title>
-    <meta name="description" content="Please login to {{ config('app.name') }} " />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <link rel="canonical" href="#" />
-    <!--begin::Fonts-->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" />
-    <!--end::Fonts-->
-    <!--begin::Page Custom Styles(used by this page)-->
-    <link href="{{ asset('assets/administrative/css/pages/login/login-3.css') }}" rel="stylesheet" type="text/css" />
-    <!--end::Page Custom Styles-->
-    <!--begin::Global Theme Styles(used by all pages)-->
-    <link href="{{ asset('assets/administrative/plugins/global/plugins.bundle.css') }}" rel="stylesheet" type="text/css" />
-    <link href="{{ asset('assets/administrative/plugins/custom/prismjs/prismjs.bundle.css') }}" rel="stylesheet" type="text/css" />
-    <link href="{{ asset('assets/administrative/css/style.bundle.css') }}" rel="stylesheet" type="text/css" />
-    <!--end::Global Theme Styles-->
-    <!--begin::Layout Themes(used by all pages)-->
-    <link href="{{ asset('assets/administrative/css/themes/layout/header/base/light.css') }}" rel="stylesheet" type="text/css" />
-    <link href="{{ asset('assets/administrative/css/themes/layout/header/menu/light.css') }}" rel="stylesheet" type="text/css" />
-    <link href="{{ asset('assets/administrative/css/themes/layout/brand/dark.css') }}" rel="stylesheet" type="text/css" />
-    <link href="{{ asset('assets/administrative/css/themes/layout/aside/dark.css') }}" rel="stylesheet" type="text/css" />
-    <!--end::Layout Themes-->
-    <link rel="shortcut icon" href="{{ asset('assets/administrative/') }}assets/media/logos/favicon.ico" />
-</head>
-<!--end::Head-->
-<!--begin::Body-->
-<body id="kt_body" class="header-fixed header-mobile-fixed subheader-enabled subheader-fixed aside-enabled aside-fixed aside-minimize-hoverable page-loading">
-<!--begin::Main-->
-<div class="d-flex flex-column flex-root">
-    <!--begin::Login-->
-    <div class="login login-3 wizard d-flex flex-column flex-lg-row flex-column-fluid">
-        <!--begin::Aside-->
-        <div class="login-aside d-flex flex-column flex-row-auto" style="background-color: #F2C98A;">
-            <!--begin::Aside Top-->
-            <div class="d-flex flex-column-auto flex-column pt-lg-40 pt-15">
-                <!--begin::Aside header-->
-                <a href="#" class="text-center mb-10">
-                    <img src="{{ asset('assets/administrative/media/logos/logo-light.png') }}" class="max-h-70px" alt="" />
-                </a>
-                <!--end::Aside header-->
-                <!--begin::Aside title-->
-                <h3 class="font-weight-bolder text-center font-size-h4 font-size-h1-lg" style="color: #986923;">{{ __('The best OTA marketplace') }}
-                    <br />{{ __('of the world') }}</h3>
-                <!--end::Aside title-->
-            </div>
-            <!--end::Aside Top-->
-            <!--begin::Aside Bottom-->
-            <div class="aside-img d-flex flex-row-fluid bgi-no-repeat bgi-position-y-bottom bgi-position-x-center" style="background-image: url({{ asset('assets/administrative/media/svg/illustrations/login-visual-1.svg') }})"></div>
-            <!--end::Aside Bottom-->
-        </div>
-        <!--begin::Aside-->
-        <!--begin::Content-->
-        <div class="login-content flex-row-fluid d-flex flex-column p-10">
-            <!--begin::Top-->
-            <div class="text-right d-flex justify-content-center">
-                <div class="top-signin text-right d-flex justify-content-end pt-5 pb-lg-0 pb-10">
-                    <span class="font-weight-bold text-muted font-size-h4">Having issues?</span>
-                    <a href="javascript:;" class="font-weight-bold text-primary font-size-h4 ml-2" id="kt_login_signup">Get Help</a>
-                </div>
-            </div>
-            <!--end::Top-->
-            <!--begin::Wrapper-->
-            <div class="d-flex flex-row-fluid flex-center">
-                <!--begin::Signin-->
-                <div class="login-form">
-                    <!--begin::Form-->
-                    <div class="form" id="">
-                        <!--begin::Title-->
-                        <div class="pb-5 pb-lg-15">
-                            <h3 class="font-weight-bolder text-dark font-size-h2 font-size-h1-lg">{{ __('Verify Your Email Address') }}</h3>
-                            <div class="text-muted font-weight-bold font-size-h4">{{ __('Wanna logout?') }}
-                                <a href="javascript:0" class="text-primary font-weight-bolder logout-btn">{{ __('Logout') }}</a></div>
-                        </div>
-                        @if(session('resent'))
-                        <div class="alert alert-custom alert-notice alert-light-primary fade show" role="alert">
-                            <div class="alert-icon">
-                                <i class="ki ki-bold-check icon-lg"></i>
+@extends('frontend.layout.app')
+    @push('title') {{ __('Verify') }} @endpush
+    @section('content')
+        <!-- ================================
+    START BREADCRUMB AREA
+================================= -->
+        <section class="breadcrumb-area" style="background-color: {{ get_static_option('website_hero_bg_color') ?? '#3B66A1' }}">
+            <div class="breadcrumb-wrap">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6">
+                            <div class="breadcrumb-content">
+                                <div class="section-heading">
+                                    <h2 class="sec__title">{{ __('Email verification') }}</h2>
+                                </div>
+                            </div><!-- end breadcrumb-content -->
+                        </div><!-- end col-lg-6 -->
+                        <div class="col-lg-6">
+                            <div class="breadcrumb-list">
+                                <ul class="list-items d-flex justify-content-end">
+                                    <li><a href="{{ url('/') }}">Home</a></li>
+                                    <li>Email verification</li>
+                                </ul>
+                            </div><!-- end breadcrumb-list -->
+                        </div><!-- end col-lg-6 -->
+                    </div><!-- end row -->
+                </div><!-- end container -->
+            </div><!-- end breadcrumb-wrap -->
+            <div class="bread-svg-box">
+                <svg class="bread-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 10" preserveAspectRatio="none"><polygon points="100 0 50 10 0 0 0 10 100 10"></polygon></svg>
+            </div><!-- end bread-svg -->
+        </section><!-- end breadcrumb-area -->
+        <!-- ================================
+            END BREADCRUMB AREA
+        ================================= -->
+
+        <!-- ================================
+            START BOOKING AREA
+        ================================= -->
+        <section class="booking-area padding-top-100px padding-bottom-70px">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8">
+                        <div class="form-box">
+                            <div class="form-title-wrap">
+                                <h3 class="font-weight-bolder text-dark font-size-h2 font-size-h1-lg">{{ __('Verify Your Email Address') }}</h3>
+                            </div><!-- form-title-wrap -->
+                            <div class="form-content">
+                                <div class="tab-content">
+                                    {{--Email verification--}}
+                                    <div class="tab-pane fade show active" id="credit-card" role="tabpanel" aria-labelledby="credit-card-tab">
+                                        <div class="contact-form-action">
+                                            <div class="row">
+                                                <div class="col-lg-12">
+                                                    @if(session('resent'))
+                                                        <div class="alert alert-primary text-center" role="alert">
+                                                            {{ __('A fresh verification link has been sent to your email address.') }}
+                                                        </div>
+                                                    @endif
+                                                <!--begin::Title-->
+                                                    <!--begin::Action-->
+                                                    <div class="pb-lg-0 pb-5">
+                                                        {{ __('Before proceeding, please check your email for a verification link.') }}
+                                                        {{ __('If you did not receive the email please click on below button.') }}
+                                                        <br>
+                                                        <br>
+                                                        <form class="d-inline" method="POST" action="{{ route('verification.resend') }}">
+                                                            @csrf
+                                                            <div class="btn-box">
+                                                                <button type="submit" class="theme-btn">{{ __('Click here to request another') }}</button>
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                    <!--end::Action-->
+                                                </div><!-- end col-lg-6 -->
+                                            </div>
+                                        </div><!-- end contact-form-action -->
+                                    </div><!-- end tab-pane-->
+                                </div><!-- end tab-content -->
+                            </div><!-- end form-content -->
+                        </div><!-- end form-box -->
+                    </div><!-- end col-lg-8 -->
+                    <div class="col-lg-4">
+                        <div class="form-box booking-detail-form">
+                            <div class="form-title-wrap">
+                                <h3 class="title">{{ __('Profile details') }}</h3>
+                            </div><!-- end form-title-wrap -->
+                            <div class="form-content">
+                                <div class="comments-list">
+                                    <div class="comment">
+                                        <div class="comment-avatar">
+                                            <img class="avatar__img" alt="" src="{{ auth()->user()->avatar ?? asset('assets/uploads/images/no-image.png') }}">
+                                        </div>
+                                        <div class="comment-body">
+                                            <div class="meta-data">
+                                                <h3 class="comment__author"> {{ auth()->user()->name }} </h3>
+                                                <div class="meta-data-inner d-flex">
+                                                   <p class="">{{ auth()->user()->email }}</p>
+                                                </div>
+                                            </div>
+                                            <button class="theme-btn logout-btn">
+                                                <span class="la la-sign-out mr-1"></span> Logout
+                                            </button>
+                                        </div>
+                                    </div><!-- end comments -->
+                                </div><!-- end comments-list -->
                             </div>
-                            <div class="alert-text">{{ __('A fresh verification link has been sent to your email address.') }}</div>
-                        </div>
-                        @endif
-                        <!--begin::Title-->
-                        <!--begin::Action-->
-                        <div class="pb-lg-0 pb-5">
-                            {{ __('Before proceeding, please check your email for a verification link.') }}
-                            {{ __('If you did not receive the email please click on below button.') }},
-                            <form class="d-inline" method="POST" action="{{ route('verification.resend') }}">
-                                @csrf
-                                <button type="submit" id="" class="btn btn-primary font-weight-bolder font-size-h6 px-8 py-4 my-3 mr-3">{{ __('Click here to request another') }}</button>
-                            </form>
-                        </div>
-                        <!--end::Action-->
-                    </div>
-                    <!--end::Form-->
-                </div>
-                <!--end::Signin-->
-            </div>
-            <!--end::Wrapper-->
-        </div>
-        <!--end::Content-->
-    </div>
-    <!--end::Login-->
-</div>
-<!--end::Main-->
-<script>var HOST_URL = "https://preview.keenthemes.com/metronic/theme/html/tools/preview";</script>
-<!--begin::Global Config(global config for global JS scripts)-->
-<script>var KTAppSettings = { "breakpoints": { "sm": 576, "md": 768, "lg": 992, "xl": 1200, "xxl": 1400 }, "colors": { "theme": { "base": { "white": "#ffffff", "primary": "#3699FF", "secondary": "#E5EAEE", "success": "#1BC5BD", "info": "#8950FC", "warning": "#FFA800", "danger": "#F64E60", "light": "#E4E6EF", "dark": "#181C32" }, "light": { "white": "#ffffff", "primary": "#E1F0FF", "secondary": "#EBEDF3", "success": "#C9F7F5", "info": "#EEE5FF", "warning": "#FFF4DE", "danger": "#FFE2E5", "light": "#F3F6F9", "dark": "#D6D6E0" }, "inverse": { "white": "#ffffff", "primary": "#ffffff", "secondary": "#3F4254", "success": "#ffffff", "info": "#ffffff", "warning": "#ffffff", "danger": "#ffffff", "light": "#464E5F", "dark": "#ffffff" } }, "gray": { "gray-100": "#F3F6F9", "gray-200": "#EBEDF3", "gray-300": "#E4E6EF", "gray-400": "#D1D3E0", "gray-500": "#B5B5C3", "gray-600": "#7E8299", "gray-700": "#5E6278", "gray-800": "#3F4254", "gray-900": "#181C32" } }, "font-family": "Poppins" };</script>
-<!--end::Global Config-->
-<!--begin::Global Theme Bundle(used by all pages)-->
-<script src="{{ asset('assets/administrative/plugins/global/plugins.bundle.js') }}"></script>
-<script src="{{ asset('assets/administrative/plugins/custom/prismjs/prismjs.bundle.js') }}"></script>
-<script src="{{ asset('assets/administrative/js/scripts.bundle.js') }}"></script>
-<!--end::Global Theme Bundle-->
-<!--begin::Page Scripts(used by this page)-->
-<script src="{{ asset('assets/administrative/js/pages/custom/login/login-3.js') }}"></script>
-<!--end::Page Scripts-->
-@include('includes.logout')
-</body>
-<!--end::Body-->
-</html>
+                        </div><!-- end form-box -->
+                    </div><!-- end col-lg-4 -->
+                </div><!-- end row -->
+            </div><!-- end container -->
+        </section><!-- end booking-area -->
+        <!-- ================================
+            END BOOKING AREA
+        ================================= -->
+    @endsection
