@@ -58,11 +58,11 @@
                                     <i class="flaticon2-information icon-md text-muted" data-toggle="tooltip" data-placement="right" title="Click to learn more..."></i>
                                 </li>
                                 <li class="navi-separator mb-3 opacity-70"></li>
-                                @foreach(allLanguages() as $allLanguage)
+                                @foreach(all_languages() as $all_language)
                                 <li class="navi-item">
-                                    <a href="{{ route('administrative.language.show', $allLanguage->id) }}" class="navi-link">
+                                    <a href="{{ route('administrative.language.show', $all_language->id) }}" class="navi-link">
 														<span class="navi-text">
-															<span class="label label-xl label-inline label-light-success">{{ $allLanguage->name }}</span>
+															<span class="label label-xl label-inline label-light-success">{{ $all_language->name }}</span>
 														</span>
                                     </a>
                                 </li>

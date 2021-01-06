@@ -34,12 +34,10 @@ Route::group(['namespace' => 'Frontend', 'as' => 'frontend.'], function (){
 });
 
 /***
- * All of authentication routes
+ * All of socialite authentication routes
  */
 Route::group(['namespace' => 'Auth', 'as' => '', 'middleware'=>['guest']], function (){
-    //Redirect to provider
     Route::get('/socialite/redirect/{driver}', 'SocialiteController@redirectToProvider')->name('socialiteLogin');
-    //Call back
     Route::get('/socialite/callback/{driver}', 'SocialiteController@handleProviderCallback')->name('socialiteCallback');
 });
 
@@ -78,7 +76,6 @@ Route::group(['namespace' => 'Administrative', 'as' => 'administrative.', 'prefi
     Route::resource('dashboard', 'DashboardController');
     Route::resource('user', 'UserController');
     Route::resource('provider', 'ProviderController');
-
     Route::group(['prefix'=>'application'], function (){
         Route::resource('language', 'LanguageController');
         Route::resource('currency', 'CurrencyController');
@@ -89,7 +86,6 @@ Route::group(['namespace' => 'Administrative', 'as' => 'administrative.', 'prefi
             Route::post('/smtp/test', 'EmailConfigController@testSmtp')->name('smtp.test');
         });
     });
-
     Route::group(['prefix'=>'application'], function (){
         Route::group(['prefix'=>'setting', 'as' => 'setting.'], function (){
             Route::get('/identity', 'SettingController@identity')->name('identity');
@@ -106,8 +102,6 @@ Route::group(['namespace' => 'Administrative', 'as' => 'administrative.', 'prefi
             Route::post('/o-auth', 'SettingController@updateOAuth')->name('oAuth.update');
         });
     });
-
-
 });
 
 /**
@@ -126,5 +120,4 @@ Route::group(['namespace' => 'Provider', 'as' => 'provider.', 'prefix'=>'provide
 Route::group(['namespace' => 'User', 'as' => 'user.', 'prefix'=>'user', 'middleware'=>['permission:user-access', 'auth', 'verified']], function (){
     //Dashboard route: user.dashboard.index
     Route::resource('dashboard', 'DashboardController');
-
 });
